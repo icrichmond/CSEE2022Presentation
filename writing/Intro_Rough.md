@@ -3,6 +3,7 @@ title: "1. Introduction"
 output: 
   word_document:
     keep_md: true 
+    reference_docx: style.docx
   csl: ecology.csl
 bibliography: PhD.bib
 fontsize: 12pt
@@ -14,9 +15,38 @@ often considered to be hostile places with little to no natural elements.
 However, cities host an abundance of flora and fauna, often rivaling their 
 natural counterparts in terms of biodiversity levels and species richness. Urban
 nature can be found in many forms, including private yards, street trees, 
-stormwater ponds, and other "green" and "blue" spaces occurring in cities. 
+stormwater ponds, and other "green" and "blue" spaces throughout a city. 
 In cities, natural elements are managed and often designed by humans. Nature 
-coexists with built and natural infrastructure simultaneously. 
+coexists with built and natural infrastructure simultaneously. The way that 
+the various stakeholders manage urban nature influences how the entire 
+population experiences and interacts with it. For example, EXAMPLE (maybe gentrification?).  Further, our interactions with nature provide benefits such as improved physical 
+health and a sense of belonging, as well as influencing our identity and lived 
+experiences.  
+
+# Part II - Ecosystem Services & Disservices  
+Nature bestows many benefits and gifts on humans that interact with it, 
+consciously or unconsciously. Often, the gifts that nature gives to humans are 
+defined as "nature's contributions to people" or ecosystem services. However, 
+nature's impacts are not always beneficial. For example, street trees often 
+require maintenance and when that is not provided, they can become dangerous for 
+residents. The negative impacts of nature on human lives are often referred to 
+as ecosystem disservices. The urban landscape is a complex and dynamic system 
+that is made up of many ecosystem services and disservices.  
+
+Ecosystem services are often categorized into four main groups, provisioning 
+services, regulating services, supporting services, and cultural services. In 
+reality, many ecosystem services cross the boundaries of each group and can 
+provide benefits in multiple categories. Provisioning services are defined as 
+benefits that provide products from ecosystems, for example food provided 
+through agriculture. Regulating services are defined as benefits that are 
+obtained through the regulation of ecosystems, such as climate regulation from 
+tree canopies. Supporting services are defined as services that are needed 
+for overall ecosystem functioning, such as nutrient cycling. Finally, cultural 
+services are defined as benefits obtained from ecosystems that are non-material 
+in nature, for example, a sense of belonging. All four groups of ecosystem 
+services provide different benefits to humans and all are required to improve 
+quality of life.  
+
 
 
 
