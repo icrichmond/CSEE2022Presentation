@@ -9,19 +9,37 @@ bibliography: PhD.bib
 fontsize: 12pt
 
 ---
-# Part I - Urban Nature & Humans  
-Most people experience nature through the lens of an urban landscape. Cities are
-often considered to be hostile places with little to no natural elements. 
-However, cities host an abundance of flora and fauna, often rivaling their 
-natural counterparts in terms of biodiversity levels and species richness. Urban
-nature can be found in many forms, including private yards, street trees, 
-stormwater ponds, and other "green" and "blue" spaces throughout a city. 
-In cities, natural elements are managed and often designed by humans. Nature 
-coexists with built and natural infrastructure simultaneously. The way that 
-the various stakeholders manage urban nature influences how the entire 
-population experiences and interacts with it. For example, EXAMPLE (maybe gentrification?).  Further, our interactions with nature provide benefits such as improved physical 
-health and a sense of belonging, as well as influencing our identity and lived 
-experiences.  
+# Part I - Urban Landscapes  
+
+Urban landscapes are a complex combination of natural and built elements. The 
+natural elements that make up our cities include flora and fauna as well as 
+structures such as rivers and lakes. Built elements are infrastructure created 
+by humans, such as buildings and roads, often referred to as "grey" 
+infrastructure. Both natural and built elements benefit urban dwellers. Built 
+infrastructure in cities is concentrated in a way that allows urban residents to 
+fulfill a lot of their needs in a convenient way. For example, living in a city 
+allows you to live, work, shop, and build community all within a relatively small 
+area. Further, the natural elements of the city provide many benefits to urban 
+dwellers. Most people experience nature through the lens of the urban landscape. 
+Studies have shown that interaction with nature improves mental health and 
+physical health, and is an important part of development. In addition, there are 
+specific gifts and benefits that humans receive from nature, urban and non-urban, 
+that we cannot receive from built elements. However, urban nature differs from 
+non-urban nature in an important way, management.  
+
+Everything in our cities is managed by humans, including 
+nature. For example, the composition of the urban forest does not necessarily 
+evolve naturally, in the same way you would expect a non-urban forest to evolve. 
+Urban planners, residents, and developers all make decisions regarding the 
+density and species of trees that make up the urban forest. Often, urban nature 
+is being managed in a way that maximizes benefits to urban dwellers. Maximizing 
+human benefit can look very different depending on the interested party, urban 
+planners want to have low levels of maintenance and are often guided by 
+ecologically determined "best practices" for planting, whereas residents may be 
+trying to obtain different benefits, like food production or aesthetic beauty. 
+All management goals are valid and important, and managing urban nature to 
+maximize benefits to all parties involved is an especially critical and 
+difficult problem (has been referred to as a "wicked" problem @Gaston2013)
 
 # Part II - Ecosystem Services & Disservices  
 Nature bestows many benefits and gifts on humans that interact with it, 
