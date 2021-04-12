@@ -9,7 +9,21 @@ bibliography: PhD.bib
 fontsize: 12pt
 
 ---
-# Part I - Urban Landscapes  
+
+*Positionality*  
+I am approaching this research as a descendent of the white settler-colonial 
+Europeans who grew up on the traditional and unceded homelands of the Haudenosaunee, 
+Anishinaabe, and Attiwonderonk Peoples. My approach to science is influenced by my heritage. 
+My privilege as a cisgender, white, settler-colonial researcher directly 
+informs the questions I ask and the science I produce. My training and approach 
+to natural science is informed by a Eurocentric worldview, which means that I 
+have been trained to view humans and nature as distinct entities and use a 
+reductionist approach. I believe that by outlining my biases and approach, I give 
+context and credibility to the work I will do and provide a critical step in 
+reproducible and transparent research. (expand and ref J Roughgarden & Sara Ahmed)     
+
+
+
 
 Urban landscapes are a complex combination of natural and built elements. The 
 natural elements that make up our cities include flora, fauna,and natural structures
@@ -58,10 +72,8 @@ alleviating public health issues, and park area is negatively correlated with
 the proportion of BIPOC residents in the census tract in the United Stats [@hoover2020]. 
 To maximize urban nature's benefits to the entire urban population, we need to 
 critically engage with the prioritization of economic benefits and make our 
-decisions based on other critera, such as equity, compassion, and justice.  
+decisions based on other critera, such as equity, compassion, and justice.   
 
-
-# Part II - Ecosystem Services & Disservices  
 Managing urban nature to maximize benefits to all urban dwellers is a daunting 
 task, however, an "ecosystem services" framework may allow us to attempt it. 
 Nature bestows many benefits and gifts on humans that interact with it, 
@@ -73,11 +85,21 @@ residents. The negative impacts of nature on human lives are often referred to
 as ecosystem disservices. The urban landscape is a complex and dynamic system 
 that is made up of many ecosystem services and disservices.  
 
+Ecosystem services improve human's quality of life. Indeed, depending on the 
+particular service, humans often rely on ecosystem services for our survival. For 
+example, the production of food by crops is an ecosystem service that most humans 
+rely on as our source of food. Ecosystem services can also enhance our lives, by 
+providing benefits that we don't need to survive, but are still important to our 
+health and allow us to thrive. For example, hearing water in daily life can cause 
+significant improvements to people's mental health, allowing them to live happier, 
+healthier lives. Thus, managing urban nature for the production and delivery of 
+ecosystem services is a common municipal goal.  
 
-
-Ecosystem services are often categorized into four main groups, provisioning 
-services, regulating services, supporting services, and cultural services. In 
-reality, many ecosystem services cross the boundaries of each group and can 
+Ecosystem services are often categorized into four main groups, all of which 
+provide humans with services that improve their quality of life. Based on the 
+Millennium Ecosystem Assessment, the four categories of ecosystem services include 
+provisioning services, regulating services, supporting services, and cultural services. 
+In reality, many ecosystem services cross the boundaries of each group and can 
 provide benefits in multiple categories. Provisioning services are defined as 
 benefits that provide products from ecosystems, for example food provided 
 through agriculture. Regulating services are defined as benefits that are 
@@ -88,6 +110,61 @@ services are defined as benefits obtained from ecosystems that are non-material
 in nature, for example, a sense of belonging. All four groups of ecosystem 
 services provide different benefits to humans and all are required to improve 
 quality of life.  
+
+Regulating ecosystem services are particularly critical when managing cities. The 
+ecological footprint of a city often extends far beyond its borders, with many of 
+the supplies and services required by the high population being provided from 
+elsewhere. Provisioning, supporting, and cultural ecosystem services  can be 
+outsourced beyond the bounds of the city limits. For example, many of the 
+provisioning ecosystem services that urban residents need and enjoy are 
+outsourced to surrounding agricultural areas. Similarly, cultural ecosystem services 
+can be provided by nature found outside the city limits, such as National Parks. 
+However, regulating services must be produced *in situ*. The cooling benefits 
+provided by tree canopies cannot be imported, nor can the clean water provided by 
+the city's watershed. The nature of regulating services requires them to be built 
+into the city's landscape. Thus, designing and managing urban nature to provide 
+regulating ecosystem services is a key part of having a just and equitable city.  
+
+Managing ecosystem services to provide their benefits equitably is a complex task. 
+Ecosystem service management includes four different processes, capacity, pressure, 
+demand, and flow [@villamagna2013]. Ecosystem service capacity is the ecosystem's 
+ability to produce a service. Capacity is the easiest to quantify ecologically, 
+and is often focused on by urban ecology studies. For example, planting more 
+street trees increases the street's capacity to provide temperature regulation 
+because of the increased amount of canopy. However, the provision of ecosystem 
+services is not only dependent on the capacity of the ecosystem. We also must 
+consider pressures, which include biophysical influences that change the ability 
+of the ecosystem to provide the service. Pressures can change the capacity of an 
+ecosystem to provide services. For example, overfishing is a pressure that can 
+change the capacity of the ocean's provisioning services. Demand is the level of 
+service that is required by society, and is notoriously difficult to quantify ecologically. 
+Demand can increase due to increased population, for example, higher urban 
+density in turn requires more clean water. However, demand also changes with 
+individual values and culture. For example, if two neighbourhoods have the same 
+population density but the culture of one values and requires urban green space 
+more than the other, then the demand can differ even when the population density 
+doesn't. Finally, flow is the amount of ecosystem services actually received by 
+people. Flow is an integration of capacity, pressures, and demand. To truly deliver
+ecosystem services in a meaningful way in cities, we must take into account each 
+process related to management.  
+
+Cities are highly dynamic and heterogeneous. The urban landscape varies on a 
+uniquely fine-scale, both temporally and spatially. The heterogeneity of cities 
+lends another level of complexity to managing ecosystem services. Capacity, 
+pressure, demand, and flow of ecosystem services changes across space, time, and 
+scale. For example, the capacity of the urban forest to deliver ecosystem services 
+is partially dependent on the species of trees planted. However, different players 
+will plant different trees within a neighbourhood. Further, different neighbourhoods 
+many manage their urban forests differently (e.g. boroughs in MTL). At a large scale, 
+different cities experience different climatic conditions and can have entirely 
+different urban forests. All of those differences change the capacity of the urban 
+forest on different spatial scales. In addition, there is temporal heterogeneity. 
+First, there are legacy effects of past decisions on current conditions. There are 
+also changes in best practices and preferences. These change differently in 
+different places. All of this leads to temporal heterogeneity.  
+
+**URBAN FOREST**
+
 
 
 
