@@ -1,5 +1,5 @@
 ---
-title: "Chapter 1: Cross-city drivers of urban tree regulatory ecosystem services"
+title: "Chapter 1: Cross-city drivers of urban forest regulatory ecosystem services"
 output: 
   word_document:
     keep_md: true 
@@ -9,3 +9,16 @@ bibliography: PhD.bib
 fontsize: 12pt
 ---
 
+The urban forest is a critical part of our urban landscapes. The urban forest is composed of all the trees found in a city and provides ecosystem services to residents from all four categories defined by the Millennium Ecosystem Assessment. Importantly, the urban forest provides critical regulating services in cities that improve quality of life and health of urban residents. One of the most recognized examples of the urban forest's contribution to regulating the urban ecosystem is the ability of urban trees to cool our cities during hot days. The shade provided by urban trees can reduce temperatures by several degrees, potentially reducing air temperatures from dangerous heat-wave levels. Temperature regulation is just one example of the critical regulating services the urban forest provides. The urban forest can also reduce air pollution, sequester carbon, flood control, and noise reduction [@andersson2015]. The ecosystem services provided by the urban forest is dependent on its composition, structure, and management.
+
+\
+
+As part of a city, the urban forest is dynamic and heterogeneous. There are many factors that impact the current ecosystem services delivered by urban trees. Legacy effects of past management and planning decisions continue to influence the urban forest. In addition, planting trends and opinions change, resulting in differences in forest composition across time. Different spatial locations have different relationships with the urban forest and thus may choose to plant different trees. The mandate of racism and classism determined under capitalism continues to determine the flow of ecosystem services through our urban neighbourhoods.  We need to understand how and why ecosystem services vary across space and time **(BIG GAP - FILL OUT)** if we want to be able to maximize the quality of life of all urban residents.
+
+\
+
+# Approach  
+
+# Status  
+
+# Preliminary Results
