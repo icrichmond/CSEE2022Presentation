@@ -1,0 +1,10 @@
+---
+title: "Proposal Outline"
+output: 
+  word_document:
+    keep_md: true 
+    reference_docx: style.docx
+  csl: ecology.csl
+bibliography: PhD.bib
+fontsize: 12pt
+---

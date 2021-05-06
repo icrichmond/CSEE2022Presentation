@@ -1,0 +1,11 @@
+---
+title: "Chapter 1: Cross-city drivers of urban tree regulatory ecosystem services"
+output: 
+  word_document:
+    keep_md: true 
+    reference_docx: style.docx
+  csl: ecology.csl
+bibliography: PhD.bib
+fontsize: 12pt
+---
+
