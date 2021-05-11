@@ -18,10 +18,9 @@ We use a framework of "large-scale" and "fine-scale" drivers of ecosystem servic
 > What are the large-scale factors driving regulatory ecosystem services provided by the urban forest in Canadian temperate cities?
 
 # Approach  
-We will use existing, publicly available data to test ecosystem services and their drivers in seven major temperate Canadian cities (Vancouver, Calgary, Winnipeg, Toronto, Ottawa, Montreal, Halifax). Using remotely sensed data we will measure proxies for three regulatory ecosystem services, temperature regulation, carbon sequestration, and air pollution mitigation. Using a combination of urban tree inventories, land cover maps, and census data we will have three groups of independent variables: natural, built infrastructure, and human demographics. Our natural variables will include previously established important variables such as biodiversity, tree size, and tree density. Built infrastructure will include variables such as road width and % grey, which have been previously shown to influence ecosystem service provision. Finally, our human demographics will include variables such as population density and socioeconomic status. We will conduct this study on three scales: street, neighbourhood, and city. The goal of this study is to determine if there are any common drivers of urban forest ecosystem services across Canadian cities.
+We will use existing, publicly available data to test ecosystem services and their drivers in seven major temperate Canadian cities (Vancouver, Calgary, Winnipeg, Toronto, Ottawa, Montreal, Halifax). Using remotely sensed data we will measure proxies for three regulatory ecosystem services, temperature regulation, carbon sequestration, and air pollution mitigation. Using a combination of urban tree inventories, land cover maps, and census data we will have three groups of independent variables: natural, built infrastructure, and human demographics. Our natural variables will include previously established important variables such as biodiversity, tree size, and tree density. Built infrastructure will include variables such as road width and % grey, which have been previously shown to influence ecosystem service provision. Finally, our human demographics will include variables such as population density and socioeconomic status. We will conduct this study on three scales: street, neighbourhood, and city. The goal of this study is to determine if there are any common drivers in 
+
 
 # Status  
 
 # Preliminary Results
-
-### References
