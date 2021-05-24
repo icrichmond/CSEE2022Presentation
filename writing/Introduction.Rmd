@@ -25,11 +25,6 @@ Regulating ecosystem services are particularly critical when managing cities [@v
 
 The heterogeneity of cities lends another level of complexity to managing ecosystem services. Cities are highly dynamic and heterogeneous, varying on a uniquely fine-scale [@knapp2020; @ziter2018]. Delivery of ecosystem services changes across spatial and temporal [@pickett2017]. The effective and just delivery of ecosystem services requires an approach that can shift depending on the scale of interest. The capacity of the urban landscape to deliver ecosystem services is highly spatially heterogeneous. For example, ecosystem service capacity of the urban forest is often dependent on the species of trees planted. However, different stakeholders will plant different species, which can occur on a small scale, e.g. different homeowners planting different species in their yards. Spatial heterogeneity can also occur on larger scales, e.g. variation in species composition across different neighbourhoods [@ossola2019] or cities [@lin2019]. Thus, uncovering drivers behind ecosystem service capacity, demand, and flow requires a multi-scale approach. *Similarly, temporal variation also occurs on multiple scales. The delivery of ecosystem services can change on a fine-scale, for example across seasons, or on a much larger scale, for example across the time frame of city densification.*  
 
-```{r, echo = FALSE, fig.align='center'}
-knitr::include_graphics("/home/icrichmond/Documents/PhD/ConceptualDiagrams/Theory.png")
-```
-
-
 My proposed thesis will investigate spatial and temporal variation in the delivery of regulating ecosystem services by the urban forest...
 
 \newpage
