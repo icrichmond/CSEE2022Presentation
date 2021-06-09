@@ -1,0 +1,11 @@
+---
+title: "Chapter 2: Legacy effects of land-use types on regulatory ecosystem service capacity of park trees"
+output: 
+  word_document:
+    keep_md: true 
+    reference_docx: style.docx
+  csl: ecology.csl
+bibliography: PhD.bib
+fontsize: 12pt
+---
+
