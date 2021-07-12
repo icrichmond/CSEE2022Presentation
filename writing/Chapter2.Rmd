@@ -9,21 +9,17 @@ bibliography: PhD.bib
 fontsize: 12pt
 ---
 
-The legacy effects of past land-use types have been demonstrated to influence various ecological processes and functioning. Land use intimately changes the structure of the environment, from differences in soil microbe communities (Ziter ref) to the cultural value assigned to a place (ref). The highly managed nature of cities often being paired with a rapid rate of development often results in little to no landscape-scale planning with respect to proportions and placement of different land cover types.  
+The present-day effects of past land-use types, also known as legacy effects, have been demonstrated to influence various ecological processes and functioning. Past land use changes the structure of the current environment, from differences in soil nutrient levels [@ziter2018] to levels of recreational use by humans [@dallimer2015]. Cultural landscapes such as cities often have histories with high rates of land use change due to management by humans [@ziter2017]. The highly managed nature of cities paired with a rapid rate of development often results in rapid rates of land use change with little to no landscape-scale planning with respect to proportions and placement of different land cover types.  
 
-Another feature of cities associated with the rapid rate of development is high turnover. Land parcels can be transformed from one land-use type to another over the course of a year, a process which is not often seen in less anthropogenic ecosystems. As cities are being developed and re-developed, sometimes a parcel of land will be developed into a park from industrial, agricultural, residential, or even waste management land use types. This begs the question:
+As urban populations grow, land is often redeveloped to meet the needs of new residents. The expansion of cities in North America results in the development of agricultural land and forested area [@alig2004] but can also result in the redevelopment of different land use types within the city's borders [@koebel1996]. The mix of development and redevelopment results in a wide array of past land use legacies within urban areas.  
 
-> What are the legacy effects of past land-use types on our current parks?
+Intrinsically tied to the increasing population in cities is the increased need for regulatory ecosystem services. As part of the strategy for meeting increased ecosystem service demands, parks are developed across the urban landscape as a crucial provider of ecosystem services to urban residents. The complex nature of urban development results in park development occurring on many different land use types, which begs the question:
 
-More specifically, we know that our parks and the urban trees within them provide many ecosystem services to the surrounding urban residents. But do the type or quantity of services being delivered change depending on the land-use type the park was developed on? And how does that scale over time? Ziter et al determined ....   
+> What are the legacy effects of past land-use types on our current parks' ecosystem service capacities?
 
-We hypothesize that the previous land-use type will influence the type and quantity of ecosystem services currently being delivered by urban trees in Montreal's parks. We also hypothesize that the relationship between time since development and quantity/type of ecosystem services will change across time depending on the previous land use type. 
+We know that our parks and the urban trees within them provide many ecosystem services to the surrounding urban residents (REFS). But do the type or quantity of services being delivered change depending on the land-use type the park was developed on? And how does that scale over time? We hypothesize that the previous land-use type will influence the type and quantity of ecosystem services currently being delivered by urban trees in Montreal's parks. We also hypothesize that the relationship between time since development and quantity/type of ecosystem services will change across time depending on the previous land use type. 
 
 # Approach 
-We will investigate the land-use legacies on today's parks in Montreal, Quebec. Using the city's historical archives, we will determine the year of establishment for parks in the city and the type of land they were developed on. We will then select a set of parks that vary in previous land-use type and age. After selecting the parks, we will measure ecosystem service capacity for a group of regulating services: temperature regulation, soil type, flood mitigation.
-
-# Status 
-
-# Preliminary Results
+We will investigate the land-use legacies on today's parks in Montreal, Quebec. Using the city's historical archives, we will determine the year of establishment for parks in the city and the type of land they were developed on. Using a subset of Montreal's parks that span age and previous land-use types, we will measure ecosystem service capacity for a group of regulating ecosystem services: temperature regulation, soil type, and flood mitigation.
 
 ###References
