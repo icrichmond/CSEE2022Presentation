@@ -63,13 +63,27 @@ Intrinsically tied to the growing population in cities is the increased need for
 
 Our parks and the urban trees therein provide many ecosystem services to the surrounding urban residents [@wrightwendel2012; @fischer2018]. But do the type or quantity of services being delivered change depending on the land-use type the park was developed on? And how does that scale over time? We hypothesize that the previous land-use type will influence the type and quantity of ecosystem services currently being delivered by urban trees in Montreal's parks. We also hypothesize that the relationship between time since development and quantity/type of ecosystem services will change across time depending on the previous land use type. 
 
-*Approach*
+*Approach*  
 We will investigate the land-use legacies on today's parks in Montreal, Quebec. Using the city's historical archives, we will determine the year of establishment for parks in the city and the type of land they were developed on. Using a subset of Montreal's parks that span age and previous land-use types, we will measure ecosystem service capacity for a group of regulating ecosystem services: temperature regulation, soil type, and flood mitigation.  
 
 ## Chapter 3 - Legacy effects of development on regulatory ecosystem service capacity of street trees  
 
+Following the industrial revolution in North America there has been an influx of people moving to urban centers (REF). Widespread immigration to cities has resulted in increased human and building density in urban centers across the continent (REF). The legacy of historical downtown cores paired with high-density development occurring consistently across several decades has resulted in a chronosequence of development in many Canadian cities, including Montréal.    
 
-## Chapter 4 - Predictive modelling for equitable ecosystem service flow in Montréal
+The nature of urban development in Canada results in high-density populations near the city center, with low-density sprawl occurring on the city's edges (REF). As people have continued to migrate to cities, high-density urban centers stay high-density, low-density sprawl becomes higher density, and surrounding agricultural and natural land is developed into low-density sprawl (REFS). The nature of urban growth then results in some areas of the city having been high-density since essentially the city's inception while some of the outer suburbs only becoming high-density in recent years. The structure of the city is then set-up to effectively test the legacy effects of development on ecosystem service capacity.  
+
+Urban centers have long been recognized as environments that are hostile and difficult for trees to grow in, due to factors such as increased air pollution, compacted soils, and warmer temperatures (REF). Nonetheless, street trees have been planted and managed in Canadian cities for many decades (REF). The chronosequence of high-density development across Canadian cities provides a unique opportunity to test: 
+
+> What are the legacy effects of densification impact street trees' ecosystem service capacities?  
+
+We hypothesize that street tree ecosystem service capacity is negatively related to densification, with street trees in low-density areas having the highest capacities for ecosystem services and street trees in high-density areas having the lowest capacities. We would expect low-density areas will have less of the stressors that make tree growth difficult in an urban setting, such as warmer temperatures, and thus the trees will have a greater capacity for ecosystem services due to better health and growth. We also hypothesize that the differences in ecosystem service capacity of street trees in different density areas will increase over time. Due to the legacy effects of living in high-density areas over a long period of time, such as continually declining soil quality, we predict that street tree ecosystem service capacity will not increase at the same rate as street trees in low-density areas due to increased turnover and decreased tree health, resulting in a higher disparity in capacity over time.  
+
+*Approach*  
+We will sample ecosystem service capacity of street trees in low-density, medium-density, and high-density areas that vary in years since development. We will sample the same regulatory ecosystem services as in Chapter 2, temperature regulation, soil type, and flood mitigation to maximize our knowledge of legacy effects in different areas of the city.
+
+
+## Chapter 4 - Predictive modelling for equitable ecosystem service flow in Montréal  
+
 
 \newpage
 # Significance
