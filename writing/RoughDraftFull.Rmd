@@ -4,7 +4,7 @@ author: "Isabella C. Richmond"
 output: 
   word_document:
     keep_md: true 
-    reference_docx: style.docx
+    reference_docx: "/home/icrichmond/Repositories/proposal/writing/style.docx"
     toc: true
     toc_depth: 3
   csl: ecology.csl
@@ -93,60 +93,15 @@ Work in progress.
 Most of the world's population currently lives in an urban area [@unitednations2019], meaning that the majority of people experience nature through the lens of the urban landscape. Close proximity to urban nature means that benefits from urban trees to city residents exceed benefits from forest trees [@larouche2021]. As cities continue to increase in population and size, their ability to effectively produce and deliver ecosystem services is critical for sustainable and equitable development. My research will provide insight into the ecological drivers and legacy effects impacting the capacity of urban forest regulating ecosystem services in a dynamic and heterogeneous landscape. Historically, the scope of our inferences on ecosystem services has been limited due to individual studies being conducted in a single city [@haase2014]. My multi-service, multi-city approach will make significant contributions to the theoretical and applied understanding of the ecology underlying urban ecosystem services. My research will also contribute to quantifying the legacy effects of management decisions such as land-use development and densification. Relating common and distinct drivers across cities and legacy effects of development decisions will promote optimal and equitable distribution of urban forest ecosystem services. Within cities, inequities exist in the access to ecosystem services by urban residents [@schell2020]. Ecological patterns of ecosystem service distribution and access can be predicted by elements of  structural racism and other mechanisms of inequality [@pham2013; @schell2020]. Critically, some factors that impact ecosystem services, such as past acts of racial segregation across neighbourhoods, are set by history and are therefore irrevocable.20,42 However, clearly defining current drivers and legacy effects of ecosystem services, and integrating those effects into future scenario modelling to predict and improve levels of ecosystem services on multiple scales will provide us with the ability to shape current and future urban landscapes to meet the needs of all city residents and stakeholders in an equitable way.
 
 \newpage
-# Glossary
+# Glossary  
+
 Table 1. Glossary of terms used.  
 
-+------------------------+-----------------+--------------------+
-| **Term**               | **Definition**  | **Reference(s)**   |
-+========================+=================+====================+
-| Urban                  |                 |                    |
-|                        |                 |                    |
-+------------------------+-----------------+--------------------+
-| Natural                |                 |                    |
-|                        |                 |                    |
-+------------------------+-----------------+--------------------+
-| Built                  |                 |                    |
-|                        |                 |                    |
-+------------------------+-----------------+--------------------+
-| Physical               |                 |                    |
-|                        |                 |                    |
-+------------------------+-----------------+--------------------+
-| Social                 |                 |                    |
-|                        |                 |                    |
-+------------------------+-----------------+--------------------+
-| Ecosystem Services     |                 |                    |
-|                        |                 |                    |
-+------------------------+-----------------+--------------------+
-| Nature's Contribution  |                 |                    |
-| to People              |                 |                    |
-+------------------------+-----------------+--------------------+
-| Ecosystem              |                 |                    |
-| Disservices            |                 |                    |
-+------------------------+-----------------+--------------------+
-| Regulating Services    |                 |                    |
-|                        |                 |                    |
-+------------------------+-----------------+--------------------+
-| Capacity               |                 |                    |
-|                        |                 |                    |
-+------------------------+-----------------+--------------------+
-| Pressure               |                 |                    |
-|                        |                 |                    |
-+------------------------+-----------------+--------------------+
-| Flow                   |                 |                    |
-|                        |                 |                    |
-+------------------------+-----------------+--------------------+
-| Demand                 |                 |                    |
-|                        |                 |                    |
-+------------------------+-----------------+--------------------+
-| Urban Forest           |                 |                    |
-|                        |                 |                    |
-+------------------------+-----------------+--------------------+
-| Legacy Effects         |                 |                    |
-|                        |                 |                    |
-+------------------------+-----------------+--------------------+
-| Chronosequence         |                 |                    |
-|                        |                 |                    |
-+------------------------+-----------------+--------------------+
+```{r table, echo = F}
+library(flextable)
+tbl <- read.csv("/home/icrichmond/Repositories/proposal/writing/glossary.csv")
+flextable(tbl, cwidth = 2.5)
+```
 
 
 \newpage
