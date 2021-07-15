@@ -14,7 +14,7 @@ fontsize: 12pt
 
 \newpage
 # Introduction
-Urban landscapes are a complex combination of natural, physical, social, and built elements (see Table S1 for our definition of natural, [@pickett2017]). The integration of natural with social and built elements results in a diverse and unique array of ecosystems within the urban landscape. Globally, urban populations continue to increase in part due to the nature of a city's centralized design, which allows residents to fulfill many basic needs and access better services [@unitednations2019]. For example, living in a city can vastly increase the quality and quantity of services accessible to you, such as waste management, water treatment, and higher quality education [@unitednations2019]. Many benefits of cities are due to the social and built elements that are implemented. However, in addition to the benefits of built and social elements, the natural and physical elements of a city provide many benefits to urban dwellers. Contact with urban nature by residents results in greater overall well-being, more happiness, reduced mortality, and other mental and physical health benefits [@frumkin2017]. All nature, urban and non-urban, provides specific gifts and benefits to humans that we cannot receive from built elements. However, urban nature differs in an important way, management.  
+Urban landscapes are a complex combination of natural, physical, social, and built elements (see Table 1 for our definition of natural, [@pickett2017]). The integration of natural with social and built elements results in a diverse and unique array of ecosystems within the urban landscape. Globally, urban populations continue to increase in part due to the nature of a city's centralized design, which allows residents to fulfill many basic needs and access better services [@unitednations2019]. For example, living in a city can vastly increase the quality and quantity of services accessible to you, such as waste management, water treatment, and higher quality education [@unitednations2019]. Many benefits of cities are due to the social and built elements that are implemented. However, in addition to the benefits of built and social elements, the natural and physical elements of a city provide many benefits to urban dwellers. Contact with urban nature by residents results in greater overall well-being, more happiness, reduced mortality, and other mental and physical health benefits [@frumkin2017]. All nature, urban and non-urban, provides specific gifts and benefits to humans that we cannot receive from built elements. However, urban nature differs in an important way, management.  
 
 Everything in our cities is managed by humans, including nature. Across cities, management occurs on vastly different scales with municipal governments attempting to manage at a city or landscape scale and private land owners often managing at a parcel level. Because of disparate interests and scales, attempting to manage urban nature in a holistic way that meets everyone's needs and benefits all stakeholders has been referred to as a "wicked" problem [@gaston2013]. Maximizing human benefit can look very different depending on the stakeholder [@salmond2016]. For example, when managing the urban forest, municipal planners may want to have low levels of maintenance and are often guided by ecologically determined "best practices" for planting, whereas individual residents may be trying to maximize benefits such as food production or aesthetic beauty.    
 
@@ -53,11 +53,11 @@ We will use existing, publicly available data to test ecosystem services and the
 We are currently in the data collection stage.  
 
 ## Chapter 2 - Legacy effects of land-use types on regulatory ecosystem service capacity of park trees  
-The present-day effects of past land-use types, also known as legacy effects, have been demonstrated to influence various ecological processes and functioning. Past land use changes the structure of the current environment, from differences in soil nutrient levels [@ziter2018] to levels of recreational use by humans [@dallimer2015]. Cultural landscapes such as cities often have histories with high rates of land use change due to management by humans [@ziter2017]. The highly managed nature of cities paired with a rapid rate of development often results in rapid rates of land use change with little to no landscape-scale planning with respect to proportions and placement of different land cover types.  
+The present-day effects of past land-use types, also known as legacy effects, have been demonstrated to influence various ecological processes and functioning. One factor that has legacy effects on the urban environment is past land use type [@ziter2018]. Past land use can change the structure of the current urban environment in many ways, from differences in soil nutrient levels [@ziter2018] to levels of recreational use by humans [@dallimer2015]. Because cities are cultural landscapes, they often have histories with high rates of land use change due to management by humans [@ziter2017]. The high intensity of management paired with a rapid rate of development in cities often results in rapid rates of land use change with little to no landscape-scale planning with respect to proportions and placement of different land cover types.  
 
-As urban populations grow, land is often developed and redeveloped to meet the needs of new residents. The expansion of cities in North America results in the development of agricultural land and forested area [@alig2004] but can also result in the redevelopment of industrial, commercial, and residential land use types within the city's borders [@koebel1996]. The mix of development and redevelopment results in a wide array of past land use legacies within urban areas.   
+The rapid rates of land use change in cities is driven by new development and redevelopment, both of which are designed to meet the needs of new residents. The expansion of cities in North America specifically results in large swaths of of agricultural land and forested area being developed to grow the city [@alig2004]. However, due to intensification within the city's borders, urban expansion can also result in the redevelopment of industrial, commercial, and residential land use types [@koebel1996]. The mix of new development and redevelopment results in a wide array of past land use legacies within urban areas.   
 
-Intrinsically tied to the growing population in cities is the increased need for regulatory ecosystem services. As part of the strategy for meeting increased ecosystem service demands, parks are being developed across the urban landscape as a crucial provider of ecosystem services to urban residents. The complex nature of urban development results in park development occurring on many different land use types, which begs the question:
+Intrinsically tied to urban expansion is the increased need for regulatory ecosystem services within the city's borders. Urban parks are  a crucial provider of ecosystem services to urban residents and are developed throughout city borders to improve the quality of life of residents. The complex nature of urban development results in park development occurring on many different land use types, which begs the question:
 
 > What are the legacy effects of past land-use types on our current parks' ecosystem service capacities?
 
@@ -68,25 +68,85 @@ We will investigate the land-use legacies on today's parks in Montreal, Quebec. 
 
 ## Chapter 3 - Legacy effects of development on regulatory ecosystem service capacity of street trees  
 
-Following the industrial revolution in North America there has been an influx of people moving to urban centers (REF). Widespread immigration to cities has resulted in increased human and building density in urban centers across the continent (REF). The legacy of historical downtown cores paired with high-density development occurring consistently across several decades has resulted in a chronosequence of development in many Canadian cities, including Montréal.    
+Following the industrial revolution in North America there has been an influx of people moving to urban centers [@unitednations2019]. Widespread immigration to cities has resulted in increased human and building density in urban centers across the continent. The legacy of historical downtown cores paired with high-density development occurring consistently across several decades has resulted in a staggered sequence of development in many Canadian cities, including Montréal.    
 
-The nature of urban development in Canada results in high-density populations near the city center, with low-density sprawl occurring on the city's edges (REF). As people have continued to migrate to cities, high-density urban centers stay high-density, low-density sprawl becomes higher density, and surrounding agricultural and natural land is developed into low-density sprawl (REFS). The nature of urban growth then results in some areas of the city having been high-density since essentially the city's inception while some of the outer suburbs only becoming high-density in recent years. The structure of the city is then set-up to effectively test the legacy effects of development on ecosystem service capacity.  
-
-Urban centers have long been recognized as environments that are hostile and difficult for trees to grow in, due to factors such as increased air pollution, compacted soils, and warmer temperatures (REF). Nonetheless, street trees have been planted and managed in Canadian cities for many decades (REF). The chronosequence of high-density development across Canadian cities provides a unique opportunity to test: 
+The nature of urban development in Canada results in high-density populations near the city center, with low-density sprawl occurring on the city's edges (REF). As people have continued to migrate to cities, high-density urban centers stay high-density, low-density sprawl becomes higher density, and surrounding agricultural and natural land is developed into low-density sprawl (REFS). The nature of urban growth in Canada results in areas of the city's core having been high-density for many decades while areas in the outer suburbs only becoming high-density in recent years. Thus, the structure of Canadian cities is a chronosequence, showing several different states of development at the same time. The chronosequence of development found across Canadian cities, such as Montréal, can then be used to effectively test the legacy effects of development on ecosystem service capacity. Our research question asks: 
 
 > What are the legacy effects of densification impact street trees' ecosystem service capacities?  
 
-We hypothesize that street tree ecosystem service capacity is negatively related to densification, with street trees in low-density areas having the highest capacities for ecosystem services and street trees in high-density areas having the lowest capacities. We would expect low-density areas will have less of the stressors that make tree growth difficult in an urban setting, such as warmer temperatures, and thus the trees will have a greater capacity for ecosystem services due to better health and growth. We also hypothesize that the differences in ecosystem service capacity of street trees in different density areas will increase over time. Due to the legacy effects of living in high-density areas over a long period of time, such as continually declining soil quality, we predict that street tree ecosystem service capacity will not increase at the same rate as street trees in low-density areas due to increased turnover and decreased tree health, resulting in a higher disparity in capacity over time.  
+Urban centers have long been recognized as environments that are hostile and difficult for trees to grow in, due to factors such as space constraints, compacted soils, and warmer temperatures [@cavender2019]. Nonetheless, street trees have been planted and managed in contemporary Canadian cities for many decades [@lawrence2008]. We hypothesize that street tree ecosystem service capacity is negatively related to densification, with street trees in low-density areas having the highest capacities for ecosystem services and street trees in high-density areas having the lowest capacities. We would expect low-density areas will have less of the stressors that make tree growth difficult in an urban setting, such as warmer temperatures, and thus the trees will have a greater capacity for ecosystem services due to better health and growth. We also hypothesize that the differences in ecosystem service capacity of street trees in different density areas will increase over time. Due to the legacy effects of living in high-density areas over a long period of time, such as continually declining soil quality, we predict that street tree ecosystem service capacity in high-density areas will not increase at the same rate as street trees in low-density areas due to increased turnover and decreased tree health, resulting in a higher disparity in capacity over time.  
 
 *Approach*  
 We will sample ecosystem service capacity of street trees in low-density, medium-density, and high-density areas that vary in years since development. We will sample the same regulatory ecosystem services as in Chapter 2, temperature regulation, soil type, and flood mitigation to maximize our knowledge of legacy effects in different areas of the city.
 
 
 ## Chapter 4 - Predictive modelling for equitable ecosystem service flow in Montréal  
+The city of Montréal is expected to continue its population growth into the coming decades, as people continue to immigrate to large cities [@statisticscanada2019]. Due to the continued increase in population Montréal will continue to develop as required. The planning and implementation of development will determine how ecosystem services flow throughout the city at the time of development and well into the future. Considering the current disparity in the delivery of ecosystem services on the island of Montréal [@pham2017], it is critical that we consider ecosystem service capacity, delivery, and flow in future development if we want to prioritize an equitable and just city.
 
+Using the results from chapters 1-3, I will produce multiple modelling scenarios of the future ecosystem service flow in Montreal. Chapter 1-3 focus on determining common drivers,legacy effects of land-use types, and legacy effects of densification of ecosystem service capacity. Using this information of how ecosystem service capacity is affected over time, I will develop a series of modelling scenarios for the City of Montréal. I will incorporate predicted demand of ecosystem services, as well as capacity, to develop models of flow for each scenario.
+
+*Approach*  
+Work in progress.
 
 \newpage
-# Significance
+# Significance  
+Most of the world's population currently lives in an urban area [@unitednations2019], meaning that the majority of people experience nature through the lens of the urban landscape. Close proximity to urban nature means that benefits from urban trees to city residents exceed benefits from forest trees [@larouche2021]. As cities continue to increase in population and size, their ability to effectively produce and deliver ecosystem services is critical for sustainable and equitable development. My research will provide insight into the ecological drivers and legacy effects impacting the capacity of urban forest regulating ecosystem services in a dynamic and heterogeneous landscape. Historically, the scope of our inferences on ecosystem services has been limited due to individual studies being conducted in a single city [@haase2014]. My multi-service, multi-city approach will make significant contributions to the theoretical and applied understanding of the ecology underlying urban ecosystem services. My research will also contribute to quantifying the legacy effects of management decisions such as land-use development and densification. Relating common and distinct drivers across cities and legacy effects of development decisions will promote optimal and equitable distribution of urban forest ecosystem services. Within cities, inequities exist in the access to ecosystem services by urban residents [@schell2020]. Ecological patterns of ecosystem service distribution and access can be predicted by elements of  structural racism and other mechanisms of inequality [@pham2013; @schell2020]. Critically, some factors that impact ecosystem services, such as past acts of racial segregation across neighbourhoods, are set by history and are therefore irrevocable.20,42 However, clearly defining current drivers and legacy effects of ecosystem services, and integrating those effects into future scenario modelling to predict and improve levels of ecosystem services on multiple scales will provide us with the ability to shape current and future urban landscapes to meet the needs of all city residents and stakeholders in an equitable way.
+
+\newpage
+# Glossary
+Table 1. Glossary of terms used.  
+
++------------------------+-----------------+--------------------+
+| **Term**               | **Definition**  | **Reference(s)**   |
++========================+=================+====================+
+| Urban                  |                 |                    |
+|                        |                 |                    |
++------------------------+-----------------+--------------------+
+| Natural                |                 |                    |
+|                        |                 |                    |
++------------------------+-----------------+--------------------+
+| Built                  |                 |                    |
+|                        |                 |                    |
++------------------------+-----------------+--------------------+
+| Physical               |                 |                    |
+|                        |                 |                    |
++------------------------+-----------------+--------------------+
+| Social                 |                 |                    |
+|                        |                 |                    |
++------------------------+-----------------+--------------------+
+| Ecosystem Services     |                 |                    |
+|                        |                 |                    |
++------------------------+-----------------+--------------------+
+| Nature's Contribution  |                 |                    |
+| to People              |                 |                    |
++------------------------+-----------------+--------------------+
+| Ecosystem              |                 |                    |
+| Disservices            |                 |                    |
++------------------------+-----------------+--------------------+
+| Regulating Services    |                 |                    |
+|                        |                 |                    |
++------------------------+-----------------+--------------------+
+| Capacity               |                 |                    |
+|                        |                 |                    |
++------------------------+-----------------+--------------------+
+| Pressure               |                 |                    |
+|                        |                 |                    |
++------------------------+-----------------+--------------------+
+| Flow                   |                 |                    |
+|                        |                 |                    |
++------------------------+-----------------+--------------------+
+| Demand                 |                 |                    |
+|                        |                 |                    |
++------------------------+-----------------+--------------------+
+| Urban Forest           |                 |                    |
+|                        |                 |                    |
++------------------------+-----------------+--------------------+
+| Legacy Effects         |                 |                    |
+|                        |                 |                    |
++------------------------+-----------------+--------------------+
+| Chronosequence         |                 |                    |
+|                        |                 |                    |
++------------------------+-----------------+--------------------+
 
 
 \newpage
