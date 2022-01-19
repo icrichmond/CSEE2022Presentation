@@ -1,0 +1,18 @@
+# credit to Alec Robitaille and WEEL's study-area-figs repo for inspiration/code: https://github.com/wildlifeevoeco/study-area-figs
+
+# Water
+watercol <- '#99acc3'
+
+# Land
+montrealcol <- '#ceb99b'
+canadacol <- '#ddc48d'
+
+# Anthro
+citycol <- "#8C6D54"
+nhoodcol <- "#73776F"
+parkcol <- '#c1d5b9'
+
+
+# Map etc
+gridcol1 <- '#323232'
+gridcol2 <- '#73776F'
