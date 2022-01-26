@@ -10,7 +10,7 @@ canadacol <- '#ddc48d'
 # Anthro
 citycol <- "#8C6D54"
 nhoodcol <- "#73776F"
-parkcol <- '#c1d5b9'
+parkcol <- '#678d58'
 
 
 # Map etc

@@ -1,7 +1,7 @@
 # credit to Alec Robitaille and WEEL's study-area-figs repo for inspiration/code: https://github.com/wildlifeevoeco/study-area-figs
 
 #### PACKAGES ####
-libs <- c('ggplot2', 'sf')
+libs <- c('ggplot2', 'ggpattern', 'sf')
 lapply(libs, require, character.only = TRUE)
 
 
@@ -9,9 +9,9 @@ lapply(libs, require, character.only = TRUE)
 bounds <- st_read('data/canada-bounds.gpkg')
 cities <- st_read('data/cities-points.gpkg')
 mtl <- st_read('data/montreal-bounds.gpkg')
-lparks <- st_read('data/montreal-large-parks.gpkg')
-sparks <- st_read('data/montreal-small-parks.gpkg')
+parks <- st_read('data/montreal-parks.gpkg')
 nhoods <- st_read('data/montreal-neighbourhoods.gpkg')
+nhoods <- nhoods[c(1,5,10, 15, 20, 35, 40, 49),] # subset
 water <- st_read('data/montreal-water.gpkg')
 
 
@@ -52,7 +52,7 @@ main <- ggplot() +
            ylim = c(bb['ymin'], bb['ymax'])) +
   #geom_rect(xmin = -74.0788, xmax = -73.3894, ymin = 45.3414, ymax = 45.7224, 
   #          fill = NA, colour = "black", size = 6)  + 
-  themelarge
+  thememain
 
 
 #### MTL INSET ####
@@ -66,9 +66,9 @@ bbi <- st_bbox(st_buffer(mtl, 2.5))
 
 inset <- ggplot() +
   geom_sf(fill = montrealcol, data = mtl) + 
-  geom_sf(fill = parkcol, data = lparks) + 
-  geom_sf(fill = parkcol, data = sparks) +
-  geom_sf(fill = NA, col = nhoodcol, data = nhoods) + 
+  geom_sf(fill = parkcol, col = NA, data = lparks) + 
+  geom_sf(fill = parkcol, col = NA, data = sparks) +
+  geom_sf(fill = nhoodcol, col = "gray20", data = nhoods) + 
   geom_sf(fill = watercol, data = water) + 
   coord_sf(xlim = c(bbi['xmin'], bbi['xmax']),
            ylim = c(bbi['ymin'], bbi['ymax'])) +
