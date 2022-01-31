@@ -1,7 +1,7 @@
 # credit to Alec Robitaille and WEEL's study-area-figs repo for inspiration/code: https://github.com/wildlifeevoeco/study-area-figs
 
 #### PACKAGES ####
-libs <- c('ggplot2', 'ggpattern', 'sf')
+libs <- c('ggplot2', 'sf', 'patchwork')
 lapply(libs, require, character.only = TRUE)
 
 
@@ -28,14 +28,16 @@ thememain <- theme(panel.border = element_rect(size = 1, fill = NA),
                   panel.background = element_rect(fill = watercol),
                   panel.grid = element_line(color = gridcol1, size = 0.2),
                   axis.text = element_text(size = 11, color = 'black'),
-                  axis.title = element_blank())
+                  axis.title = element_blank(), 
+                  plot.background = element_rect(fill = "#e7e5cc", colour = "#e7e5cc"))
 
 ## inset 
 themeinset <- theme(panel.border = element_rect(size = 1, fill = NA),
                     panel.background = element_rect(fill = canadacol),
                     panel.grid = element_line(color = gridcol2, size = 0.2),
                     axis.text = element_text(size = 11, color = 'black'),
-                    axis.title = element_blank())
+                    axis.title = element_blank(), 
+                    plot.background = element_rect(fill = "#e7e5cc", colour = "#e7e5cc"))
 
 
 
@@ -50,15 +52,15 @@ main <- ggplot() +
   geom_sf(color = citycol, size = 3, data = cities) +
   coord_sf(xlim = c(bb['xmin'], bb['xmax'] + 2.5),
            ylim = c(bb['ymin'], bb['ymax'])) +
-  #geom_rect(xmin = -74.0788, xmax = -73.3894, ymin = 45.3414, ymax = 45.7224, 
-  #          fill = NA, colour = "black", size = 6)  + 
+  #geom_rect(aes(xmin = -74.0788, xmax = -73.3894, ymin = 45.3414), ymax = 45.7224, 
+  #          fill = NA, colour = "black", size = 0.5)  + 
+  labs(subtitle = "Chapter 1") +
   thememain
 
 
 #### MTL INSET ####
 mtl <- st_transform(mtl, mtlcrs)
-lparks <- st_transform(lparks, mtlcrs)
-sparks <- st_transform(sparks, mtlcrs)
+parks <- st_transform(parks, mtlcrs)
 nhoods <- st_transform(nhoods, mtlcrs)
 water <- st_transform(water, mtlcrs)
 
@@ -66,31 +68,21 @@ bbi <- st_bbox(st_buffer(mtl, 2.5))
 
 inset <- ggplot() +
   geom_sf(fill = montrealcol, data = mtl) + 
-  geom_sf(fill = parkcol, col = NA, data = lparks) + 
-  geom_sf(fill = parkcol, col = NA, data = sparks) +
-  geom_sf(fill = nhoodcol, col = "gray20", data = nhoods) + 
+  geom_sf(fill = parkcol, col = NA, data = parks) +
+  geom_sf(fill = nhoodcol, col = "gray40", data = nhoods) + 
   geom_sf(fill = watercol, data = water) + 
   coord_sf(xlim = c(bbi['xmin'], bbi['xmax']),
            ylim = c(bbi['ymin'], bbi['ymax'])) +
+  labs(subtitle = "Chapters 2 & 3") +
   themeinset
 
-  
 #### FULL #### 
-## full
-main + 
-  annotation_custom(
-    grob = ggplotGrob(inset),
-    xmin = -70,
-    xmax = -60,
-    ymin = 61.5,
-    ymax = 64)
-
+main | inset
 
 #### SAVE ####
 ggsave(
-  'graphics/13-manitoba.png',
-  gmb,
-  width = 10,
-  height = 10,
-  dpi = 320
+  'study-system.png',
+  width = 12,
+  height = 7,
+  dpi = 450
 )
