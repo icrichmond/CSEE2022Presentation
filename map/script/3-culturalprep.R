@@ -21,12 +21,12 @@ mpolys <- parks$osm_multipolygons
 mpolys <- st_make_valid(st_cast(mpolys, "POLYGON"))
 # Grab polygons (small parks)
 polys <- parks$osm_polygons
-allpolys <- st_union(polys, mpolys)
+allpolys <- st_make_valid(st_union(polys, mpolys))
 # clip parks to Montreal island boundary
 mtl <- st_read('data/montreal-bounds.gpkg')
 wi <- st_within(allpolys, mtl)
 subwi <- vapply(wi, function(x) length(x) >= 1, TRUE)
-keepp <- mpolys[subwi, ]
+keepp <- allpolys[subwi, ]
 
 ## Neighbourhoods 
 hoods <- opq(bb) %>%
