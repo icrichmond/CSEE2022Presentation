@@ -8,6 +8,7 @@ lapply(libs, require, character.only = TRUE)
 #### DATA ####
 bounds <- st_read('data/canada-bounds.gpkg')
 cities <- st_read('data/cities-points.gpkg')
+cities$city <- gsub("(.*),.*", "\\1", cities$location)
 mtl <- st_read('data/montreal-bounds.gpkg')
 parks <- st_read('data/montreal-parks.gpkg')
 nhoods <- st_read('data/montreal-neighbourhoods.gpkg')
@@ -29,7 +30,7 @@ thememain <- theme(panel.border = element_rect(size = 1, fill = NA),
                   panel.grid = element_line(color = gridcol1, size = 0.2),
                   axis.text = element_text(size = 11, color = 'black'),
                   axis.title = element_blank(), 
-                  plot.background = element_rect(fill = "#e7e5cc", colour = "#e7e5cc"))
+                  plot.background = element_rect(fill = NA, colour = NA))
 
 ## inset 
 themeinset <- theme(panel.border = element_rect(size = 1, fill = NA),
@@ -37,7 +38,7 @@ themeinset <- theme(panel.border = element_rect(size = 1, fill = NA),
                     panel.grid = element_line(color = gridcol2, size = 0.2),
                     axis.text = element_text(size = 11, color = 'black'),
                     axis.title = element_blank(), 
-                    plot.background = element_rect(fill = "#e7e5cc", colour = "#e7e5cc"))
+                    plot.background = element_rect(fill = NA, colour = NA))
 
 
 
@@ -50,11 +51,13 @@ bb <- st_bbox(st_buffer(can, 2.5))
 main <- ggplot() +
   geom_sf(fill = canadacol, color = 'grey32', size = 0.1, data = bounds) +
   geom_sf(color = citycol, size = 3, data = cities) +
+  ggrepel::geom_label_repel(data = cities, aes(label = city, geometry = geom), stat = "sf_coordinates", 
+                            min.segment.length = 0, colour = citycol, segment.colour = citycol) + 
   coord_sf(xlim = c(bb['xmin'], bb['xmax'] + 2.5),
            ylim = c(bb['ymin'], bb['ymax'])) +
   #geom_rect(aes(xmin = -74.0788, xmax = -73.3894, ymin = 45.3414), ymax = 45.7224, 
   #          fill = NA, colour = "black", size = 0.5)  + 
-  labs(subtitle = "Chapter 1") +
+  labs(subtitle = "A) Chapter 1") +
   thememain
 
 
@@ -73,7 +76,7 @@ inset <- ggplot() +
   geom_sf(fill = watercol, data = water) + 
   coord_sf(xlim = c(bbi['xmin'], bbi['xmax']),
            ylim = c(bbi['ymin'], bbi['ymax'])) +
-  labs(subtitle = "Chapters 2 & 3") +
+  labs(subtitle = "B) Chapters 2 & 3") +
   themeinset
 
 #### FULL #### 
