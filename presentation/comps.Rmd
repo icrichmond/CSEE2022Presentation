@@ -1,0 +1,332 @@
+---
+title: "Spatial and Temporal Variation in Canadian Urban Forests"
+subtitle: 
+- "BIOL-850 Qualifying Exams"
+author:
+- Isabella C. Richmond
+- "Supervisor: Dr. Carly Ziter"
+- "Committee Members: Dr. Hiên Pham & Dr. Emma Despland"
+- "Examining Commitee: Dr. Eric Pederson & Dr. Jim Grant"
+date: May 2, 2022
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      beforeInit: "macros-slides.js"
+      highlightLines: true
+      countIncrementalSlides: false
+      slideNumberFormat: "%current% of %total%"
+    css: [metropolis, metropolis-fonts, "extras-slides.css"]
+
+---
+```{r, echo = F}
+library(emo)
+```
+class: introduction
+
+# Thank You 
+
+.pull-left[
+```{r, echo = F, fig.align='center', fig.retina=2.5}
+knitr::include_graphics("Summer-August-5-2021.jpg")
+```
+]
+
+.pull-right[
+```{r, echo = F, fig.align='center', fig.retina=2.5}
+knitr::include_graphics("zule-december.jpg")
+```
+]
+
+
+
+---
+class: mainconcepts 
+# .small[The Urban Ecosystem] 
+
+```{r, echo = F, fig.align='center', fig.retina=2.5}
+knitr::include_graphics("adapted-pickett.png")
+```
+
+.footnote[
+[1]: Adapted from Pickett et al. 2017, [Urban Ecosystems](http://link.springer.com/10.1007/s11252-016-0574-9)
+]
+
+---
+class: mainconcepts 
+
+# .small[Inequity]
+
+```{r,echo=F, fig.align='center'}
+knitr::include_graphics("racism.jpeg", dpi = 200)
+```
+
+.footnote[ [2]: Schell et al. 2020. [Science](https://www.sciencemag.org/lookup/doi/10.1126/science.aay4497)
+]
+
+---
+
+class: mainconcepts
+
+# .small[Spatial Heterogeneity]
+
+<center> 
+```{r echo=F, message=F, warning=FALSE, fig.align='center'}
+library(mapview)
+library(raster)
+lst <- raster("LSTMeanExample.tif")
+mapview(lst, alpha.regions = 0.6)
+```
+</center>
+
+.footnote[
+[3]: Pickett et al. 2017, [Urban Ecosystems](http://link.springer.com/10.1007/s11252-016-0574-9)
+]
+
+---
+class: mainconcepts 
+
+# .small[Temporal Heterogeneity]
+
+```{r,echo=F, message = F, warning=F, fig.align='center'}
+knitr::include_graphics("frederickbackthen.png")
+```
+
+
+.footnote[ [4]:[László Horváth](https://www.mindat.org/photo-506487.html)]
+
+---
+
+class: mainconcepts 
+
+# .small[Temporal Heterogeneity]
+```{r,echo=F, message = F, warning=F, fig.align='center'}
+knitr::include_graphics("frederickbacknow.jpg")
+```
+
+
+.footnote[[5]:[Tourisme Montréal](https://www.mtl.org/en)
+]
+
+---
+class: mainconcepts 
+
+# .small[The Urban Forest & it's Composition]
+- Urban forest is part of the biotic elements of cities
+- Differences in urban forest composition change ecosystem functioning
+```{r, echo = F}
+knitr::include_graphics("composition.jpg")
+```
+
+.footnote[
+[6]: Aronson et al. 2017, [Frontiers in Ecology and the Environment](https://esajournals-onlinelibrary-wiley-com/doi/full/10.1002/fee.1480?casa_token=pfUkQEswVAMAAAAA%3ApcP-dwTjzK9rumqs4Vg4y_VpVF0SClhwurbbTvsMTvMr_obS1DGbWBhufnRWabViUVW7zciXJuqB0o-A)
+]
+
+---
+class: mainconcepts
+
+# .small[Ecosystem Services]
+- The benefits that humans derive from nature 
+
+```{r, echo = F, warning = F, message=F,  fig.align='center',fig.retina = 2.5}
+library(data.table)
+library(ggplot2)
+library(ggrepel)
+
+demand <- rep(0,101)
+x <- seq(0, 100, by = 1)
+pressure <- dnorm(x, mean = 50, sd = 10)
+capacity <- (dnorm(x, mean = 75, sd = 15))*-1
+
+df <- data.frame(demand = demand, pressure = pressure, capacity = capacity, time = 1:101)
+df <- melt(df ,  id.vars = 'time', variable.name = 'ES')
+df$ES <- as.factor(df$ES)
+
+data_label <- df
+data_label$label <- NA
+data_label$label[which(data_label$time == max(data_label$time))] <- data_label$ES[which(data_label$time == max(data_label$time))]
+data_label['label'][data_label['label'] == '1'] <- 'demand'
+data_label['label'][data_label['label'] == '2'] <- 'pressure'
+data_label['label'][data_label['label'] == '3'] <- 'capacity'
+
+cols <- c('#9cc184', '#447243', '#1e3d14')
+
+ggplot(aes(x = time, y = value, colour = ES), data = data_label) + 
+  geom_line(size = 1) + 
+  scale_colour_manual(values = cols) + 
+  geom_label_repel(aes(label = label),
+                   nudge_x = 3,
+                   na.rm = TRUE) +
+  theme_classic() + 
+  xlab(label = "Time") + 
+  ylab(label = " ") + 
+  xlim(0,115) + 
+  theme(axis.text.x = element_blank(),
+        axis.ticks.x = element_blank(),
+        axis.text.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        legend.position = "none",
+        panel.background = element_rect(fill = "#e7e5cc", color = NA),
+        plot.background = element_rect(fill = "#e7e5cc", color = NA)
+        )
+```
+
+.small[.footnote[
+[7]: Adapted from Villamagna   
+et al. 2013. [Ecological Complexity](https://linkinghub.elsevier.com/retrieve/pii/S1476945X1300055X)
+]]
+
+---
+class: chapterone
+
+# .small[Chapter 1: Cross-City Drivers of Ecosystem Services]
+
+**Question:** What are the cross-city drivers of regulatory ecosystem service capacity provided by the urban forest in Canadian temperate cities?  
+
+```{r, echo = F, fig.align='center', out.width="60%"}
+knitr::include_graphics("chapter-1.png")
+```
+
+---
+class: chapterone
+
+# .small[Chapter 1: Cross-City Drivers of Ecosystem Services]
+
+**Hypotheses** 
+
+--
+
+*Cross-City Drivers*: We hypothesize that there will be some drivers that influence ecosystem service capacity in the same direction across scales/cities. For example:  
+
+- tree size .large[`r emo::ji("deciduous_tree")`].small[`r emo::ji("deciduous_tree")`]
+- tree density .large[`r emo::ji("house_with_garden")` `r emo::ji("office_building")`]
+- impervious surface .large[`r emo::ji("bricks")`] 
+
+--
+
+*City-Specific Drivers*: We hypothesize that there will be some drivers that change magnitude and direction in how they influence ecosystem service capacity across scales/cities. For example: 
+
+- tree diversity .large[`r emo::ji("deciduous_tree")``r emo::ji("palm_tree")``r emo::ji("evergreen_tree")`]
+- building function .large[`r emo::ji("house_with_garden")` `r emo::ji("office_building")`]
+- class/income .large[`r emo::ji("bill")`]
+
+---
+class:chapterone
+
+# .small[Chapter 1: Cross-City Drivers of Ecosystem Services]
+**Approach:** 
+
+--
+.left-column[
+- Three scales:  
+
+```{r, echo = F, fig.align='center', out.width="30%"}
+knitr::include_graphics("urban-city-2.png")  
+```
+
+
+```{r, echo = F, fig.align='center', out.width="30%"}
+knitr::include_graphics("favela-in-brazil.png")  
+```
+
+
+```{r, echo = F, fig.align='center', out.width="30%"}
+knitr::include_graphics("street.jpg")  
+```
+]
+
+--
+
+.right-column[
+- Three ecosystem services: .large[`r emo::ji("thermometer")`, `r emo::ji("factory")`, `r emo::ji("seedling")`]]
+
+--
+
+.right-column[
+- Ecological drivers: .large[`r emo::ji("deciduous_tree")``r emo::ji("palm_tree")``r emo::ji("evergreen_tree")`,].large[`r emo::ji("deciduous_tree")`].small[`r emo::ji("deciduous_tree")`, `r emo::ji("national_park")``r emo::ji("road")`]]
+
+--
+
+.right-column[
+- Infrastructure drivers: .large[`r emo::ji("straight_ruler")`,] .large[`r emo::ji("bricks")`, `r emo::ji("national_park")`, ].large[`r emo::ji("city")`,].large[ `r emo::ji("house_with_garden")` `r emo::ji("office_building")`,] .large[`r emo::ji("office_building")`].smaller[`r emo::ji("office_building")`]]
+
+--
+
+.right-column[
+- Sociodemographic drivers: .large[`r emo::ji("parents")`, `r emo::ji("bill")`, `r emo::ji("graduation_cap")`, `r emo::ji("light_skin_tone")``r emo::ji("dark_skin_tone")``r emo::ji("medium_skin_tone")`, `r emo::ji("house")``r emo::ji("castle")` ]]
+
+.footnote[ .small[ [9]: [IAN](ian.umces.edu/media-library) & [VectorStock](https://cdn4.vectorstock.com/i/1000x1000/15/73/city-road-urban-street-vector-23001573.jpg)
+]]
+
+---
+class: chapterone 
+
+# .small[Chapter 1: Cross-City Drivers of Ecosystem Services]
+
+**Causal Model**
+
+**Simulation?**
+
+
+---
+class: chaptertwo
+# .small[Chapter 2: Legacy Effects of Past Land-Use]
+
+.smaller[**Question:** a) What are the legacy effects of past land-use types on our current ecosystem services in parks?  
+b) Are certain past land-use types disproportionately represented in today’s neighbourhoods and if so, is the relationship perpetuating systemic injustices?] 
+
+```{r, echo = F, fig.align='center', out.width="65%"}
+knitr::include_graphics("chapter-2.png")
+```
+
+
+---
+class: chaptertwo
+# .small[Chapter 2: Legacy Effects of Past Land-Use]
+
+**Hypotheses:**  previous land-use type and associated inequities will influence the ecosystem services today
+
+```{r, echo = F, fig.align='center', out.width = '70%'}
+
+```
+
+.footnote[ [7]: Ziter & Turner. 2018. [Ecological Applications](https://esajournals-onlinelibrary-wiley-com.lib-ezproxy.concordia.ca/doi/full/10.1002/eap.1689?casa_token=jlA05lJnUHwAAAAA%3ANdg3NC2RvvhOtgRNR-2bszOns1RpsACy_ZsABEG_AU4hVozT_1CrYi2eIfCrMtTn5kkcNajPklPdwTIf)
+]
+
+
+---
+class: chapterthree
+
+# .small[Chapter 3: Legacy Effects of Urban Form Decisions]
+**Question:**  What are the legacy effects of past urban form decisions and how do they interact with gentrification to influence the urban forest composition in today's neighbourhoods?  
+
+```{r, echo = F, fig.align='center', out.width="65%"}
+knitr::include_graphics("chapter-3.png")
+```
+
+
+---
+
+class: chapterthree
+
+# .small[Chapter 3: Legacy Effects of Urban Form Decisions]
+
+**Hypotheses:** Urban form decisions influence today's urban forest. Gentrification also influences the urban forest but the effects are constrained by urban form. 
+
+```{r, echo = F, fig.align='center', out.width = '60%'}
+knitr::include_graphics("setback_MM.png")
+```
+
+.small[.footnote[Image credit: Miranda Monosky, adapted from [8]: Pham et al. 2017. [Landscape & Urban Planning](https://www-sciencedirect-com.lib-ezproxy.concordia.ca/science/article/pii/S0169204616301797?casa_token=MDUd7MzLR8kAAAAA:1nzBpBCwcdbdDB0VgKWWXsEcNieIS_M82RzdkGlHLF1oqDzD4-kHvV228lFrsf1VuyBqi95udv0)
+]]
+
+---
+class: chapterthree
+background-image: url("urbantree.jpg")
+
+# Questions
+
+
+.footnotefinal["Le Plateau Montreal - Tree" by ra1000 is licensed under CC BY-NC-ND 2.0]
+
