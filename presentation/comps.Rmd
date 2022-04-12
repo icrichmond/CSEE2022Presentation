@@ -266,8 +266,33 @@ class: chapterone
 
 **Causal Model**
 
-**Simulation?**
+```{r, eval = T, message = F, echo = F}
+library(ggdag)
+library(ggplot2)
 
+dag <- dagify(
+    ES ~ "Tree Div",
+    ES ~ "Tree Size", 
+    ES ~ "Tree Dens", 
+    ES ~ "Road Size",
+    ES ~ "Imperv", 
+    ES ~ "Build Dens", 
+    ES ~ "Build Func",
+    ES ~ "Build Height", 
+    ES ~ "Pop Dens", 
+    ES ~ "Income", 
+    ES ~ "Prop Imm",
+    ES ~ "Prop Minor", 
+    ES ~ "Prop Indig",
+    ES ~ "Dwel Type",
+    "Tree Div" ~ "Build Func" + "Income" + "Prop Imm" + "Prop Minor" + "Dwel Type"
+    
+)
+
+dagi
+
+ggdag(dag)
+```
 
 ---
 class: chaptertwo
