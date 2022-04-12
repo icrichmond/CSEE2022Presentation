@@ -285,7 +285,8 @@ dag <- dagify(
     ES ~ "Prop Minor", 
     ES ~ "Prop Indig",
     ES ~ "Dwel Type",
-    "Tree Div" ~ "Build Func" + "Income" + "Prop Imm" + "Prop Minor" + "Dwel Type"
+    "Tree Div" ~ "Build Func" + "Income" + "Prop Imm" + "Prop Minor" + "Dwel Type",
+    "Tree Size" ~ "Tree Div" + "Tree Dens" + "Road Size" + ""
     
 )
 
