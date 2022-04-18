@@ -23,6 +23,13 @@ output:
 ```{r, echo = F}
 library(emo)
 ```
+TO-DO: 
+- Script 
+- Break down Ch. 1 DAG 
+- Add Paquette paper to back deck of slides 
+- Add table of all variables + sources for ch 1 to back of slide deck 
+
+---
 class: introduction
 
 # Thank You 
@@ -215,7 +222,7 @@ class: chapterone
 class:chapterone
 
 # .small[Chapter 1: Cross-City Drivers of Ecosystem Services]
-**Approach:** 
+**Approach** 
 
 --
 .left-column[
@@ -259,41 +266,6 @@ knitr::include_graphics("street.jpg")
 .footnote[ .small[ [9]: [IAN](ian.umces.edu/media-library) & [VectorStock](https://cdn4.vectorstock.com/i/1000x1000/15/73/city-road-urban-street-vector-23001573.jpg)
 ]]
 
----
-class: chapterone 
-
-# .small[Chapter 1: Cross-City Drivers of Ecosystem Services]
-
-**Causal Model**
-
-```{r, eval = T, message = F, echo = F}
-library(ggdag)
-library(ggplot2)
-
-dag <- dagify(
-    ES ~ "Tree Div",
-    ES ~ "Tree Size", 
-    ES ~ "Tree Dens", 
-    ES ~ "Road Size",
-    ES ~ "Imperv", 
-    ES ~ "Build Dens", 
-    ES ~ "Build Func",
-    ES ~ "Build Height", 
-    ES ~ "Pop Dens", 
-    ES ~ "Income", 
-    ES ~ "Prop Imm",
-    ES ~ "Prop Minor", 
-    ES ~ "Prop Indig",
-    ES ~ "Dwel Type",
-    "Tree Div" ~ "Build Func" + "Income" + "Prop Imm" + "Prop Minor" + "Dwel Type",
-    "Tree Size" ~ "Tree Div" + "Tree Dens" + "Road Size" + ""
-    
-)
-
-dagi
-
-ggdag(dag)
-```
 
 ---
 class: chaptertwo
@@ -311,14 +283,17 @@ knitr::include_graphics("chapter-2.png")
 class: chaptertwo
 # .small[Chapter 2: Legacy Effects of Past Land-Use]
 
-**Hypotheses:**  previous land-use type and associated inequities will influence the ecosystem services today
+**Hypotheses**  
 
-```{r, echo = F, fig.align='center', out.width = '70%'}
+--
 
-```
+1) Previous land-use type and will influence urban forest composition and ecosystem service capacity in today's parks 
+  - Land use types that resulted in an *input* of nutrients, i.e., <span style="color:#556219; font-weight: 700">natural</span> and <span style = "color:#E5A335; font-weight: 700">agricultural</span>,  will have bigger trees and higher ecosystem service capacity 
+  - Previous land use types that *contaminated* the soil, i.e., <span style = "color:#591D06; font-weight: 700">industrial</span>, will have smaller trees and lower ecosystem service capacity  
 
-.footnote[ [7]: Ziter & Turner. 2018. [Ecological Applications](https://esajournals-onlinelibrary-wiley-com.lib-ezproxy.concordia.ca/doi/full/10.1002/eap.1689?casa_token=jlA05lJnUHwAAAAA%3ANdg3NC2RvvhOtgRNR-2bszOns1RpsACy_ZsABEG_AU4hVozT_1CrYi2eIfCrMtTn5kkcNajPklPdwTIf)
-]
+--
+
+2) Neighbourhoods historically inhabited by marginalized people will have more parks built on industrial sites but this relationship will have shifted over time in Montreal
 
 
 ---
@@ -338,7 +313,7 @@ class: chapterthree
 
 # .small[Chapter 3: Legacy Effects of Urban Form Decisions]
 
-**Hypotheses:** Urban form decisions influence today's urban forest. Gentrification also influences the urban forest but the effects are constrained by urban form. 
+**Hypotheses** Urban form decisions influence today's urban forest. Gentrification also influences the urban forest but the effects are constrained by urban form. 
 
 ```{r, echo = F, fig.align='center', out.width = '60%'}
 knitr::include_graphics("setback_MM.png")
@@ -356,3 +331,33 @@ background-image: url("urbantree.jpg")
 
 .footnotefinal["Le Plateau Montreal - Tree" by ra1000 is licensed under CC BY-NC-ND 2.0]
 
+
+---
+class: chapterone 
+
+# .small[Chapter 1: Cross-City Drivers of Ecosystem Services]
+
+**Causal Model**
+
+```{r, eval = T, message = F, echo = F, fig.align='center'}
+library(ggdag)
+library(ggplot2)
+
+dag <- dagify(
+    ES ~ TDiv + TSiz + TDens + RSiz + Imp + BDens + BFunc + BHgt + PDens + Inc + PImm + PMin + DTyp,
+    TDiv ~ BFunc + Inc + PImm + PMin + DTyp,
+    TSiz ~ TDiv + TDens + RSiz + Imp + BDens + PDens + Inc + PImm + PMin + DTyp,
+    TDens ~ TSiz + RSiz + Imp + BDens + BFunc + PDens + Inc + PImm + PMin + DTyp,
+    RSiz ~ BDens + BFunc + PDens + DTyp, 
+    Imp ~ TDens + RSiz + BDens + BHgt + DTyp,
+    BDens ~ Inc + DTyp,
+    PDens ~ BDens + BFunc + Inc + PImm + PMin + DTyp,
+    Inc ~ PImm + PMin + DTyp,
+    PImm ~ Inc + PMin,
+    PMin ~ PImm + Inc,
+    DTyp ~ PDens + PImm + PMin
+)
+ggdag(dag) + 
+  theme_dag_blank() + 
+  theme(plot.background = element_rect(fill = "#e7e5cc", colour = NA))
+```
