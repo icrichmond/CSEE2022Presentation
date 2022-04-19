@@ -135,6 +135,30 @@ img, video, iframe {
 }
 
 
+/* headers */ 
+.sidebar{
+  font-size: 10px;
+}
+
+.mainconc {
+  font-size: 10px;
+   color: #669d62;}
+
+.ch1 {
+  font-size: 10px;
+   color: #447243;
+}   
+
+.ch2 {
+  font-size: 10px;
+   color: #447243;
+} 
+
+.ch3 {
+  font-size: 10px;
+  color: #1e3d14;
+}
+  
 /* font size */
 .large { font-size: 130% }
 .larger { font-size: 200% }
