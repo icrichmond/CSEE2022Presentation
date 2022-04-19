@@ -94,7 +94,7 @@ crs_string = "+proj=omerc +lat_0=45.65 +lonc=-73.80 +alpha=0 +k_0=.7 +datum=WGS8
 ggplot() +
   geom_sf(fill = montrealcol, data = mtl) + 
   geom_sf(aes(fill = PastLandUse), colour = NA, data = studyparks) +
-  scale_fill_manual(values = p) +
+  scale_fill_viridis_d() +
   geom_sf(fill = watercol, data = water) + 
   coord_sf(crs = crs_string, 
            xlim = c(-19000, 17268),
