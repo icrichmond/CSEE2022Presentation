@@ -350,7 +350,7 @@ knitr::include_graphics("chapter-2.png")
 
 ???
 
-Moving on to chapter 2 - where we start to dial in more on the temporal heterogeneity and the influence of historical events. The question driving this chapter is 
+Moving on to chapter 2 - where we start to dial in more on the temporal heterogeneity and the influence of historical events. The question driving this chapter is first, what are the legacy effects of past land-use types on our current ecosystem services in Montreal parks. And second - how are these different past land uses represented in today's neighbourhoods - for example - is there overrepresentation of industrial land use types in areas that have a high percentage of immigrants or visible minorities?
 
 ---
 class: chaptertwo
@@ -369,6 +369,10 @@ class: chaptertwo
 2) Neighbourhoods historically inhabited by marginalized people will have more parks built on industrial sites but this relationship will have shifted over time in Montreal
 
 
+???
+
+Our hypotheses for this chapter first address how previous land-use types influence our parks today. We hypothesize that land use types that ultimately resulted in an input of nutrients - i.e., agricultural and previously forested (or natural) will result in parks that today have denser, larger trees and a higher ecosystem service capacity. Whereas, we expect that land use types that contaminated the soil - here labelled as industrial, which includes both previous quarries and previous landfills, will have smaller trees and lower ecosystem service capacity today.
+
 ---
 class: chaptertwo
 # .small[Chapter 2: Legacy Effects of Past Land-Use]
@@ -380,13 +384,18 @@ class: chaptertwo
 knitr::include_graphics("studyparks.png")
 ```
 
+???
+
+To address this question, we are going to sample 30 parks total - 10 for each land cover class type across the island of Montreal. Within the parks, we will split the park into areas of low, medium, and high canopy cover and do 3 sampling plots per cover level. The plots are based on iTree sampling methodology, a popular approach in urban ecology and will be 0.04 ha in size. In each plot, we will do a forest inventory including species and size of trees, as well as place a temperature sensor so we can assess the temperature mitigation capacity of these parks.
+
+
 ---
 class: chaptertwo
 # .small[Chapter 2: Legacy Effects of Past Land-Use]
 
 **Approach**
 
-- Need sampling diagram (working on it)
+- Need sampling diagram? (working on it)
 
 ---
 
@@ -407,6 +416,10 @@ class: chapterthree
 knitr::include_graphics("chapter-3.png")
 ```
 
+???
+
+Finally, chapter three continues in the temporal heterogeneity vein and will try to address the trade-offs or tensions between historical urban form decisions and the process of gentrification, and how these things influence the urban forest of today's neighbourhoods in Montreal. The idea here being that there are historical urban form decisions that can be considered "static" - in that they are extremely hard to change and often do not change, even when a neighbourhood is developed and redeveloped. And even when a neighbourhood goes through a developmental process, in the case of this chapter - gentrification, these static factors may constrain the effect that gentrification has on our urban forest, which may diminish or change the effects that we might expect to see.
+
 
 ---
 
@@ -419,6 +432,10 @@ class: chapterthree
 ```{r, echo = F, fig.align='center', out.width = '60%'}
 knitr::include_graphics("tension.png")
 ```
+
+???
+
+So we hypothesize that these static urban form factors, such as road size and building setback, are constraining the effect that the dynamic factors, which change through gentrification has on the urban forest. So although gentrification will change the urban forest - perhaps through increasing diversity or density of trees, it will only change SO much in areas that are constrained by really low building setback and high population density.
 
 ---
 
@@ -433,6 +450,12 @@ class: chapterthree
 ```{r, echo = F, fig.align='center', out.width='75%'}
 knitr::include_graphics("ch3sampling.png")
 ```
+
+
+???
+
+To try and tease out how all these factors are operating together, we will use a categorical approach to gentrification, developed by Statistics Canada and designate 5 neighbourhoods as either gentrified, not gentrified, or didn't qualify for gentrification 
+
 
 ---
 class: chapterthree
