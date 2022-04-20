@@ -454,7 +454,7 @@ knitr::include_graphics("ch3sampling.png")
 
 ???
 
-To try and tease out how all these factors are operating together, we will use a categorical approach to gentrification, developed by Statistics Canada and designate 5 neighbourhoods as either gentrified, not gentrified, or didn't qualify for gentrification 
+To try and tease out how all these factors are operating together, we will use a categorical approach to gentrification, developed by Statistics Canada and designate 5 neighbourhoods as either gentrified, not gentrified, or didn't qualify for gentrification. We will then spread those 5 sites across 
 
 
 ---
