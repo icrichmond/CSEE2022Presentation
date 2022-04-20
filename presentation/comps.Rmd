@@ -294,6 +294,12 @@ knitr::include_graphics("street.jpg")
 ```
 ]
 
+
+???
+
+So with all that in mind, my first chapter will take a multi-scale, multi-service, multi-city approach to this question. Using seven cities across Canada and three scales - street, neighbourhood, and whole city, we will test if there are cross-city drivers.
+
+
 --
 
 .right-column[
@@ -319,7 +325,7 @@ knitr::include_graphics("street.jpg")
 
 ???
 
-So with all that in mind, my first chapter will take a multi-scale, multi-service, multi-city approach to this question. Using seven cities across Canada and three scales - street, neighbourhood, and whole city, we will test if there are cross-city drivers. The drivers I am testing can be separated into three categories - ecological: tree diversity, tree size, and tree density, built infrastructure/urban form: road size, impervious surface, green area, building density, building height, building function, and sociodemographic; population density, income, educatioon level, visible minorities, immigration, and dwelling type
+The drivers I am testing can be separated into three categories - ecological: tree diversity, tree size, and tree density, built infrastructure/urban form: road size, impervious surface, green area, building density, building height, building function, and sociodemographic; population density, income, educatioon level, visible minorities, immigration, and dwelling type
 
 ---
 class:chapterone
@@ -377,8 +383,19 @@ knitr::include_graphics("studyparks.png")
 ---
 class: chaptertwo
 # .small[Chapter 2: Legacy Effects of Past Land-Use]
+
+**Approach**
+
 - Need sampling diagram (working on it)
 
+---
+
+class: chaptertwo
+# .small[Chapter 2: Legacy Effects of Past Land-Use]
+
+**Proposed Analysis**
+
+- Diagrams to come
 
 ---
 class: chapterthree
@@ -416,6 +433,15 @@ class: chapterthree
 ```{r, echo = F, fig.align='center', out.width='75%'}
 knitr::include_graphics("ch3sampling.png")
 ```
+
+---
+class: chapterthree
+
+# .small[Chapter 3: Legacy Effects of Urban Form Decisions]
+
+**Proposed Analysis**
+
+- diagrams to come
 
 ---
 class: chapterthree
