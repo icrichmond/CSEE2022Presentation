@@ -131,7 +131,7 @@ knitr::include_graphics("frederickbackthen.png")
 
 ???
 
-Similarly important to spatial heterogeneity is temporal heterogeneity! We can 
+Similarly important to spatial heterogeneity is temporal heterogeneity! We know that current functioning of our cities with respect to ecosystem services and other ecological processes is temporally heterogeneous, and specifically are influenced by legacy effects which are a form of temporal heterogeneity. Legacy effects occur when an event carries its effects across time. For example, we can imagine that a decision or event such as past land-use type could have legacy effects. So using a location as a landfill or quarry (or both)... 
 
 ---
 
@@ -146,6 +146,10 @@ knitr::include_graphics("frederickbacknow.jpg")
 .footnote[[5]:[Tourisme Montréal](https://www.mtl.org/en)
 ]
 
+???
+
+May influence the subsequent functioning of that ecosystem through many legacy effects, even when the land use has changed to something else, perhaps a park - such as here in Frederick-Back
+
 ---
 class: mainconcepts 
 
@@ -159,6 +163,10 @@ knitr::include_graphics("composition.jpg")
 .footnote[
 [6]: Aronson et al. 2017, [Frontiers in Ecology and the Environment](https://esajournals-onlinelibrary-wiley-com/doi/full/10.1002/fee.1480?casa_token=pfUkQEswVAMAAAAA%3ApcP-dwTjzK9rumqs4Vg4y_VpVF0SClhwurbbTvsMTvMr_obS1DGbWBhufnRWabViUVW7zciXJuqB0o-A)
 ]
+
+???
+
+So - we have the urban ecosystem as a whole, inequity, spatial and temporal heterogeneity, all of these things come together when we start to think about the urban forest and how it is organized in time and space. We can think of the urban forest as all trees, shrubs, and greenspaces within an urban area and it is part of the biotic elements found within cities. The urban forest is critical to human well-being and different components of the urban forest function extremely differently. For example, we can imagine the forest remnant pictured on the far left providing really different ecosystem functions than a managed park or a green roof, on the right. A remnant forest may provide better habitat for wildlife and support more native species. Whereas a managed park may provide more mental health benefits and a green roof may add green space to an extremely dense environment. However, they can also all decrease air temperatures and store carbon, although albeit with different capacities. 
 
 ---
 class: mainconcepts
@@ -214,6 +222,11 @@ ggplot(aes(x = time, y = value, colour = ES), data = data_label) +
 et al. 2013. [Ecological Complexity](https://linkinghub.elsevier.com/retrieve/pii/S1476945X1300055X)
 ]]
 
+
+???
+
+Now, when we discuss all the benefits that we receive from the urban forest (and other biotic elements within our cities), we often refer to the benefits as "ecosystem services". Ecosystem services can be a useful framework and is often conceived of having multiple components. In my thesis, and proposal, I really focus exclusively on ecosystem service capacity - which is the total potential of an ecosystem to produce a service. However, factors such as pressure and demand inherently influence both capacity, and importantly, flow of ecosystem services. In this diagram we keep demand constant, but we can also imagine how demand may change over time and space. But we see pressure, the physical stressors acting on an ecosystem increasing - which causes a decrease in the capacity and indeed the flow of ecosystem services in this imagined system. Each component of the ecosystem service framework is important, but capacity underlines it all - because with no capacity there can be no provision
+
 ---
 class: chapterone
 
@@ -224,6 +237,10 @@ class: chapterone
 ```{r, echo = F, fig.align='center', out.width="60%"}
 knitr::include_graphics("chapter-1.png")
 ```
+
+???
+
+Alright so now we are getting into the actual proposed research in my proposal, beginning with a kind of zoomed out, spatial approach to ecosystem services. This chapter is driven by the question - what are the cross-city drivers of regulatory ecosystem service capacity provided by the urban forest in Canadian temperate cities? And I think this is an interesting question because although there has undoubtedly been a lot of work regarding ecosystem services in urban settings - there hasn't been many studies that try to take this multi-city, multi-scale approach. And I think it is an interesting approach to take because if there are indeed factors, or drivers, that consistently influence ecosystem service capacity - regardless of scale or city - we can use that knowledge to more effectively plan and manage for ecosystem services.
 
 ---
 class: chapterone
@@ -247,6 +264,10 @@ class: chapterone
 - tree diversity .large[`r emo::ji("deciduous_tree")``r emo::ji("palm_tree")``r emo::ji("evergreen_tree")`]
 - building function .large[`r emo::ji("house_with_garden")` `r emo::ji("office_building")`]
 - class/income .large[`r emo::ji("bill")`]
+
+???
+
+This chapter's hypotheses are really driven by this kind of cross-city vs city-specific framework, with the idea that there will be some drivers, for example tree size, tree density, or impervious surfaces, that consistently influence ecosystem services. So bigger trees mitigate higher temperatures and store more carbon, regardless of what city you are in or what scale you look at. However, it should be noted that I do not expect the magnitude of the effect to stay the same, just direction. In contrast, we also expect to have some city or scale-specific drivers. These are factors, potentially such as tree diversity, building function, or median income, that may influence ecosystem service capacity differently depending on the scale or city you are looking at. We might imagine that a more species rich forest might increase capacity to store carbon at a city scale but not a street scale, or that different cities may have different approaches to tree planting across different building functions - e.g., commercial lots look different in Toronto than Halifax.
 
 ---
 class:chapterone
@@ -296,6 +317,18 @@ knitr::include_graphics("street.jpg")
 .footnote[ .small[ [9]: [IAN](ian.umces.edu/media-library) & [VectorStock](https://cdn4.vectorstock.com/i/1000x1000/15/73/city-road-urban-street-vector-23001573.jpg)
 ]]
 
+???
+
+So with all that in mind, my first chapter will take a multi-scale, multi-service, multi-city approach to this question. Using seven cities across Canada and three scales - street, neighbourhood, and whole city, we will test if there are cross-city drivers. The drivers I am testing can be separated into three categories - ecological: tree diversity, tree size, and tree density, built infrastructure/urban form: road size, impervious surface, green area, building density, building height, building function, and sociodemographic; population density, income, educatioon level, visible minorities, immigration, and dwelling type
+
+---
+class:chapterone
+
+# .small[Chapter 1: Cross-City Drivers of Ecosystem Services]
+
+**Proposed Analysis** 
+
+~ diagrams to come 
 
 ---
 class: chaptertwo
@@ -308,6 +341,10 @@ b) Are certain past land-use types disproportionately represented in today’s n
 knitr::include_graphics("chapter-2.png")
 ```
 
+
+???
+
+Moving on to chapter 2 - where we start to dial in more on the temporal heterogeneity and the influence of historical events. The question driving this chapter is 
 
 ---
 class: chaptertwo
@@ -397,6 +434,8 @@ class: mainconcepts
 # .small[Bayesian vs Frequentist]
 
 **Bayesian** 
+
+**Multinomial Models**
 
 ---
 class: chapterone 
@@ -494,3 +533,7 @@ knitr::include_graphics("montrealgent.png")
 ```
 
 [GENUINE](https://teaminteract.ca/develop/gentrification/gentrif_test_allCMA.html)
+
+---
+
+Definitions of spatial and temporal heterogeneity
