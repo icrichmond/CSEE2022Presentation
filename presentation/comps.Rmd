@@ -246,6 +246,20 @@ Now, when we discuss all the benefits that we receive from the urban forest (and
 We can use this diagram to imagine a system where demand for ecosystem services is kept constant through time. However, we see a pressure, a physical stressors acting on an ecosystem such as a storm increasing, which subsequently causes a decrease in the capacity perhaps due to tree death/removal. This example demonstrates that each part of the ecosystem services framework is really imprtant to understand if we want to understand the actual flow and delivery of ES. However, its also really complex and in my thesis I have chosen to focus on specifically capacity because it underlines it all - because with no capacity there can be no provision
 
 ---
+class: introduction 
+
+# .small[Proposed Research]
+
+```{r,echo=F, message = F, warning=F, fig.align='center'}
+knitr::include_graphics("study-system.png")
+```
+
+???
+
+Alright so now we are getting into the actual proposed research in my proposal, as you probably already know I have three chapters proposed. The first taking a kind of zoomed out, spatial approach to ecosystem services. The second diving into the more temporal/legacy effects aspect of the urban forest and ecosystem services in parks. And then the third chapter looking at legacy effects of urban form decisions and the ongoing process of gentrification and how those two things interact to impact the urban forest in Montreal neighbourhoods.
+
+
+---
 class: chapterone
 
 # .small[Chapter 1: Cross-City Drivers of Ecosystem Services]
@@ -258,7 +272,8 @@ knitr::include_graphics("chapter-1.png")
 
 ???
 
-Alright so now we are getting into the actual proposed research in my proposal, beginning with a kind of zoomed out, spatial approach to ecosystem services. This chapter is driven by the question - what are the cross-city drivers of regulatory ecosystem service capacity provided by the urban forest in Canadian temperate cities? And I think this is an interesting question because although there has undoubtedly been a lot of work regarding ecosystem services in urban settings - there hasn't been many studies that try to take this multi-city, multi-scale approach. And I think it is an interesting approach to take because if there are indeed factors, or drivers, that consistently influence ecosystem service capacity - regardless of scale or city - we can use that knowledge to more effectively plan and manage for ecosystem services.
+
+This chapter is driven by the question - what are the cross-city drivers of regulatory ecosystem service capacity provided by the urban forest in Canadian temperate cities? And I think this is an interesting question because although there has undoubtedly been a lot of work regarding ecosystem services in urban settings - there hasn't been many studies that try to take this multi-city, multi-scale approach. And I think it is an interesting approach to take because if there are indeed factors, or drivers, that consistently influence ecosystem service capacity - regardless of scale or city - we can use that knowledge to more effectively plan and manage for ecosystem services.
 
 ---
 class: chapterone
