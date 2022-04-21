@@ -53,7 +53,7 @@ mp <- studyparks %>%
   filter(Nom != "Grand parc de l'Ouest") %>% 
   left_join(., mtlparks, by = "Nom")
 mp <- st_as_sf(mp)
-mp <- mp[-c(55:57), c(1:5, 16)]
+mp <- mp[-c(24, 31, 36, 52, 55:57), c(1:5, 16)] # remove extra polygons
 mp <- rename(mp, ParkOfficial = Nom,
               OBJECTID = OBJECTID.x)
 
@@ -70,6 +70,7 @@ bdup <- rename(bdup, ParkOfficial = name,
                geometry = geom)
 
 studyparks <- st_as_sf(rbind(gpo, mp, bdup))
+st_write(studyparks, "data/studyparks.gpkg")
 
 # Theme -------------------------------------------------------------------
 ## Colors
