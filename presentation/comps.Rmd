@@ -42,7 +42,7 @@ knitr::include_graphics("zule-december.jpg")
 
 ???
 
-I want to start this presentation with gratitude because although starting my PhD in a pandemic and only being at Concordia for a year and 4 months, I have so many people to thank. I first want to thank the cities and trees and all the people within and around them, they are so cool and inspire me to think about these things a lot and also allow me to have fun while doing this. HUGE thank you to the ZULE lab, they are in every single part of this proposal. Shout out to Kayleigh, who I think has read this more than anyone else but also Lingshan, Fatemeh, Emily, Katie, Nicole, Gail, Maya, Noa, and Serena for the endless edits. Thank you to Nicole and Lauren for helping me collect and clean data! Special thank you to Michael for edits as well as collaboration on the second chapter, and OF COURSE a huge thank you to Carly who has been a truly excellent supervisor up to this point and also helped me make my first friends in Montreal because she is so kind. I also want to thank my committee and examiners for spending time thinking about my project, that is extremely cool for me to have so many smart people think about my work and how to make it better. And finally, after all this gratitude I do want to acknowledge that I am doing this work on the stolen land of many Indigenous peoples including the Haudenosaunee, Mohawk, and Anishinaabeg peoples. I use this land acknowledgement not as a final destination or a checkmark on a list but as a constant reminder to engage with and grapple with how my science as a settler on this land is or is not reckoning with colonization and its ongoing presence.
+I want to start this presentation with gratitude because although starting my PhD in a pandemic and only being at Concordia for a year and 4 months, I have so many people to thank. HUGE thank you to the ZULE lab, they are in every single part of this proposal. Shout out to Kayleigh, who I think has read this more than anyone else but also Lingshan, Fatemeh, Emily, Katie, Nicole, Gail, Maya, Noa, and Serena for the endless edits. Thank you to Nicole and Lauren for helping me collect and clean data! Special thank you to Michael for edits as well as collaboration on the second chapter, and OF COURSE a huge thank you to Carly who has been a truly excellent supervisor up to this point and also helped me make my first friends in Montreal because she is so kind. I also want to thank my committee and examiners for spending time thinking about my project, that is extremely cool for me to have so many smart people think about my work and how to make it better. And finally, after all this gratitude I do want to acknowledge that I am doing this work on the stolen land of many Indigenous peoples including the Haudenosaunee, Mohawk, and Anishinaabeg peoples. I use this land acknowledgement not as a final destination or a checkmark on a list but as a constant reminder to engage with and grapple with how my science as a settler on this land is or is not reckoning with colonization and its ongoing presence.
 
 
 ---
@@ -81,6 +81,24 @@ However, we can conceptualize the difference between "traditional" ecosystems an
 ---
 class: mainconcepts 
 
+# .small[The Urban Forest & it's Composition]
+- Urban forest is part of the biotic elements of cities
+- Differences in urban forest composition change ecosystem functioning
+```{r, echo = F}
+knitr::include_graphics("composition.jpg")
+```
+
+.footnote[
+[6]: Aronson et al. 2017, [Frontiers in Ecology and the Environment](https://esajournals-onlinelibrary-wiley-com/doi/full/10.1002/fee.1480?casa_token=pfUkQEswVAMAAAAA%3ApcP-dwTjzK9rumqs4Vg4y_VpVF0SClhwurbbTvsMTvMr_obS1DGbWBhufnRWabViUVW7zciXJuqB0o-A)
+]
+
+???
+
+An important part of the biotic elements in cities is the urban forest. We can think of the urban forest as all trees, shrubs, and greenspaces within an urban area and it is part of the biotic elements found within cities. The urban forest is critical to human well-being and different components of the urban forest function extremely differently. For example, we can imagine the forest remnant pictured on the far left providing really different ecosystem functions than a managed park or a green roof, on the right. A remnant forest may provide better habitat for wildlife and support more native species. Whereas a managed park may provide more mental health benefits and a green roof may add green space to an extremely dense environment. However, they can also all decrease air temperatures and store carbon, although albeit with different capacities. 
+
+---
+class: mainconcepts 
+
 # .small[Inequity]
 
 ```{r,echo=F, fig.align='center'}
@@ -92,7 +110,7 @@ knitr::include_graphics("racism.jpeg", dpi = 200)
 
 ???
 
-Importantly, when we conceptualize urban ecosystems as the intersection between natural, physical, built, and social elements we can understand that the inequity built into the social elements of our cities underpins the built, natural, and physical elements as well. And indeed if we **don't** try to incorporate inequities into our science, we will never be ably to fully understand our ecosystems.
+Importantly, when we conceptualize urban ecosystems as the intersection between natural, physical, built, and social elements we can understand that the inequity built into the social elements of our cities underpins the built, natural, and physical elements as well, including the urban forest. And indeed if we **don't** try to incorporate inequities into our science, we will never be ably to fully understand our ecosystems. For example, urban greenspaces and parks provide many benefits to urban residents, including improving mental health, providing a sense of community, reducing temperatures, and during covid providing a safe space t socialize. However, overall park area as well as park quality decreases as you increase the proportion of racialized people within a neighbourhood. This is important of course if we are interested in inequity and environmental justice. But it is also key to understanding the distribution and composition of the urban forest. Without understanding and incorporating the piece of inequity, I as a scientist would never be able to fully understand this ecosystem.
 
 ---
 
@@ -123,15 +141,31 @@ class: mainconcepts
 # .small[Temporal Heterogeneity]
 
 ```{r,echo=F, message = F, warning=F, fig.align='center'}
+knitr::include_graphics("legacyeffects.jpg")
+```
+
+.footnote[ [4]:[Dallimer et al. 2015](https://doi.org/10.1016/j.gloenvcha.2015.01.015)]
+
+???
+
+Similarly important to spatial heterogeneity is temporal heterogeneity! We know that current functioning of our cities with respect to ecosystem services and other ecological processes is temporally heterogeneous, and specifically are influenced by legacy effects which are a form of temporal heterogeneity. Legacy effects occur when an event carries its effects across time.  
+
+This figure shows us how historical land use cover surrounding parks often can contribute to our understanding of the current ecological functioning and composition of the park. Black circles represent AIC values of models that have carbon storage, bird density etc. as the response and land use cover as explanatory variables across several decades/centuries. What we see, is that for a few of these models, historical land use cover actually better explains the relationship with current day park composition than current land use cover surrounding the park. These influences of past land uses on today's park functioning are a good example of the importance of legacy effects.
+
+---
+class: mainconcepts
+
+# .small[Temporal Heterogeneity]
+```{r,echo=F, message = F, warning=F, fig.align='center'}
 knitr::include_graphics("frederickbackthen.png")
 ```
 
 
-.footnote[ [4]:[László Horváth](https://www.mindat.org/photo-506487.html)]
+.footnote[ [5]:[László Horváth](https://www.mindat.org/photo-506487.html)]
 
 ???
 
-Similarly important to spatial heterogeneity is temporal heterogeneity! We know that current functioning of our cities with respect to ecosystem services and other ecological processes is temporally heterogeneous, and specifically are influenced by legacy effects which are a form of temporal heterogeneity. Legacy effects occur when an event carries its effects across time. For example, we can imagine that a decision or event such as past land-use type could have legacy effects. So using a location as a landfill or quarry (or both)... 
+We can also imagine that if historical land use surrounding the parks influences their current functioning, that past land use of the actual park could have similar effects. For example, if the land used to be a quarry...
 
 ---
 
@@ -143,30 +177,12 @@ knitr::include_graphics("frederickbacknow.jpg")
 ```
 
 
-.footnote[[5]:[Tourisme Montréal](https://www.mtl.org/en)
+.footnote[[6]:[Tourisme Montréal](https://www.mtl.org/en)
 ]
 
 ???
 
-May influence the subsequent functioning of that ecosystem through many legacy effects, even when the land use has changed to something else, perhaps a park - such as here in Frederick-Back
-
----
-class: mainconcepts 
-
-# .small[The Urban Forest & it's Composition]
-- Urban forest is part of the biotic elements of cities
-- Differences in urban forest composition change ecosystem functioning
-```{r, echo = F}
-knitr::include_graphics("composition.jpg")
-```
-
-.footnote[
-[6]: Aronson et al. 2017, [Frontiers in Ecology and the Environment](https://esajournals-onlinelibrary-wiley-com/doi/full/10.1002/fee.1480?casa_token=pfUkQEswVAMAAAAA%3ApcP-dwTjzK9rumqs4Vg4y_VpVF0SClhwurbbTvsMTvMr_obS1DGbWBhufnRWabViUVW7zciXJuqB0o-A)
-]
-
-???
-
-So - we have the urban ecosystem as a whole, inequity, spatial and temporal heterogeneity, all of these things come together when we start to think about the urban forest and how it is organized in time and space. We can think of the urban forest as all trees, shrubs, and greenspaces within an urban area and it is part of the biotic elements found within cities. The urban forest is critical to human well-being and different components of the urban forest function extremely differently. For example, we can imagine the forest remnant pictured on the far left providing really different ecosystem functions than a managed park or a green roof, on the right. A remnant forest may provide better habitat for wildlife and support more native species. Whereas a managed park may provide more mental health benefits and a green roof may add green space to an extremely dense environment. However, they can also all decrease air temperatures and store carbon, although albeit with different capacities. 
+That past land use probably influence the subsequent functioning of that ecosystem through many legacy effects, even when the land use has changed to something else, perhaps a park - such as here in Frederick-Back
 
 ---
 class: mainconcepts
@@ -225,7 +241,9 @@ et al. 2013. [Ecological Complexity](https://linkinghub.elsevier.com/retrieve/pi
 
 ???
 
-Now, when we discuss all the benefits that we receive from the urban forest (and other biotic elements within our cities), we often refer to the benefits as "ecosystem services". Ecosystem services can be a useful framework and is often conceived of having multiple components. In my thesis, and proposal, I really focus exclusively on ecosystem service capacity - which is the total potential of an ecosystem to produce a service. However, factors such as pressure and demand inherently influence both capacity, and importantly, flow of ecosystem services. In this diagram we keep demand constant, but we can also imagine how demand may change over time and space. But we see pressure, the physical stressors acting on an ecosystem increasing - which causes a decrease in the capacity and indeed the flow of ecosystem services in this imagined system. Each component of the ecosystem service framework is important, but capacity underlines it all - because with no capacity there can be no provision
+Now, when we discuss all the benefits that we receive from the urban forest (and other biotic elements within our cities), we often refer to the benefits as "ecosystem services".  In my thesis, and proposal, I really focus exclusively on ecosystem service capacity - which is the total potential of an ecosystem to produce a service. However, factors such as pressure and demand inherently influence both capacity, and importantly, flow of ecosystem services. 
+
+We can use this diagram to imagine a system where demand for ecosystem services is kept constant through time. However, we see a pressure, a physical stressors acting on an ecosystem such as a storm increasing, which subsequently causes a decrease in the capacity perhaps due to tree death/removal. This example demonstrates that each part of the ecosystem services framework is really imprtant to understand if we want to understand the actual flow and delivery of ES. However, its also really complex and in my thesis I have chosen to focus on specifically capacity because it underlines it all - because with no capacity there can be no provision
 
 ---
 class: chapterone
