@@ -2,7 +2,7 @@
 
 
 # Packages ----------------------------------------------------------------
-libs <- c('ggplot2', 'ggspatial', 'sf', 'dplyr')
+libs <- c('ggplot2', 'ggspatial', 'sf', 'dplyr', 'data.table')
 lapply(libs, require, character.only = TRUE)
 
 
@@ -10,7 +10,7 @@ lapply(libs, require, character.only = TRUE)
 mtl <- st_read('data/montreal-bounds.gpkg')
 water <- st_read('data/montreal-water.gpkg')
 parks <- st_read('data/montreal-parks.gpkg')
-studyparks <- read.csv('data/studyparks.csv')
+studyparks <- fread('data/studyparks.csv')
 
 # CRS
 mtlcrs <- st_crs(3347)
@@ -53,7 +53,7 @@ mp <- studyparks %>%
   filter(Nom != "Grand parc de l'Ouest") %>% 
   left_join(., mtlparks, by = "Nom")
 mp <- st_as_sf(mp)
-mp <- mp[-c(24, 31, 36, 52, 55:57), c(1:5, 16)] # remove extra polygons
+mp <- mp[-c(19, 23, 29, 36, 41), c(1:5, 16)] # remove extra polygons
 mp <- rename(mp, ParkOfficial = Nom,
               OBJECTID = OBJECTID.x)
 
@@ -66,11 +66,19 @@ bdup <- studyparks %>%
 bdup <- st_as_sf(bdup)
 bdup <- st_cast(bdup, "POLYGON")
 bdup <- bdup[c(34,69,104), c(1:5, 99)]
+bdup <- st_cast(bdup, "MULTIPOLYGON")
 bdup <- rename(bdup, ParkOfficial = name,
                geometry = geom)
 
 studyparks <- st_as_sf(rbind(gpo, mp, bdup))
-st_write(studyparks, "data/studyparks.gpkg")
+st_write(studyparks, "data/studyparks.gpkg",append = F)
+
+# points
+studyparksu <- studyparks %>% 
+  group_by(Name) %>%
+  summarize(geometry = st_union(geometry))
+
+pts <- st_centroid(studyparks)
 
 # Theme -------------------------------------------------------------------
 ## Colors
@@ -94,8 +102,8 @@ crs_string = "+proj=omerc +lat_0=45.65 +lonc=-73.80 +alpha=0 +k_0=.7 +datum=WGS8
 
 ggplot() +
   geom_sf(fill = montrealcol, data = mtl) + 
-  geom_sf(aes(fill = PastLandUse), colour = NA, data = studyparks) +
-  scale_fill_viridis_d() +
+  geom_sf(aes(colour = PastLandUse), data = pts) +
+  scale_color_manual(values = c("#fab255", "#dd5129", "#0f7ba2", "#43b284")) +
   geom_sf(fill = watercol, data = water) + 
   coord_sf(crs = crs_string, 
            xlim = c(-19000, 17268),
