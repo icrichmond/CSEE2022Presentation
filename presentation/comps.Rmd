@@ -6,7 +6,7 @@ author:
 - Isabella C. Richmond
 - "Supervisor: Dr. Carly Ziter"
 - "Committee Members: Dr. Hiên Pham & Dr. Emma Despland"
-- "Examining Commitee: Dr. Eric Pederson & Dr. Jim Grant"
+- "Examining Commitee: Dr. Eric Pedersen & Dr. Jim Grant"
 date: May 2, 2022
 output:
   xaringan::moon_reader:
@@ -602,9 +602,51 @@ class: chapterone
 class: chaptertwo 
 
 # .small[Chapter 2: Legacy Effects of Past Land-Use Type]
-**Parks**
 
-- table + interactive map
+```{r, echo = F}
+library(data.table)
+library(kableExtra)
+p <- fread("studyparks.csv", encoding = "UTF-8") 
+i <- subset(p, `Past Land-Use` == "Industrial")
+a  <- subset(p, `Past Land-Use` == "Agricultural")
+n <- subset(p, `Past Land-Use` == "Natural")
+knitr::kable(i) %>%
+  kable_styling(font_size = 15)
+```
+
+---
+class: chaptertwo 
+
+# .small[Chapter 2: Legacy Effects of Past Land-Use Type]
+
+```{r, echo = F}
+knitr::kable(a) %>%
+  kable_styling(font_size = 15)
+```
+
+---
+class: chaptertwo 
+
+# .small[Chapter 2: Legacy Effects of Past Land-Use Type]
+
+```{r, echo = F}
+knitr::kable(n) %>%
+  kable_styling(font_size = 15)
+```
+
+
+---
+class: chaptertwo 
+
+# .small[Chapter 2: Legacy Effects of Past Land-Use Type]
+
+```{r, echo = F, message = F,warning = F}
+library(mapview)
+library(sf)
+parks <- read_sf("studyparks.gpkg")
+mapview(parks)
+```
+
 
 ---
 class: chapterthree
