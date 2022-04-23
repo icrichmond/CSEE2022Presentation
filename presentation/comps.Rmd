@@ -374,7 +374,7 @@ class: chaptertwo
 # .small[Chapter 2: Legacy Effects of Past Land-Use]
 
 .smaller[**Question:** a) What are the legacy effects of past land-use types on our current ecosystem services in parks?  
-b) Are certain past land-use types disproportionately represented in today’s neighbourhoods and if so, is the relationship perpetuating systemic injustices?] 
+b) Do the neighbourhoods surrounding our study parks have disproportionate representation of past land-use types based on their historical sociodemographics? If so, is the relationship perpetuating systemic injustices?] 
 
 ```{r, echo = F, fig.align='center', out.width="65%"}
 knitr::include_graphics("chapter-2.png")
@@ -411,8 +411,7 @@ class: chaptertwo
 # .small[Chapter 2: Legacy Effects of Past Land-Use]
 **Approach**
 
-- 30 parks, 3 canopy cover classes, 3 plots / canopy cover
-- census data for surrounding neighbourhood demographics
+- 30 parks, 10 of each land cover type
 ```{r, echo = F, fig.align='center', out.height='125%'}
 knitr::include_graphics("studyparks.png")
 ```
@@ -427,8 +426,12 @@ class: chaptertwo
 # .small[Chapter 2: Legacy Effects of Past Land-Use]
 
 **Approach**
+- 3 canopy cover classes, 3 forestry sampling plots per canopy cover class 
 
-- Need sampling diagram? (working on it)
+```{r, echo = F}
+knitr::include_graphics("sampling-example.png")
+```
+
 
 ---
 
