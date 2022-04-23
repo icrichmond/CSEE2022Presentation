@@ -393,13 +393,14 @@ class: chaptertwo
 
 --
 
-1) Previous land-use type and will influence urban forest composition and ecosystem service capacity in today's parks 
-  - Land use types that resulted in an *input* of nutrients, i.e., <span style="color:#7AD151FF; font-weight: 700">natural</span> and <span style = "color:#440154FF; font-weight: 700">agricultural</span>,  will have bigger trees and higher ecosystem service capacity 
-  - Previous land use types that *contaminated* the soil, i.e., <span style = "color:#2A788EFF; font-weight: 700">industrial</span>, will have smaller trees and lower ecosystem service capacity  
+1) Previous land-use type will influence urban forest composition and ecosystem service capacity in today's parks according to levels of disturbance, where:  
+  - <span style="color:#43b284; font-weight: 700">Natural</span> parks will have the largest urban forest and highest ecosystem service capacity
+  - <span style = "color:#c88a2c; font-weight: 700">Agricultural</span> parks will have the second largest urban forest and ecosystem service capacity 
+  - <span style = "color:#dd5129; font-weight: 700">Industrial</span> parks will have the smallest urban forest and lowest ecosystem service capacity  
 
 --
 
-2) Neighbourhoods historically inhabited by marginalized people will have more parks built on industrial sites but this relationship will have shifted over time in Montreal
+2) Neighbourhoods surrounding our <span style = "color:#dd5129; font-weight: 700">industrial</span> parks will have been historically inhabited by marginalized people. However, this relationship will have shifted over time in Montreal, leading to a weaker relationship with neighbourhood sociodemographics today
 
 
 ???
@@ -455,6 +456,14 @@ knitr::include_graphics("chapter-3.png")
 ???
 
 Finally, chapter three continues in the temporal heterogeneity vein and will try to address the trade-offs or tensions between historical urban form decisions and the process of gentrification, and how these things influence the urban forest of today's neighbourhoods in Montreal. The idea here being that there are historical urban form decisions that can be considered "static" - in that they are extremely hard to change and often do not change, even when a neighbourhood is developed and redeveloped. And even when a neighbourhood goes through a developmental process, in the case of this chapter - gentrification, these static factors may constrain the effect that gentrification has on our urban forest, which may diminish or change the effects that we might expect to see.
+
+
+---
+class: chapterthree 
+
+# .small[Chapter 3: Legacy Effects of the Urban Form Decisions]
+
+
 
 
 ---
