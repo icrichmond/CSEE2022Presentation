@@ -76,9 +76,10 @@ st_write(studyparks, "data/studyparks.gpkg",append = F)
 # points
 studyparksu <- studyparks %>% 
   group_by(Name) %>%
-  summarize(geometry = st_union(geometry))
+  summarize(geometry = st_union(geometry), 
+            PastLandUse = first(PastLandUse))
 
-pts <- st_centroid(studyparks)
+pts <- st_centroid(studyparksu)
 
 # Theme -------------------------------------------------------------------
 ## Colors
@@ -102,13 +103,13 @@ crs_string = "+proj=omerc +lat_0=45.65 +lonc=-73.80 +alpha=0 +k_0=.7 +datum=WGS8
 
 ggplot() +
   geom_sf(fill = montrealcol, data = mtl) + 
-  geom_sf(aes(colour = PastLandUse), data = pts) +
-  scale_color_manual(values = c("#fab255", "#dd5129", "#0f7ba2", "#43b284")) +
+  geom_sf(aes(colour = PastLandUse), size = 2, data = pts) +
+  scale_color_manual(values = c("#c88a2c", "#dd5129", "#0f7ba2", "#43b284")) +
   geom_sf(fill = watercol, data = water) + 
   coord_sf(crs = crs_string, 
-           xlim = c(-19000, 17268),
-           ylim = c(-20859, -750)) +
-  labs(fill = "") +
+           xlim = c(-17500, 16000),
+           ylim = c(-20200, 100)) +
+  labs(colour = "") +
   annotation_north_arrow(height = unit(1, "cm"), 
                          width = unit(1, "cm"), 
                          location = 'br',
