@@ -522,6 +522,14 @@ class: mainconcepts
 
 **Multinomial Models**
 
+
+---
+class: mainconcepts
+
+# .small[Spatial & Temporal Heterogeneity]
+
+**what do those words mean**
+
 ---
 class: chapterone 
 
@@ -561,13 +569,6 @@ class: chapterone
 **Causal Model**
 - break down DAG
 
----
-
-class: chapterone 
-
-# .small[Chapter 1: Cross-City Drivers of Ecosystem Services]
-
-**Simulations?**
 
 ---
 class: chapterone 
@@ -649,6 +650,13 @@ mapview(parks)
 
 
 ---
+class: chapterthree 
+
+# .small[Chapter 3: Legacy Effects of Urban Form]
+
+**Gentrification**
+
+---
 class: chapterthree
 
 # .small[Chapter 3: Legacy Effects of Urban Form]
@@ -660,7 +668,3 @@ knitr::include_graphics("montrealgent.png")
 ```
 
 [GENUINE](https://teaminteract.ca/develop/gentrification/gentrif_test_allCMA.html)
-
----
-
-Definitions of spatial and temporal heterogeneity
