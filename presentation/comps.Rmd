@@ -599,7 +599,32 @@ class: chapterthree
 
 **Proposed Analysis**
 
-- diagrams to come
+```{r, echo = F, eval = T, warning = F, message = F, fig.align='center', fig.retina = 2}
+library(data.table)
+library(ggplot2)
+
+
+N   <- 15
+rho1 <- -0.7
+rho2 <- -0.9 
+rho3 <- -0.2 
+
+density  <- rnorm(n = N, mean = 0, sd = 1)
+NAGen  <- (rho1 * x1) + sqrt(1 - rho1*rho1) * rnorm(n = N, mean = 0, sd = 1)
+Gen <- (rho2 * x1) + sqrt(1 - rho2*rho2) * rnorm(n = N, mean = 0, sd = 1)
+DNGen  <- (rho3 * x1) + sqrt(1 - rho3*rho3) * rnorm(n = N, mean = 0, sd = 1)
+
+df3 <- as.data.table(cbind(density, NAGen, Gen, DNGen))
+
+df3l <- melt(df3, id.vars = "density", measure.vars = c("NAGen", "Gen", "DNGen"), value.name = "ForestSize", variable.name = "NeighbourhoodType")
+
+ggplot(df3l, aes(x = density, y = ForestSize, colour = NeighbourhoodType)) + 
+  geom_point() + 
+  geom_smooth(method = "lm") + 
+  theme_classic()
+
+```
+
 
 ---
 class: chapterthree
