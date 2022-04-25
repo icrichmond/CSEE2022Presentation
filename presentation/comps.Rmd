@@ -463,8 +463,39 @@ class: chapterthree
 
 # .small[Chapter 3: Legacy Effects of the Urban Form Decisions]
 
+**The Luxury Effect**
+
+```{r, echo = F, fig.align='center', out.width = '50%'}
+knitr::include_graphics("luxuryincome.jpg")
+```
+
+.footnote[ .small[ [10]: [Gerrish & Watkins, 2018](https://linkinghub.elsevier.com/retrieve/pii/S0169204617302062)]]
 
 
+???
+
+
+
+---
+class: chapterthree 
+
+# .small[Chapter 3: Legacy Effects of the Urban Form Decisions]
+
+**The Luxury Effect**
+
+
+```{r, echo = F, fig.align='center', out.width = '50%'}
+knitr::include_graphics("luxuryracism.jpg")
+```
+
+
+.footnote[ .small[ [11]: [Watkins & Gerrish, 2018](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5889081/)
+]]
+
+
+???
+
+The relationship between gentrification and the urban forest has been well established, with the phenomenon often being referred to as the luxury effect. The luxury effect refers to 
 
 ---
 
