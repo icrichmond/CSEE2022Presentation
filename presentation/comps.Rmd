@@ -474,6 +474,7 @@ knitr::include_graphics("luxuryincome.jpg")
 
 ???
 
+One of the main ways that gentrification relates and changes the urban forest is through what is known as the luxury effect. The luxury effect refers to the positive relationship between wealth and whiteness, with respect to urban forest size, diversity, and resilience. The luxury effect has been studied worldwide but has the most evidence supporting it in the United States. This figure shows the relationship between income inequity and the urban forest across many different studies, where studies on the right hand side of the middle line provided evidence for the link between inequity and the urban forest (with varying mechanisms and measures)
 
 
 ---
@@ -495,7 +496,26 @@ knitr::include_graphics("luxuryracism.jpg")
 
 ???
 
-The relationship between gentrification and the urban forest has been well established, with the phenomenon often being referred to as the luxury effect. The luxury effect refers to 
+This figure is a review by the same authors showing the relationship between race inequity and the urban forest. The luxury effect seems to be complex in Canada, with some studies showing the same relationships we would expect based on literature primarily based in the US. But sometimes, the relationship in Canadian cities becomes a bit more noisy... 
+ 
+
+
+---
+class: chapterthree
+
+# .small[Chapter 3: Legacy Effects of the Urban Form Decisions]
+
+**Constraints of Urban Form**
+
+
+*Building setback photo*
+
+
+???
+
+One hypothesis for the noisy, complex relationship between environmental injustice in Canadian cities, specifically with respect to gentrification, is the interacting effects with urban form. Urban form refers to the physical configuration of an urban area and refers to factors such as building density, building setback, road size, and others. There has been some really excellent work done in the city of Montreal that shows that urban form is a major contributing factor to, at the very least, canopy cover composition in the city, with urban form variables interacting with socioeconomic variables to significantly determine levels of canopy cover.
+
+
 
 ---
 
