@@ -508,7 +508,13 @@ class: chapterthree
 **Constraints of Urban Form**
 
 
-*Building setback photo*
+```{r, echo = F, fig.align='center', out.width = '45%'}
+knitr::include_graphics("adapted-pham.png")
+```
+
+
+.footnote[ .small[ [12]: [Adapted from Pham et al. 2017](http://dx.doi.org/10.1016/j.landurbplan.2016.09.001)
+]]
 
 
 ???
