@@ -602,17 +602,19 @@ class: chapterthree
 ```{r, echo = F, eval = T, warning = F, message = F, fig.align='center', fig.retina = 2}
 library(data.table)
 library(ggplot2)
+library(patchwork)
 
+set.seed(1)
 
 N   <- 15
-rho1 <- -0.7
-rho2 <- -0.9 
-rho3 <- -0.2 
+rho1 <- -0.3
+rho2 <- -0.73 
+rho3 <- -0.3 
 
-density  <- rnorm(n = N, mean = 0, sd = 1)
-NAGen  <- (rho1 * x1) + sqrt(1 - rho1*rho1) * rnorm(n = N, mean = 0, sd = 1)
-Gen <- (rho2 * x1) + sqrt(1 - rho2*rho2) * rnorm(n = N, mean = 0, sd = 1)
-DNGen  <- (rho3 * x1) + sqrt(1 - rho3*rho3) * rnorm(n = N, mean = 0, sd = 1)
+density  <- rlnorm(n = N, mean = 0, sd = 1)
+NAGen  <- (rho1 * density) + sqrt(1 - rho1*rho1) * rnorm(n = N, mean = 3, sd = 1)
+Gen <- (rho2 * density) + sqrt(1 - rho2*rho2) * rnorm(n = N, mean = 10, sd = 1)
+DNGen  <- (rho3 * density) + sqrt(1 - rho3*rho3) * rnorm(n = N, mean = 2, sd = 1)
 
 df3 <- as.data.table(cbind(density, NAGen, Gen, DNGen))
 
@@ -620,8 +622,47 @@ df3l <- melt(df3, id.vars = "density", measure.vars = c("NAGen", "Gen", "DNGen")
 
 ggplot(df3l, aes(x = density, y = ForestSize, colour = NeighbourhoodType)) + 
   geom_point() + 
-  geom_smooth(method = "lm") + 
-  theme_classic()
+  scale_colour_manual(values = c("#FEEFD8", "#FDCFA8", "#EB806F")) + 
+  geom_smooth(method = "lm", se = F) + 
+  theme_classic() + 
+  ylab("Forest Size Composition") + 
+  xlab("Urban Form (Density)") + 
+  labs(colour = "Gentrification") + 
+  theme(panel.background = element_rect(fill='#e7e5cc'),
+        plot.background = element_rect(fill='#e7e5cc', color=NA), 
+        legend.position = "none")  
+
+```
+
+
+
+---
+class: chapterthree
+
+# .small[Chapter 3: Legacy Effects of Urban Form Decisions]
+
+**Proposed Analysis**
+```{r, eval = T, echo = F, warning = F, message = F, fig.align = 'center', fig.retina = 2}
+rho4 <- -0.4
+
+NAGenD  <- (rho4 * density) + sqrt(1 - rho4*rho4) * rnorm(n = N, mean = 6, sd = 1)
+GenD <- (rho4 * density) + sqrt(1 - rho4*rho4) * rnorm(n = N, mean = 10, sd = 1)
+DNGenD  <- (rho4 * density) + sqrt(1 - rho4*rho4) * rnorm(n = N, mean = 3, sd = 1)
+
+df3.2 <- as.data.table(cbind(density, NAGenD, GenD, DNGenD))
+
+df3.2l <- melt(df3.2, id.vars = "density", measure.vars = c("NAGenD", "GenD", "DNGenD"), value.name = "ForestDiversity", variable.name = "NeighbourhoodType")
+ggplot(df3.2l, aes(x = density, y = ForestDiversity, colour = NeighbourhoodType)) + 
+  geom_point() + 
+  scale_colour_manual(values = c("#FEEFD8", "#FDCFA8", "#EB806F"), labels = c("Non Gentrifiable", "Gentrified", "Did Not Gentrify")) + 
+  geom_smooth(method = "lm", se = F) + 
+  theme_classic() + 
+  ylab("Forest Diversity") + 
+  xlab("Urban Form (Density)") + 
+  labs(colour = "Gentrification") + 
+  theme(panel.background = element_rect(fill='#e7e5cc'),
+        plot.background = element_rect(fill='#e7e5cc', color=NA), 
+        legend.background = element_rect(fill = '#e7e5cc'))  
 
 ```
 
