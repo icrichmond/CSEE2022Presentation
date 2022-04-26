@@ -42,7 +42,7 @@ knitr::include_graphics("zule-december.jpg")
 
 ???
 
-I want to start this presentation with gratitude because although starting my PhD in a pandemic and only being at Concordia for a year and 4 months, I have so many people to thank. HUGE thank you to the ZULE lab, they are in every single part of this proposal. Shout out to Kayleigh, who I think has read this more than anyone else but also Lingshan, Fatemeh, Emily, Katie, Nicole, Gail, Maya, Noa, and Serena for the endless edits. Thank you to Nicole and Lauren for helping me collect and clean data! Special thank you to Michael for edits as well as collaboration on the second chapter, and OF COURSE a huge thank you to Carly who has been a truly excellent supervisor up to this point and also helped me make my first friends in Montreal because she is so kind. I also want to thank my committee and examiners for spending time thinking about my project, that is extremely cool for me to have so many smart people think about my work and how to make it better. And finally, after all this gratitude I do want to acknowledge that I am doing this work on the stolen land of many Indigenous peoples including the Haudenosaunee, Mohawk, and Anishinaabeg peoples. I use this land acknowledgement not as a final destination or a checkmark on a list but as a constant reminder to engage with and grapple with how my science as a settler on this land is or is not reckoning with colonization and its ongoing presence.
+I want to start this presentation with gratitude because although starting my PhD in a pandemic and only being at Concordia for a year and 4 months, I have so many people to thank. HUGE thank you to the ZULE lab, they are in every single part of this proposal. Shout out to Kayleigh, who I think has read this more than anyone else but also Lingshan, Fatemeh, Emily, Katie, Nicole, Gail, Maya, Noa, Mathieu, and Serena for the endless edits. Thank you to Nicole and Lauren for helping me collect and clean data! Special thank you to Michael for edits as well as collaboration on the second chapter, and OF COURSE a huge thank you to Carly who has been a truly excellent supervisor up to this point and also helped me make my first friends in Montreal because she is so kind. I also want to thank my committee and examiners for spending time thinking about my project, that is extremely cool for me to have so many smart people think about my work and how to make it better. And finally, after all this gratitude I do want to acknowledge that I am doing this work on the stolen land of many Indigenous peoples including the Haudenosaunee, Mohawk, and Anishinaabeg peoples. I use this land acknowledgement not as a final destination or a checkmark on a list but as a constant reminder to engage with and grapple with how my science as a settler on this land is or is not reckoning with colonization and its ongoing presence.
 
 
 ---
@@ -370,7 +370,12 @@ class:chapterone
 
 **Proposed Analysis** 
 
-~ diagrams to come 
+
+
+
+
+
+
 
 ---
 class: chaptertwo
@@ -622,7 +627,7 @@ df3l <- melt(df3, id.vars = "density", measure.vars = c("NAGen", "Gen", "DNGen")
 
 ggplot(df3l, aes(x = density, y = ForestSize, colour = NeighbourhoodType)) + 
   geom_point() + 
-  scale_colour_manual(values = c("#FEEFD8", "#FDCFA8", "#EB806F")) + 
+  scale_colour_manual(values = c("#FEEFD8", "#FDCFA8", "#EB806F"), labels = c("Non Gentrifiable", "Gentrified", "Did Not Gentrify")) + 
   geom_smooth(method = "lm", se = F) + 
   theme_classic() + 
   ylab("Forest Size Composition") + 
@@ -630,7 +635,7 @@ ggplot(df3l, aes(x = density, y = ForestSize, colour = NeighbourhoodType)) +
   labs(colour = "Gentrification") + 
   theme(panel.background = element_rect(fill='#e7e5cc'),
         plot.background = element_rect(fill='#e7e5cc', color=NA), 
-        legend.position = "none")  
+        legend.background = element_rect(fill = '#e7e5cc'))  
 
 ```
 
@@ -763,6 +768,21 @@ class: chapterone
 # .small[Chapter 1: Cross-City Drivers of Ecosystem Services]
 
 **Data Sources ch 1** 
+
+---
+class: chapterone 
+# .small[Chapter 1: Cross-City Drivers of Ecosystem Services]
+
+**Scale vs City** 
+
+- Landscape vs local level effects 
+
+- Drivers that vary across scales but consistently across cities 
+  - e.g., air pollution mitigation + tree size
+  - e.g., temperature mitigation + building height 
+
+- Drivers that vary across cities but consistently across scales 
+  - e.g., sociodemographic variables - effect often scales up but is dependent on local context 
 
 ---
 class: chaptertwo 
