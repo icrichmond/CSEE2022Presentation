@@ -42,7 +42,7 @@ knitr::include_graphics("zule-december.jpg")
 
 ???
 
-I want to start this presentation with gratitude because although starting my PhD in a pandemic and only being at Concordia for a year and 4 months, I have so many people to thank. HUGE thank you to the ZULE lab, they are in every single part of this proposal. Shout out to Kayleigh, who I think has read this more than anyone else but also Lingshan, Fatemeh, Emily, Katie, Nicole, Gail, Maya, Noa, Mathieu, and Serena for the endless edits. Thank you to Nicole and Lauren for helping me collect and clean data! Special thank you to Michael for edits as well as collaboration on the second chapter, and OF COURSE a huge thank you to Carly who has been a truly excellent supervisor up to this point and also helped me make my first friends in Montreal because she is so kind. I also want to thank my committee and examiners for spending time thinking about my project, that is extremely cool for me to have so many smart people think about my work and how to make it better. And finally, after all this gratitude I do want to acknowledge that I am doing this work on the stolen land of many Indigenous peoples including the Haudenosaunee, Mohawk, and Anishinaabeg peoples. I use this land acknowledgement not as a final destination or a checkmark on a list but as a constant reminder to engage with and grapple with how my science as a settler on this land is or is not reckoning with colonization and its ongoing presence.
+I want to start this presentation with gratitude because although starting my PhD in a pandemic and only being at Concordia for a year and 4 months, I have so many people to thank. HUGE thank you to the ZULE lab, they are in every single part of this proposal. Shout out to Kayleigh, who I think has read this more than anyone else but also Lingshan, Fatemeh, Emily, Katie, Nicole, Gail, Maya, Noa, Mathieu, and Serena for the endless edits. Thank you to Nicole and Lauren for helping me collect and clean data! Special thank you to Michael for edits as well as collaboration on the second chapter, and OF COURSE a huge thank you to Carly who has been a truly excellent supervisor. I also want to thank my committee and examiners for spending time thinking about my project, that is extremely cool for me to have so many smart people think about my work and how to make it better. And finally, after all this gratitude I do want to acknowledge that I am doing this work on the stolen land of many Indigenous peoples including the Haudenosaunee, Mohawk, and Anishinaabeg peoples. I use this land acknowledgement not as a final destination or a checkmark on a list but as a constant reminder to engage with and grapple with how my science as a settler on this land is or is not reckoning with colonization and its ongoing presence.
 
 
 ---
@@ -173,7 +173,7 @@ knitr::include_graphics("racism.jpeg", dpi = 200)
 
 ???
 
-Importantly, when we conceptualize urban ecosystems as the intersection between natural, physical, built, and social elements we can understand that the inequity built into the social elements of our cities underpins the built, natural, and physical elements as well, including the urban forest. And indeed if we **don't** try to incorporate inequities into our science, we will never be ably to fully understand our ecosystems. For example, urban greenspaces and parks provide many benefits to urban residents, including improving mental health, providing a sense of community, reducing temperatures, and during covid providing a safe space t socialize. However, overall park area as well as park quality decreases as you increase the proportion of racialized people within a neighbourhood. This is important of course if we are interested in inequity and environmental justice. But it is also key to understanding the distribution and composition of the urban forest. Without understanding and incorporating the piece of inequity, I as a scientist would never be able to fully understand this ecosystem.
+Importantly, when we conceptualize ecosystem services provided by the urban forest, we have to understand that these biotic elements are inherently intertwined with the physical, built, and social elements of our cities as well. Thus, we can understand that the inequity built into the social elements of our cities underpins the built, natural, and physical elements as well, including the urban forest. And indeed if we **don't** try to incorporate inequities into our science, we will never be ably to fully understand our ecosystems. For example, urban greenspaces and parks provide many benefits to urban residents, including improving mental health, providing a sense of community, reducing temperatures, and during covid providing a safe space t socialize. However, overall park area as well as park quality decreases as you increase the proportion of racialized people within a neighbourhood. This is important of course if we are interested in inequity and environmental justice. But it is also key to understanding the distribution and composition of the urban forest. Without understanding and incorporating the piece of inequity, I as a scientist would never be able to fully understand this ecosystem.
 
 ---
 
@@ -252,6 +252,8 @@ That past land use probably influence the subsequent functioning of that ecosyst
 class: introduction 
 
 # .small[Proposed Research]
+
+*Street trees, parks, and neighbourhoods...*
 
 ```{r,echo=F, message = F, warning=F, fig.align='center'}
 knitr::include_graphics("study-system.png")
@@ -377,8 +379,9 @@ knitr::include_graphics("ch1analysis.png")
 
 ```
 
+???
 
-
+The conceptualization of the analysis for this chapter gets a little bit complicated when you try to hold it all in your brain at once. And I am super open to a discussion regarding this, I would love to get everyone's opinions and insights. On this slide, I am presenting one possible approach that I have started to think about. Basically here, I am depicting some hypothetical cross-city drivers (x axis), at the neighbourhood scale, for all three ecosystem service capacities (y axis), for three hypothetical cities. Here, I have the response variables separated obviously, but I would also be looking at the interaction between these three ecosystem service capacities through a kind of spatial hotspot analysis. I have also considered using a multiple linear regression with all three response variables included in the same model so that we can see the interactions between them, since they are of course related and causally tied to one another. We could also imagine this graph with only one driver and each column being a different scale, street vs neighbourhood vs city. Basically, modelling the variables and trying to tease out these common relationships is the goal. But I haven't nailed down exactly the approach I will be taking.
 
 ---
 class: chaptertwo
@@ -430,7 +433,7 @@ knitr::include_graphics("studyparks.png")
 
 ???
 
-To address this question, we are going to sample 30 parks total - 10 for each land cover class type across the island of Montreal. Within the parks, we will split the park into areas of low, medium, and high canopy cover and do 3 sampling plots per cover level. The plots are based on iTree sampling methodology, a popular approach in urban ecology and will be 0.04 ha in size. In each plot, we will do a forest inventory including species and size of trees, as well as place a temperature sensor so we can assess the temperature mitigation capacity of these parks.
+To address this question, we are going to sample 30 parks total - 10 for each land cover class type across the island of Montreal. There are some parks that are mixed - as in they have different past land-use types depending on the area. For these, we have used historical documents to delineated where the boundaries of each past land use type is.
 
 
 ---
@@ -443,6 +446,10 @@ class: chaptertwo
 ```{r, echo = F}
 knitr::include_graphics("sampling-example.png")
 ```
+
+???
+
+Within the parks, we will split the park into areas of low, medium, and high canopy cover and do 3 sampling plots per cover level. The plots are based on iTree sampling methodology, a popular approach in urban ecology and will be 0.04 ha in size. In each plot, we will do a forest inventory including species and size of trees, as well as place a temperature sensor so we can assess the temperature mitigation capacity of these parks. We will also do an overall assessment of total canopy cover, to get a more holistic picture of the park as well.
 
 
 ---
@@ -483,6 +490,11 @@ ggplot(df2l, aes(x = ParkType, y = value)) +
   facet_wrap(vars(variable), scales = "free_y", labeller = as_labeller(labelnames, multi_line = T))
 
 ```
+
+
+???
+
+I anticipate using generalized linear models to tease out the relationships between past land use type and current ecosystem service capacity/forest composition. I will also use modelling techniques to determine if there is a relationship between the proportion of marginalized communities surrounding each park type historically, and currently.
 
 ---
 class: chapterthree
@@ -642,6 +654,8 @@ ggplot(df3l, aes(x = density, y = ForestSize, colour = NeighbourhoodType)) +
 
 ```
 
+???
+
 
 
 ---
@@ -674,6 +688,10 @@ ggplot(df3.2l, aes(x = density, y = ForestDiversity, colour = NeighbourhoodType)
 
 ```
 
+
+???
+
+Finally, I expect to model these results using a continuous gradient of density based on a variety of urban form factors. I will use dependent variables of urban forest size, density, and diversity for street trees, as well as overall canopy cover to try and capture the contribution of privately owned trees in my analysis.
 
 ---
 class: chapterthree
