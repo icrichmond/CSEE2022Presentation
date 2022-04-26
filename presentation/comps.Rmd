@@ -371,8 +371,11 @@ class:chapterone
 **Proposed Analysis** 
 
 
+```{r,echo = F, eval = T, fig.align='center', out.width='85%'}
 
+knitr::include_graphics("ch1analysis.png")
 
+```
 
 
 
