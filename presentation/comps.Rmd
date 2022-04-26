@@ -704,31 +704,13 @@ background-image: url("urbantree.jpg")
 
 
 ---
-
-class: mainconcepts 
-
-# .small[Bayesian vs Frequentist]
-
-**Bayesian** 
-
-**Multinomial Models**
-
-
----
-class: mainconcepts
-
-# .small[Spatial & Temporal Heterogeneity]
-
-**what do those words mean**
-
----
 class: chapterone 
 
 # .small[Chapter 1: Cross-City Drivers of Ecosystem Services]
 
-**Causal Model**
+**Causal Model - All Variables**
 
-```{r, eval = T, message = F, echo = F, fig.align='center'}
+```{r, eval = T, message = F, echo = F, fig.align='center', fig.retina=2}
 library(ggdag)
 library(ggplot2)
 
@@ -744,21 +726,14 @@ dag <- dagify(
     Inc ~ PImm + PMin + DTyp,
     PImm ~ Inc + PMin,
     PMin ~ PImm + Inc,
-    DTyp ~ PDens + PImm + PMin
+    DTyp ~ PDens + PImm + PMin,
+    outcome = "ES"
 )
 ggdag(dag) + 
   theme_dag_blank() + 
   theme(plot.background = element_rect(fill = "#e7e5cc", colour = NA))
 ```
 
-
----
-class: chapterone 
-
-# .small[Chapter 1: Cross-City Drivers of Ecosystem Services]
-
-**Causal Model**
-- break down DAG
 
 
 ---
@@ -774,21 +749,7 @@ knitr::include_graphics("paquette.jpg")
 .footnote[
 Paquette et al. 2021, [Urban Forestry & Urban Greening](https://doi.org/10.1016/j.ufug.2021.127157)]
 
----
-class: chapterone 
 
-# .small[Chapter 1: Cross-City Drivers of Ecosystem Services]
-
-**Allometric Modelling** 
-
-
----
-
-class: chapterone 
-
-# .small[Chapter 1: Cross-City Drivers of Ecosystem Services]
-
-**Data Sources ch 1** 
 
 ---
 class: chapterone 
@@ -862,6 +823,23 @@ class: chapterthree
 
 **Gentrification**
 
+"Gentrification is an area-level process in which formerly declining, under-resourced neighbourhoods experience reinvestment and in-migration of increasingly affluent new residents"  
+
+|                   | Grube-Cavers                                                 |
+| -------------     | ------------------------------------------------------------ | 
+| **Gentrifiable**  |                                                              | 
+|                   | Avg. family income < CMA avg.                                |
+|                   | Number of college degree holders per capita < CMA avg.       |
+| **Gentrified**    |                                                              |
+|                   | Increase in family income > CMA avg                          | 
+|                   | Increase in prop. degrees per capita > CMA avg.              |
+|                   | Increase in avg. monthly rent > CMA avg.                     | 
+|                   | Increase in prop. owner occupied dwellings > CMA avg.        | 
+|                   | Increase in prop. people professional occupations > CMA avg. | 
+
+
+
+.footnote[ [Grube-Cavers & Patterson, 2014](https://journals.sagepub.com/doi/full/10.1177/0042098014524287) ]]
 ---
 class: chapterthree
 
