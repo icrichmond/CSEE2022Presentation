@@ -388,7 +388,7 @@ class: chaptertwo
 # .small[Chapter 2: Legacy Effects of Past Land-Use]
 
 .smaller[**Question:** a) What are the legacy effects of past land-use types on our current ecosystem services in parks?  
-b) Are parks developed on certain past land use types more likely to be found in neighbourhoods that have historically been home to marginalized groups?
+b) Are parks developed on certain past land use types more likely to be found in neighbourhoods that have historically been home to marginalized groups?]
 
 ```{r, echo = F, fig.align='center', out.width="65%"}
 knitr::include_graphics("chapter-2.png")
@@ -400,6 +400,7 @@ knitr::include_graphics("chapter-2.png")
 Moving on to chapter 2 - where we start to dial in more on the temporal heterogeneity and the influence of historical events. The question driving this chapter is first, what are the legacy effects of past land-use types on our current ecosystem services in Montreal parks. And second - how are these different past land uses represented in today's neighbourhoods - for example - is there overrepresentation of industrial land use types in areas that have a high percentage of immigrants or visible minorities?
 
 ---
+
 class: chaptertwo
 # .small[Chapter 2: Legacy Effects of Past Land-Use]
 
@@ -475,9 +476,6 @@ df2l$ParkType <- factor(df2l$ParkType,     # Reorder factor levels
                          c("Industrial", "Agricultural", "Natural"))
 
 labelnames <- c('ESCapacity' = "Service Capacity", 'HMinorities' = "Historical Minorities", 'CMinorities' = "Current Minorities")
-
-ann_text <- data.frame(ParkType = "Industrial", value = 8,lab = "High",
-                       variable = factor('ESCapacity',levels = c("ESCapacity","HMinorities","CMinorities")))
 
 ggplot(df2l, aes(x = ParkType, y = value)) + 
   geom_boxplot(fill = '#e7e5cc') + 
