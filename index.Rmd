@@ -730,6 +730,31 @@ background-image: url("urbantree.jpg")
 
 
 ---
+
+class: mainconcepts 
+
+# Foundational Papers
+
+1. **Wu** J (2014) Urban ecology and sustainability: The state-of-the-science and future directions. Landscape and Urban Planning 125:209–221. 
+
+--
+
+2. **Villamagna** AM, Angermeier PL, Bennett EM (2013) Capacity, pressure, demand, and flow: A conceptual framework for analyzing ecosystem service provision and delivery. 
+
+--
+
+3. **Pham** T-T-H, Apparicio P, Landry S, Lewnard J (2017) Disentangling the effects of urban form and socio-demographic context on street tree cover: A multi-level analysis from Montréal. Landscape and Urban Planning 157:422–433
+
+--
+
+4. **Schell** CJ, Dyson K, Fuentes TL, et al (2020) The ecological and evolutionary consequences of systemic racism in urban environments. Science 369
+
+--
+
+5. **Ossola** A, Cadenasso ML, Meineke EK (2021) Valuing the Role of Time in Urban Ecology. Front Ecol Evol 9:620620.
+
+---
+
 class: chapterone 
 
 # .small[Chapter 1: Cross-City Drivers of Ecosystem Services]
@@ -879,9 +904,3 @@ knitr::include_graphics("montrealgent.png")
 
 [GENUINE](https://teaminteract.ca/develop/gentrification/gentrif_test_allCMA.html)
 
-
----
-
-class: mainconcepts 
-
-# Foundational Papers
