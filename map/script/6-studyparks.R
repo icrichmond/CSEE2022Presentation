@@ -104,7 +104,7 @@ crs_string = "+proj=omerc +lat_0=45.65 +lonc=-73.80 +alpha=0 +k_0=.7 +datum=WGS8
 ggplot() +
   geom_sf(fill = montrealcol, data = mtl) + 
   geom_sf(aes(colour = PastLandUse), size = 2, data = pts) +
-  scale_color_manual(values = c("#c88a2c", "#dd5129", "#0f7ba2", "#43b284")) +
+  scale_color_manual(values = c("#c88a2c", "#43b284", "#dd5129", "#0f7ba2" )) +
   geom_sf(fill = watercol, data = water) + 
   coord_sf(crs = crs_string, 
            xlim = c(-17500, 16000),
