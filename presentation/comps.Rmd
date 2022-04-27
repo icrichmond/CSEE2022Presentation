@@ -476,17 +476,23 @@ df2l$ParkType <- factor(df2l$ParkType,     # Reorder factor levels
 
 labelnames <- c('ESCapacity' = "Service Capacity", 'HMinorities' = "Historical Minorities", 'CMinorities' = "Current Minorities")
 
+ann_text <- data.frame(ParkType = "Industrial", value = 8,lab = "High",
+                       variable = factor('ESCapacity',levels = c("ESCapacity","HMinorities","CMinorities")))
+
 ggplot(df2l, aes(x = ParkType, y = value)) + 
   geom_boxplot(fill = '#e7e5cc') + 
   geom_jitter() +
   theme_classic() +
   theme(
-    panel.background = element_rect(fill='#e7e5cc'), #transparent panel bg
+    panel.background = element_rect(fill='#e7e5cc'), 
     plot.background = element_rect(fill='#e7e5cc', color=NA),
     strip.background = element_rect(fill='#e7e5cc'),
-    strip.text.x = element_text(size = 15)) + #transparent plot bg
+    strip.text.x = element_text(size = 15),
+    axis.ticks.y = element_blank(),
+    axis.text.y = element_blank(), 
+    ) + 
   ylab("") + 
-  xlab("Park Type") + 
+  xlab("Park Type") +
   facet_wrap(vars(variable), scales = "free_y", labeller = as_labeller(labelnames, multi_line = T))
 
 ```
@@ -645,7 +651,7 @@ ggplot(df3l, aes(x = density, y = ForestSize, colour = NeighbourhoodType)) +
   scale_colour_manual(values = c("#FEEFD8", "#FDCFA8", "#EB806F"), labels = c("Non Gentrifiable", "Gentrified", "Did Not Gentrify")) + 
   geom_smooth(method = "lm", se = F) + 
   theme_classic() + 
-  ylab("Forest Size Composition") + 
+  ylab("Canopy Cover (%)") + 
   xlab("Urban Form (Density)") + 
   labs(colour = "Gentrification") + 
   theme(panel.background = element_rect(fill='#e7e5cc'),
