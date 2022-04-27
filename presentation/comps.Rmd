@@ -694,6 +694,16 @@ ggplot(df3.2l, aes(x = density, y = ForestDiversity, colour = NeighbourhoodType)
 Finally, I expect to model these results using a continuous gradient of density based on a variety of urban form factors. I will use dependent variables of urban forest size, density, and diversity for street trees, as well as overall canopy cover to try and capture the contribution of privately owned trees in my analysis.
 
 ---
+class: chapterthree 
+
+# Contributions 
+
+## Scientific 
+
+## Applied
+
+
+---
 class: chapterthree
 background-image: url("urbantree.jpg")
 
