@@ -487,8 +487,7 @@ ggplot(df2l, aes(x = ParkType, y = value)) +
     strip.background = element_rect(fill='#e7e5cc'),
     strip.text.x = element_text(size = 15),
     axis.ticks.y = element_blank(),
-    axis.text.y = element_blank(), 
-    ) + 
+    axis.text.y = element_blank())+ 
   ylab("") + 
   xlab("Park Type") +
   facet_wrap(vars(variable), scales = "free_y", labeller = as_labeller(labelnames, multi_line = T))
@@ -700,12 +699,25 @@ Finally, I expect to model these results using a continuous gradient of density 
 ---
 class: chapterthree 
 
-# Contributions 
+# .small[Contributions] 
 
-## Scientific 
+**Scientific**
 
-## Applied
+1. Broad, landscape scale study on urban ecosystem services
 
+2. Addition of temporal heterogeneity to the field  
+
+3. Integration of natural and social sciences 
+
+--
+
+**Applied**
+
+1. Generalizable knowledge on drivers of ecosystem service capacity
+
+2. Impacts of park development choices 
+
+3. Mechanisms of gentrification
 
 ---
 class: chapterthree
