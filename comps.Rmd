@@ -878,3 +878,10 @@ knitr::include_graphics("montrealgent.png")
 ```
 
 [GENUINE](https://teaminteract.ca/develop/gentrification/gentrif_test_allCMA.html)
+
+
+---
+
+class: mainconcepts 
+
+# Foundational Papers
