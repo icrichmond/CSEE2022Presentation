@@ -155,7 +155,7 @@ et al. 2013. [Ecological Complexity](https://linkinghub.elsevier.com/retrieve/pi
 
 Now, when we discuss all the benefits that we receive from the urban forest (and other biotic elements within our cities), we often refer to the benefits as "ecosystem services".  In my thesis, and proposal, I really focus exclusively on ecosystem service capacity - which is the total potential of an ecosystem to produce a service. However, factors such as pressure and demand inherently influence both capacity, and importantly, flow of ecosystem services. 
 
-We can use this diagram to imagine a system where demand for ecosystem services is kept constant through time. However, we see a pressure, a physical stressors acting on an ecosystem such as a storm increasing, which subsequently causes a decrease in the capacity perhaps due to tree death/removal. This example demonstrates that each part of the ecosystem services framework is really imprtant to understand if we want to understand the actual flow and delivery of ES. However, its also really complex and in my thesis I have chosen to focus on specifically capacity because it underlines it all - because with no capacity there can be no provision
+We can use this diagram to imagine a system where demand for ecosystem services is kept constant through time. However, we see a pressure, a physical stressors acting on an ecosystem such as a storm increasing, which subsequently causes a decrease in the capacity perhaps due to tree death/removal. This example demonstrates that each part of the ecosystem services framework is really imprtant to understand if we want to understand the actual flow and delivery of ES. However, its also really complex and in my thesis I have chosen to focus on specifically capacity because it underlines it all and is the most tied to ecology - because with no capacity there can be no provision
 
 
 
@@ -249,11 +249,40 @@ That past land use probably influence the subsequent functioning of that ecosyst
 
 
 ---
+class: introduction
+
+# .small[Research Gaps]
+
+- "Despite the importance of historical and future urban growth as a driver of global change, the global impact on biodiversity remains unclear" - McDonald et al. 2020
+
+--
+
+- "Some of the most compelling, and as yet unanswered, questions that take a systems approach to understanding and quantifying ES:" - Bennett 2017
+  - "How do multiple ES interact, and what do those interactions mean for ecosystem management?" 
+  - "What is the role of historical legacies in the provision of ES today?"
+  
+--
+  
+- "central features of future urban ecological research should be synthesis, a complex-systems view, cross-city comparison at multiple scales, and inclusion of more disciplines that take advantage of emerging data sources, methods, and tools." - McPhearson et al. 2016
+
+--
+
+- "...the analysis of the distribution of ecosystem services needs to be developed further to fully address justice" - Ernstson 2013 
+
+--
+
+- "A more rigorous engagement between urban political ecology and the biophysical sciences, ..., would mark the outline of a very different kind of research agenda" - Gandy 2022
+
+???
+
+Here I have included some quotes from some of the foundational papers driving my research that kind of outline the gaps that I am trying to fill... We start with this McDonald paper that highlights the need for an improved understanding of urbanization and biodiversity. Followed by Elena Bennett's 2017 paper saying that some of the most compelling questions about ecosystem services are investigating how multiple ES interact and what do those interactions mean, as well as looking into the effect of historical legacies on ES. McPhearson et al outline the future of urban ecology should do cross-city comparisons at multiple scales, with multiple disciplines, using cutting edge tools. We have Ernstson saying that we need to further develop our understanding of the distribution of ecosystem services if we want to use this framework to address justice and injustice. And finally, we have Gandy outlining the gap that exists between urban political ecology and urban ecology, where if integrated, we could see really new and exciting research taking place.
+
+---
 class: introduction 
 
 # .small[Proposed Research]
 
-*Street trees, parks, and neighbourhoods...*
+*Spatial Heterogeneity + Temporal Heterogeneity + Inequity + Urban Forest*
 
 ```{r,echo=F, message = F, warning=F, fig.align='center'}
 knitr::include_graphics("study-system.png")
@@ -261,7 +290,7 @@ knitr::include_graphics("study-system.png")
 
 ???
 
-Alright so now we are getting into the actual proposed research in my proposal, as you probably already know I have three chapters proposed. The first taking a kind of zoomed out, spatial approach to ecosystem services. The second diving into the more temporal/legacy effects aspect of the urban forest and ecosystem services in parks. And then the third chapter looking at legacy effects of urban form decisions and the ongoing process of gentrification and how those two things interact to impact the urban forest in Montreal neighbourhoods.
+So essentially, the goal of this chapter is to attempt to fill in some of these gaps that we just talked about by doing science that addresses both spatial and temporal heterogeneity, while incorporating inequities and social science, into questions regarding our urban forest. So to do that...
 
 
 ---
@@ -278,7 +307,7 @@ knitr::include_graphics("chapter-1.png")
 ???
 
 
-This chapter is driven by the question - what are the cross-city drivers of regulatory ecosystem service capacity provided by the urban forest in Canadian temperate cities? And I think this is an interesting question because although there has undoubtedly been a lot of work regarding ecosystem services in urban settings - there hasn't been many studies that try to take this multi-city, multi-scale approach. And I think it is an interesting approach to take because if there are indeed factors, or drivers, that consistently influence ecosystem service capacity - regardless of scale or city - we can use that knowledge to more effectively plan and manage for ecosystem services.
+First we will discuss my cross-city study. This chapter is driven by the question - what are the cross-city drivers of regulatory ecosystem service capacity provided by the urban forest in Canadian temperate cities? And I think this is an interesting question because although there has undoubtedly been a lot of work regarding ecosystem services in urban settings - there hasn't been many studies that try to take this multi-city, multi-scale approach. And I think it is an interesting approach to take because if there are indeed factors, or drivers, that consistently influence ecosystem service capacity - regardless of scale or city - we can use that knowledge to more effectively plan and manage for ecosystem services.
 
 ---
 class: chapterone
@@ -382,6 +411,26 @@ knitr::include_graphics("ch1analysis.png")
 ???
 
 The conceptualization of the analysis for this chapter gets a little bit complicated when you try to hold it all in your brain at once. And I am super open to a discussion regarding this, I would love to get everyone's opinions and insights. On this slide, I am presenting one possible approach that I have started to think about. Basically here, I am depicting some hypothetical cross-city drivers (x axis), at the neighbourhood scale, for all three ecosystem service capacities (y axis), for three hypothetical cities. Here, I have the response variables separated obviously, but I would also be looking at the interaction between these three ecosystem service capacities through a kind of spatial hotspot analysis. I have also considered using a multiple linear regression with all three response variables included in the same model so that we can see the interactions between them, since they are of course related and causally tied to one another. We could also imagine this graph with only one driver and each column being a different scale, street vs neighbourhood vs city. Basically, modelling the variables and trying to tease out these common relationships is the goal. But I haven't nailed down exactly the approach I will be taking.
+
+---
+class:chapterone
+
+# .small[Chapter 1: Cross-City Drivers of Ecosystem Services]
+
+**Proposed Analysis** 
+
+
+```{r,echo = F, eval = T, fig.align='center', out.width='40%', out.height='40%'}
+knitr::include_graphics("hotspots.webp")
+```
+
+.footnote[ .small[ [10]: [Qiu & Turner](https://www.pnas.org/doi/10.1073/pnas.1310539110)] ] 
+
+???
+
+Alternatively, I think using a hot-spot/cold-spot approach to the ecosystem service capacities and trying to pull out if there are common characteristics across these hot or cold spots could be a better way to go about this - that begins to address some of the issues of confounding variables that pop up when we start modelling. This paper models 10 ecosystem services and identifies where 6 or more ES are in their upper or lower 20th percentile and labels those places as hotspots and coldspots. This also gets at the ideas of synergies and trade-offs between the ES, instead of modelling them separately.  
+
+10 services include: crop production, pasture production, freshwater supply, carbon storage, groundwater quality, surface water quality, soil retention, flood regulation, forest recreation, hunting recreation
 
 ---
 class: chaptertwo
@@ -525,7 +574,7 @@ class: chapterthree
 knitr::include_graphics("luxuryincome.jpg")
 ```
 
-.footnote[ .small[ [10]: [Gerrish & Watkins, 2018](https://linkinghub.elsevier.com/retrieve/pii/S0169204617302062)]]
+.footnote[ .small[ [11]: [Gerrish & Watkins, 2018](https://linkinghub.elsevier.com/retrieve/pii/S0169204617302062)]]
 
 
 ???
@@ -546,7 +595,7 @@ knitr::include_graphics("luxuryracism.jpg")
 ```
 
 
-.footnote[ .small[ [11]: [Watkins & Gerrish, 2018](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5889081/)
+.footnote[ .small[ [12]: [Watkins & Gerrish, 2018](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5889081/)
 ]]
 
 
@@ -569,7 +618,7 @@ knitr::include_graphics("adapted-pham.png")
 ```
 
 
-.footnote[ .small[ [12]: [Adapted from Pham et al. 2017](http://dx.doi.org/10.1016/j.landurbplan.2016.09.001)
+.footnote[ .small[ [13]: [Adapted from Pham et al. 2017](http://dx.doi.org/10.1016/j.landurbplan.2016.09.001)
 ]]
 
 
@@ -701,23 +750,20 @@ class: chapterthree
 
 # .small[Contributions] 
 
-**Scientific**
 
-1. Broad, landscape scale study on urban ecosystem services
-
-2. Addition of temporal heterogeneity to the field  
-
-3. Integration of natural and social sciences 
+1. Broad, landscape scale study on urban ecosystem services + generalizable knowledge on drivers 
 
 --
 
-**Applied**
+2. Addition of temporal heterogeneity to the field + impacts of park development choices   
 
-1. Generalizable knowledge on drivers of ecosystem service capacity
+--
 
-2. Impacts of park development choices 
+3. Process of gentrification in Montreal
 
-3. Mechanisms of gentrification
+--
+
+4. Integration of natural and social sciences 
 
 ---
 class: chapterthree
@@ -816,6 +862,39 @@ class: chapterone
 
 - Drivers that vary across cities but consistently across scales 
   - e.g., sociodemographic variables - effect often scales up but is dependent on local context 
+
+---
+class: chaptertwo 
+
+# .small[Chapter 2: Legacy Effects of Past Land-Use Type]
+**1874**
+
+```{r, echo = F, fig.align='center', out.width='35%', out.height='35%'}
+knitr::include_graphics("JD_1874.JPG")
+```
+
+
+---
+class: chaptertwo 
+
+# .small[Chapter 2: Legacy Effects of Past Land-Use Type]
+**1930**
+
+```{r, echo = F, fig.align='center', out.width='85%'}
+knitr::include_graphics("JD_1930.JPG")
+```
+
+
+---
+class: chaptertwo 
+
+# .small[Chapter 2: Legacy Effects of Past Land-Use Type]
+**1954**
+
+```{r, echo = F, fig.align='center', out.width = '75%'}
+knitr::include_graphics("JD_1954.JPG")
+```
+
 
 ---
 class: chaptertwo 
