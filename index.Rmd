@@ -1,5 +1,5 @@
 ---
-title: "Spatial and Temporal Variation in Canadian Urban Forests"
+title: "Temporal and spatial drivers of Canadian urban forests"
 subtitle: 
 - "BIOL-850 Qualifying Exams"
 author:
