@@ -1,8 +1,8 @@
 ---
 title: "Cross-city drivers of Canadian urban forest ecosystem services"
-subtitle: Isabella C. Richmond<sup>1</sup>, Nicole Yu<sup>1,2</sup>, Carly Ziter<sup>1</sup>
-author: 1. Concordia University, 2. University of Hong Kong
-date: August 16, 2022
+subtitle: Isabella C. Richmond<sup>1</sup>, Nicole Yu<sup>1,2</sup>, Carly Ziter<sup>1</sup> 
+author: August 16, 2022 
+date: <sup>1.</sup> Concordia University, <sup>2.</sup> University of Hong Kong
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -42,7 +42,7 @@ I want to start this presentation with a HUGE thank you to the ZULE lab and my c
 
 ---
 class: mainconcepts 
-# .small[The Urban Ecosystem] 
+# The Urban Ecosystem 
 
 ```{r, echo = F, fig.align='center'}
 knitr::include_graphics("adapted-pickett-base.png")
@@ -59,7 +59,7 @@ Okay so we are going to start with a little intro into some of the main concepts
 
 ---
 class: mainconcepts 
-# .small[The Urban Ecosystem] 
+# The Urban Ecosystem
 
 ```{r, echo = F, fig.align='center', fig.retina=2.5}
 knitr::include_graphics("adapted-pickett.png")
@@ -76,7 +76,7 @@ However, we can conceptualize the difference between "traditional" ecosystems an
 ---
 class: mainconcepts 
 
-# .small[The Urban Forest & it's Composition]
+# The Urban Forest & it's Composition
 - Urban forest is part of the biotic elements of cities
 - Differences in urban forest composition change ecosystem functioning
 ```{r, echo = F}
@@ -94,7 +94,7 @@ An important part of the biotic elements in cities is the urban forest. We can t
 ---
 class: mainconcepts
 
-# .small[Ecosystem Services]
+# Ecosystem Services
 - The benefits that humans derive from nature 
 
 ```{r, echo = F, warning = F, message=F,  fig.align='center',fig.retina = 2.5}
@@ -108,10 +108,11 @@ pressure <- dnorm(x, mean = 50, sd = 10)
 capacity <- (dnorm(x, mean = 75, sd = 15))*-1
 
 df <- data.frame(demand = demand, pressure = pressure, capacity = capacity, time = 1:101)
+df <- as.data.table(df)
 df <- melt(df ,  id.vars = 'time', variable.name = 'ES')
 df$ES <- as.factor(df$ES)
 
-data_label <- df
+data_label <- as.data.frame(df)
 data_label$label <- NA
 data_label$label[which(data_label$time == max(data_label$time))] <- data_label$ES[which(data_label$time == max(data_label$time))]
 data_label['label'][data_label['label'] == '1'] <- 'demand'
@@ -157,9 +158,9 @@ We can use this diagram to imagine a system where demand for ecosystem services 
 ---
 class: mainconcepts 
 
-# .small[Inequity]
+# Inequity
 
-```{r,echo=F, fig.align='center'}
+```{r,echo=F, fig.align='center', out.width='75%'}
 knitr::include_graphics("racism.jpeg", dpi = 200)
 ```
 
@@ -174,7 +175,7 @@ Importantly, when we conceptualize ecosystem services provided by the urban fore
 
 class: mainconcepts
 
-# .small[Spatial Heterogeneity]
+# Spatial Heterogeneity
 
 <center> 
 ```{r echo=F, message=F, warning=FALSE, fig.align='center'}
@@ -198,7 +199,7 @@ class: question
 
 # .small[What are the cross-city drivers of ecosystem services?]
 
-```{r, echo = F, fig.align='center', out.width="60%"}
+```{r, echo = F, fig.align='center', out.width="70%"}
 knitr::include_graphics("chapter-1.png")
 ```
 
@@ -210,7 +211,7 @@ This study is driven by the question - what are the cross-city drivers of regula
 ---
 class: hypotheses
 
-# .small[Cross-City vs City-Specific]
+# Cross-City vs City-Specific
 
 **Hypotheses** 
 
@@ -237,7 +238,7 @@ This chapter's hypotheses are really driven by this kind of cross-city vs city-s
 ---
 class:hypotheses
 
-# .small[Our Approach]
+# Our Approach
 
 --
 .left-column[
@@ -332,21 +333,9 @@ Alternatively, I think using a hot-spot/cold-spot approach to the ecosystem serv
 ---
 class:results
 
-# .small[Why Does it Matter? + Stay Tuned!]
+# Why Does it Matter? + Stay Tuned!
 
-.pull-left[
-```{r,echo = F, eval = T, fig.align='center', out.width='40%', out.height='40%'}
-knitr::include_graphics("frederickbackthen.png")
-```
-]
 
-.pull-right[
-```{r,echo = F, eval = T, fig.align='center', out.width='40%', out.height='40%'}
-knitr::include_graphics("frederickbacknow.jpg")
-```
-]
-
-.footnote[ .small[ [8]: [László Horváth](https://www.mindat.org/photo-506487.html)], [Tourisme Montréal](https://www.mtl.org/en) ] 
 
 ???
 Cities across Canada are dynamic systems - evolving and changing all the time. In understanding the commonalities (and differences) of the factors that determine the ecosystem service capacity in our cities, we can more effectively plan and manage on large, landscape scales. We have a better baseline understanding when starting a project, which hopefully will allow us to design and live in cities that distribute ecosystem services effectively and equitably. 
