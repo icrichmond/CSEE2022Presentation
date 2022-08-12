@@ -1,13 +1,8 @@
 ---
-title: "Temporal and spatial drivers of Canadian urban forests"
-subtitle: 
-- "BIOL-850 Qualifying Exams"
-author:
-- Isabella C. Richmond
-- "Supervisor: Dr. Carly Ziter"
-- "Committee Members: Dr. Hiên Pham & Dr. Emma Despland"
-- "Examining Commitee: Dr. Eric Pedersen & Dr. Jim Grant"
-date: May 2, 2022
+title: "Cross-city drivers of Canadian urban forest ecosystem services"
+subtitle: Isabella C. Richmond<sup>1</sup>, Nicole Yu<sup>1,2</sup>, Carly Ziter<sup>1</sup>
+author: 1. Concordia University, 2. University of Hong Kong
+date: August 16, 2022
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -42,7 +37,7 @@ knitr::include_graphics("zule-december.jpg")
 
 ???
 
-I want to start this presentation with gratitude because although starting my PhD in a pandemic and only being at Concordia for a year and 4 months, I have so many people to thank. HUGE thank you to the ZULE lab, they are in every single part of this proposal. Shout out to Kayleigh, who I think has read this more than anyone else but also Lingshan, Fatemeh, Emily, Katie, Nicole, Gail, Maya, Noa, Mathieu, and Serena for the endless edits. Thank you to Nicole and Lauren for helping me collect and clean data! Special thank you to Michael for edits as well as collaboration on the second chapter, and OF COURSE a huge thank you to Carly who has been a truly excellent supervisor. I also want to thank my committee and examiners for spending time thinking about my project, that is extremely cool for me to have so many smart people think about my work and how to make it better. And finally, after all this gratitude I do want to acknowledge that I am doing this work on the stolen land of many Indigenous peoples including the Haudenosaunee, Mohawk, and Anishinaabeg peoples. I use this land acknowledgement not as a final destination or a checkmark on a list but as a constant reminder to engage with and grapple with how my science as a settler on this land is or is not reckoning with colonization and its ongoing presence.
+I want to start this presentation with a HUGE thank you to the ZULE lab and my coauthors. I also want to acknowledge that I am doing this work on the stolen land of many Indigenous peoples including the Haudenosaunee, Mohawk, and Anishinaabeg peoples. I use this land acknowledgement not as a final destination or a checkmark on a list but as a constant reminder to engage with and grapple with how my science as a settler on this land is or is not reckoning with colonization and its ongoing presence.
 
 
 ---
@@ -89,7 +84,7 @@ knitr::include_graphics("composition.jpg")
 ```
 
 .footnote[
-[6]: Aronson et al. 2017, [Frontiers in Ecology and the Environment](https://esajournals-onlinelibrary-wiley-com/doi/full/10.1002/fee.1480?casa_token=pfUkQEswVAMAAAAA%3ApcP-dwTjzK9rumqs4Vg4y_VpVF0SClhwurbbTvsMTvMr_obS1DGbWBhufnRWabViUVW7zciXJuqB0o-A)
+[2]: Aronson et al. 2017, [Frontiers in Ecology and the Environment](https://esajournals-onlinelibrary-wiley-com/doi/full/10.1002/fee.1480?casa_token=pfUkQEswVAMAAAAA%3ApcP-dwTjzK9rumqs4Vg4y_VpVF0SClhwurbbTvsMTvMr_obS1DGbWBhufnRWabViUVW7zciXJuqB0o-A)
 ]
 
 ???
@@ -146,7 +141,7 @@ ggplot(aes(x = time, y = value, colour = ES), data = data_label) +
 ```
 
 .small[.footnote[
-[7]: Adapted from Villamagna   
+[3]: Adapted from Villamagna   
 et al. 2013. [Ecological Complexity](https://linkinghub.elsevier.com/retrieve/pii/S1476945X1300055X)
 ]]
 
@@ -168,7 +163,7 @@ class: mainconcepts
 knitr::include_graphics("racism.jpeg", dpi = 200)
 ```
 
-.footnote[ [2]: Schell et al. 2020. [Science](https://www.sciencemag.org/lookup/doi/10.1126/science.aay4497)
+.footnote[ [4]: Schell et al. 2020. [Science](https://www.sciencemag.org/lookup/doi/10.1126/science.aay4497)
 ]
 
 ???
@@ -191,7 +186,7 @@ mapview(lst, alpha.regions = 0.6)
 </center>
 
 .footnote[
-[3]: Pickett et al. 2017, [Urban Ecosystems](http://link.springer.com/10.1007/s11252-016-0574-9)
+[5]: Pickett et al. 2017, [Urban Ecosystems](http://link.springer.com/10.1007/s11252-016-0574-9)
 ]
 
 ???
@@ -199,106 +194,9 @@ mapview(lst, alpha.regions = 0.6)
 And so if we conceptualize inequity as varying across space we can start to imagine spatial heterogeneity. Now, of course, there are other factors that are causing spatial heterogeneity - going back to the physical, biotic, and built elements all intertwined. All of these complex layers work together to create cities which are a uniquely fine-scale spatially heterogeneous system. And this spatial heterogeneity occurs on many scales - we can see on this slide that land surface temperature varies on a fine-scale, along a single street for example - but it also varies across neighbourhoods, and we can of course imagine it varying across cities. Spatial heterogeneity is so important when considering our cities
 
 ---
-class: mainconcepts 
+class: question
 
-# .small[Temporal Heterogeneity]
-
-```{r,echo=F, message = F, warning=F, fig.align='center'}
-knitr::include_graphics("legacyeffects.jpg")
-```
-
-.footnote[ [4]:[Dallimer et al. 2015](https://doi.org/10.1016/j.gloenvcha.2015.01.015)]
-
-???
-
-Similarly important to spatial heterogeneity is temporal heterogeneity! We know that current functioning of our cities with respect to ecosystem services and other ecological processes is temporally heterogeneous, and specifically are influenced by legacy effects which are a form of temporal heterogeneity. Legacy effects occur when an event carries its effects across time.  
-
-This figure shows us how historical land use cover surrounding parks often can contribute to our understanding of the current ecological functioning and composition of the park. Black circles represent AIC values of models that have carbon storage, bird density etc. as the response and land use cover as explanatory variables across several decades/centuries. What we see, is that for a few of these models, historical land use cover actually better explains the relationship with current day park composition than current land use cover surrounding the park. These influences of past land uses on today's park functioning are a good example of the importance of legacy effects.
-
----
-class: mainconcepts
-
-# .small[Temporal Heterogeneity]
-```{r,echo=F, message = F, warning=F, fig.align='center'}
-knitr::include_graphics("frederickbackthen.png")
-```
-
-
-.footnote[ [5]:[László Horváth](https://www.mindat.org/photo-506487.html)]
-
-???
-
-We can also imagine that if historical land use surrounding the parks influences their current functioning, that past land use of the actual park could have similar effects. For example, if the land used to be a quarry...
-
----
-
-class: mainconcepts 
-
-# .small[Temporal Heterogeneity]
-```{r,echo=F, message = F, warning=F, fig.align='center'}
-knitr::include_graphics("frederickbacknow.jpg")
-```
-
-
-.footnote[[6]:[Tourisme Montréal](https://www.mtl.org/en)
-]
-
-???
-
-That past land use probably influence the subsequent functioning of that ecosystem through many legacy effects, even when the land use has changed to something else, perhaps a park - such as here in Frederick-Back
-
-
----
-class: introduction
-
-# .small[Research Gaps]
-
-- "Despite the importance of historical and future urban growth as a driver of global change, the global impact on biodiversity remains unclear" - McDonald et al. 2020
-
---
-
-- "Some of the most compelling, and as yet unanswered, questions that take a systems approach to understanding and quantifying ES:" - Bennett 2017
-  - "How do multiple ES interact, and what do those interactions mean for ecosystem management?" 
-  - "What is the role of historical legacies in the provision of ES today?"
-  
---
-  
-- "central features of future urban ecological research should be synthesis, a complex-systems view, cross-city comparison at multiple scales, and inclusion of more disciplines that take advantage of emerging data sources, methods, and tools." - McPhearson et al. 2016
-
---
-
-- "...the analysis of the distribution of ecosystem services needs to be developed further to fully address justice" - Ernstson 2013 
-
---
-
-- "A more rigorous engagement between urban political ecology and the biophysical sciences, ..., would mark the outline of a very different kind of research agenda" - Gandy 2022
-
-???
-
-Here I have included some quotes from some of the foundational papers driving my research that kind of outline the gaps that I am trying to fill... We start with this McDonald paper that highlights the need for an improved understanding of urbanization and biodiversity. Followed by Elena Bennett's 2017 paper saying that some of the most compelling questions about ecosystem services are investigating how multiple ES interact and what do those interactions mean, as well as looking into the effect of historical legacies on ES. McPhearson et al outline the future of urban ecology should do cross-city comparisons at multiple scales, with multiple disciplines, using cutting edge tools. We have Ernstson saying that we need to further develop our understanding of the distribution of ecosystem services if we want to use this framework to address justice and injustice. And finally, we have Gandy outlining the gap that exists between urban political ecology and urban ecology, where if integrated, we could see really new and exciting research taking place.
-
----
-class: introduction 
-
-# .small[Proposed Research]
-
-*Spatial Heterogeneity + Temporal Heterogeneity + Inequity + Urban Forest*
-
-```{r,echo=F, message = F, warning=F, fig.align='center'}
-knitr::include_graphics("study-system.png")
-```
-
-???
-
-So essentially, the goal of this chapter is to attempt to fill in some of these gaps that we just talked about by doing science that addresses both spatial and temporal heterogeneity, while incorporating inequities and social science, into questions regarding our urban forest. So to do that...
-
-
----
-class: chapterone
-
-# .small[Chapter 1: Cross-City Drivers of Ecosystem Services]
-
-**Question:** What are the cross-city drivers of regulatory ecosystem service capacity provided by the urban forest in Canadian temperate cities?  
+# .small[What are the cross-city drivers of ecosystem services?]
 
 ```{r, echo = F, fig.align='center', out.width="60%"}
 knitr::include_graphics("chapter-1.png")
@@ -307,12 +205,12 @@ knitr::include_graphics("chapter-1.png")
 ???
 
 
-First we will discuss my cross-city study. This chapter is driven by the question - what are the cross-city drivers of regulatory ecosystem service capacity provided by the urban forest in Canadian temperate cities? And I think this is an interesting question because although there has undoubtedly been a lot of work regarding ecosystem services in urban settings - there hasn't been many studies that try to take this multi-city, multi-scale approach. And I think it is an interesting approach to take because if there are indeed factors, or drivers, that consistently influence ecosystem service capacity - regardless of scale or city - we can use that knowledge to more effectively plan and manage for ecosystem services.
+This study is driven by the question - what are the cross-city drivers of regulatory ecosystem service capacity provided by the urban forest in Canadian temperate cities? And I think this is an interesting question because although there has undoubtedly been a lot of work regarding ecosystem services in urban settings - there hasn't been many studies that try to take this multi-city, multi-scale approach. And I think it is an interesting approach to take because if there are indeed factors, or drivers, that consistently influence ecosystem service capacity - regardless of scale or city - we can use that knowledge to more effectively plan and manage for ecosystem services.
 
 ---
-class: chapterone
+class: hypotheses
 
-# .small[Chapter 1: Cross-City Drivers of Ecosystem Services]
+# .small[Cross-City vs City-Specific]
 
 **Hypotheses** 
 
@@ -337,10 +235,9 @@ class: chapterone
 This chapter's hypotheses are really driven by this kind of cross-city vs city-specific framework, with the idea that there will be some drivers, for example tree size, tree density, or impervious surfaces, that consistently influence ecosystem services. So bigger trees mitigate higher temperatures and store more carbon, regardless of what city you are in or what scale you look at. However, it should be noted that I do not expect the magnitude of the effect to stay the same, just direction. In contrast, we also expect to have some city or scale-specific drivers. These are factors, potentially such as tree diversity, building function, or median income, that may influence ecosystem service capacity differently depending on the scale or city you are looking at. We might imagine that a more species rich forest might increase capacity to store carbon at a city scale but not a street scale, or that different cities may have different approaches to tree planting across different building functions - e.g., commercial lots look different in Toronto than Halifax.
 
 ---
-class:chapterone
+class:hypotheses
 
-# .small[Chapter 1: Cross-City Drivers of Ecosystem Services]
-**Approach** 
+# .small[Our Approach]
 
 --
 .left-column[
@@ -387,7 +284,7 @@ So with all that in mind, my first chapter will take a multi-scale, multi-servic
 .right-column[
 - Sociodemographic drivers: .large[`r emo::ji("parents")`, `r emo::ji("bill")`, `r emo::ji("graduation_cap")`, `r emo::ji("light_skin_tone")``r emo::ji("dark_skin_tone")``r emo::ji("medium_skin_tone")`, `r emo::ji("house")``r emo::ji("castle")` ]]
 
-.footnote[ .small[ [9]: [IAN](ian.umces.edu/media-library) & [VectorStock](https://cdn4.vectorstock.com/i/1000x1000/15/73/city-road-urban-street-vector-23001573.jpg)
+.footnote[ .small[ [6]: [IAN](ian.umces.edu/media-library) & [VectorStock](https://cdn4.vectorstock.com/i/1000x1000/15/73/city-road-urban-street-vector-23001573.jpg)
 ]]
 
 ???
@@ -395,7 +292,7 @@ So with all that in mind, my first chapter will take a multi-scale, multi-servic
 The drivers I am testing can be separated into three categories - ecological: tree diversity, tree size, and tree density, built infrastructure/urban form: road size, impervious surface, green area, building density, building height, building function, and sociodemographic; population density, income, educatioon level, visible minorities, immigration, and dwelling type
 
 ---
-class:chapterone
+class:results
 
 # .small[Chapter 1: Cross-City Drivers of Ecosystem Services]
 
@@ -413,7 +310,7 @@ knitr::include_graphics("ch1analysis.png")
 The conceptualization of the analysis for this chapter gets a little bit complicated when you try to hold it all in your brain at once. And I am super open to a discussion regarding this, I would love to get everyone's opinions and insights. On this slide, I am presenting one possible approach that I have started to think about. Basically here, I am depicting some hypothetical cross-city drivers (x axis), at the neighbourhood scale, for all three ecosystem service capacities (y axis), for three hypothetical cities. Here, I have the response variables separated obviously, but I would also be looking at the interaction between these three ecosystem service capacities through a kind of spatial hotspot analysis. I have also considered using a multiple linear regression with all three response variables included in the same model so that we can see the interactions between them, since they are of course related and causally tied to one another. We could also imagine this graph with only one driver and each column being a different scale, street vs neighbourhood vs city. Basically, modelling the variables and trying to tease out these common relationships is the goal. But I haven't nailed down exactly the approach I will be taking.
 
 ---
-class:chapterone
+class:results
 
 # .small[Chapter 1: Cross-City Drivers of Ecosystem Services]
 
@@ -424,7 +321,7 @@ class:chapterone
 knitr::include_graphics("hotspots.webp")
 ```
 
-.footnote[ .small[ [10]: [Qiu & Turner](https://www.pnas.org/doi/10.1073/pnas.1310539110)] ] 
+.footnote[ .small[ [7]: [Qiu & Turner](https://www.pnas.org/doi/10.1073/pnas.1310539110)] ] 
 
 ???
 
@@ -433,340 +330,30 @@ Alternatively, I think using a hot-spot/cold-spot approach to the ecosystem serv
 10 services include: crop production, pasture production, freshwater supply, carbon storage, groundwater quality, surface water quality, soil retention, flood regulation, forest recreation, hunting recreation
 
 ---
-class: chaptertwo
-# .small[Chapter 2: Legacy Effects of Past Land-Use]
+class:results
 
-.smaller[**Question:** a) What are the legacy effects of past land-use types on our current ecosystem services in parks?  
-b) Are parks developed on certain past land use types more likely to be found in neighbourhoods that have historically been home to marginalized groups?]
+# .small[Why Does it Matter? + Stay Tuned!]
 
-```{r, echo = F, fig.align='center', out.width="65%"}
-knitr::include_graphics("chapter-2.png")
+.pull-left[
+```{r,echo = F, eval = T, fig.align='center', out.width='40%', out.height='40%'}
+knitr::include_graphics("frederickbackthen.png")
 ```
+]
 
-
-???
-
-Moving on to chapter 2 - where we start to dial in more on the temporal heterogeneity and the influence of historical events. The question driving this chapter is first, what are the legacy effects of past land-use types on our current ecosystem services in Montreal parks. And second - how are these different past land uses represented in today's neighbourhoods - for example - is there overrepresentation of industrial land use types in areas that have a high percentage of immigrants or visible minorities?
-
----
-
-class: chaptertwo
-# .small[Chapter 2: Legacy Effects of Past Land-Use]
-
-**Hypotheses**  
-
---
-
-1) Previous land-use type will influence urban forest composition and ecosystem service capacity in today's parks according to levels of disturbance, where:  
-  - <span style="color:#43b284; font-weight: 700">Forested</span> parks will have the largest trees and highest ecosystem service capacity
-  - <span style = "color:#c88a2c; font-weight: 700">Agricultural</span> parks will have the second largest trees and ecosystem service capacity 
-  - <span style = "color:#dd5129; font-weight: 700">Industrial</span> parks will have the smallest trees and lowest ecosystem service capacity  
-
---
-
-2) Neighbourhoods surrounding our <span style = "color:#dd5129; font-weight: 700">industrial</span> parks will have been historically inhabited by marginalized people. However, this relationship will have shifted over time in Montreal, leading to a weaker relationship with neighbourhood sociodemographics today
-
-
-???
-
-Our hypotheses for this chapter first address how previous land-use types influence our parks today. We hypothesize that land use types that ultimately resulted in an input of nutrients - i.e., agricultural and previously forested (or natural) will result in parks that today have denser, larger trees and a higher ecosystem service capacity. Whereas, we expect that land use types that contaminated the soil - here labelled as industrial, which includes both previous quarries and previous landfills, will have smaller trees and lower ecosystem service capacity today.
-
----
-class: chaptertwo
-# .small[Chapter 2: Legacy Effects of Past Land-Use]
-**Approach**
-
-- 30 parks, 10 of each land cover type
-```{r, echo = F, fig.align='center', out.height='125%'}
-knitr::include_graphics("studyparks.png")
+.pull-right[
+```{r,echo = F, eval = T, fig.align='center', out.width='40%', out.height='40%'}
+knitr::include_graphics("frederickbacknow.jpg")
 ```
+]
+
+.footnote[ .small[ [8]: [László Horváth](https://www.mindat.org/photo-506487.html)], [Tourisme Montréal](https://www.mtl.org/en) ] 
 
 ???
-
-To address this question, we are going to sample 30 parks total - 10 for each land cover class type across the island of Montreal. There are some parks that are mixed - as in they have different past land-use types depending on the area. For these, we have used historical documents to delineated where the boundaries of each past land use type is.
-
-
----
-class: chaptertwo
-# .small[Chapter 2: Legacy Effects of Past Land-Use]
-
-**Approach**
-- 3 canopy cover classes, 3 forestry sampling plots per canopy cover class 
-
-```{r, echo = F}
-knitr::include_graphics("sampling-example.png")
-```
-
-???
-
-Within the parks, we will split the park into areas of low, medium, and high canopy cover and do 3 sampling plots per cover level. The plots are based on iTree sampling methodology, a popular approach in urban ecology and will be 0.04 ha in size. In each plot, we will do a forest inventory including species and size of trees, as well as place a temperature sensor so we can assess the temperature mitigation capacity of these parks. We will also do an overall assessment of total canopy cover, to get a more holistic picture of the park as well.
+Cities across Canada are dynamic systems - evolving and changing all the time. In understanding the commonalities (and differences) of the factors that determine the ecosystem service capacity in our cities, we can more effectively plan and manage on large, landscape scales. We have a better baseline understanding when starting a project, which hopefully will allow us to design and live in cities that distribute ecosystem services effectively and equitably. 
 
 
 ---
-
-class: chaptertwo
-# .small[Chapter 2: Legacy Effects of Past Land-Use]
-
-**Proposed Analysis**
-
-```{r, echo = F, eval = T, warning = F, message = F, fig.align='center', fig.retina = 2}
-library(data.table)
-library(ggplot2)
-
-
-df2 <- data.table(ParkType = rep(factor(c("Industrial", "Agricultural", "Natural")), length.out = 30), ESCapacity = rnorm(n = 30, mean = c(1, 5, 7), sd = 1), HMinorities = 
-                    rnorm(n = 30, mean = c(5, 0, -5), sd = 1), CMinorities = rnorm(n = 30, mean = c(1, 0, -1), sd = 1))
-
-df2l <- melt(df2, id.vars = c("ParkType"),
-                measure.vars = c("ESCapacity", "HMinorities", "CMinorities"))
-
-df2l$variable <- as.factor(df2l$variable)
-df2l$ParkType <- factor(df2l$ParkType,     # Reorder factor levels
-                         c("Industrial", "Agricultural", "Natural"))
-
-labelnames <- c('ESCapacity' = "Service Capacity", 'HMinorities' = "Historical Minorities", 'CMinorities' = "Current Minorities")
-
-ggplot(df2l, aes(x = ParkType, y = value)) + 
-  geom_boxplot(fill = '#e7e5cc') + 
-  geom_jitter() +
-  theme_classic() +
-  theme(
-    panel.background = element_rect(fill='#e7e5cc'), 
-    plot.background = element_rect(fill='#e7e5cc', color=NA),
-    strip.background = element_rect(fill='#e7e5cc'),
-    strip.text.x = element_text(size = 15),
-    axis.ticks.y = element_blank(),
-    axis.text.y = element_blank())+ 
-  ylab("") + 
-  xlab("Park Type") +
-  facet_wrap(vars(variable), scales = "free_y", labeller = as_labeller(labelnames, multi_line = T))
-
-```
-
-
-???
-
-I anticipate using generalized linear models to tease out the relationships between past land use type and current ecosystem service capacity/forest composition. I will also use modelling techniques to determine if there is a relationship between the proportion of marginalized communities surrounding each park type historically, and currently.
-
----
-class: chapterthree
-
-# .small[Chapter 3: Legacy Effects of Urban Form Decisions]
-**Question:**  What are the legacy effects of past urban form decisions and how do they interact with gentrification to influence the urban forest composition in today's neighbourhoods?  
-
-```{r, echo = F, fig.align='center', out.width="65%"}
-knitr::include_graphics("chapter-3.png")
-```
-
-???
-
-Finally, chapter three continues in the temporal heterogeneity vein and will try to address the trade-offs or tensions between historical urban form decisions and the process of gentrification, and how these things influence the urban forest of today's neighbourhoods in Montreal. The idea here being that there are historical urban form decisions that can be considered "static" - in that they are extremely hard to change and often do not change, even when a neighbourhood is developed and redeveloped. And even when a neighbourhood goes through a developmental process, in the case of this chapter - gentrification, these static factors may constrain the effect that gentrification has on our urban forest, which may diminish or change the effects that we might expect to see.
-
-
----
-class: chapterthree 
-
-# .small[Chapter 3: Legacy Effects of the Urban Form Decisions]
-
-**The Luxury Effect**
-
-```{r, echo = F, fig.align='center', out.width = '50%'}
-knitr::include_graphics("luxuryincome.jpg")
-```
-
-.footnote[ .small[ [11]: [Gerrish & Watkins, 2018](https://linkinghub.elsevier.com/retrieve/pii/S0169204617302062)]]
-
-
-???
-
-One of the main ways that gentrification relates and changes the urban forest is through what is known as the luxury effect. The luxury effect refers to the positive relationship between wealth and whiteness, with respect to urban forest size, diversity, and resilience. The luxury effect has been studied worldwide but has the most evidence supporting it in the United States. This figure shows the relationship between income inequity and the urban forest across many different studies, where studies on the right hand side of the middle line provided evidence for the link between inequity and the urban forest (with varying mechanisms and measures)
-
-
----
-class: chapterthree 
-
-# .small[Chapter 3: Legacy Effects of the Urban Form Decisions]
-
-**The Luxury Effect**
-
-
-```{r, echo = F, fig.align='center', out.width = '50%'}
-knitr::include_graphics("luxuryracism.jpg")
-```
-
-
-.footnote[ .small[ [12]: [Watkins & Gerrish, 2018](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5889081/)
-]]
-
-
-???
-
-This figure is a review by the same authors showing the relationship between race inequity and the urban forest. The luxury effect seems to be complex in Canada, with some studies showing the same relationships we would expect based on literature primarily based in the US. But sometimes, the relationship in Canadian cities becomes a bit more noisy... 
- 
-
-
----
-class: chapterthree
-
-# .small[Chapter 3: Legacy Effects of the Urban Form Decisions]
-
-**Constraints of Urban Form**
-
-
-```{r, echo = F, fig.align='center', out.width = '45%'}
-knitr::include_graphics("adapted-pham.png")
-```
-
-
-.footnote[ .small[ [13]: [Adapted from Pham et al. 2017](http://dx.doi.org/10.1016/j.landurbplan.2016.09.001)
-]]
-
-
-???
-
-One hypothesis for the noisy, complex relationship between environmental injustice in Canadian cities, specifically with respect to gentrification, is the interacting effects with urban form. Urban form refers to the physical configuration of an urban area and refers to factors such as building density, building setback, road size, and others. There has been some really excellent work done in the city of Montreal that shows that urban form is a major contributing factor to, at the very least, canopy cover composition in the city, with urban form variables interacting with socioeconomic variables to significantly determine levels of canopy cover.
-
-
-
----
-
-class: chapterthree
-
-# .small[Chapter 3: Legacy Effects of Urban Form Decisions]
-
-**Hypotheses** There is tension between *static* and *dynamic* urban form factors, which influences how gentrification influences the urban forest community in current Montreal neighbourhoods 
-
-```{r, echo = F, fig.align='center', out.width = '60%'}
-knitr::include_graphics("tension.png")
-```
-
-???
-
-So we hypothesize that these static urban form factors, such as road size and building setback, are constraining the effect that the dynamic factors, which change through gentrification has on the urban forest. So although gentrification will change the urban forest - perhaps through increasing diversity or density of trees, it will only change SO much in areas that are constrained by really low building setback and high population density.
-
----
-
-class: chapterthree
-
-# .small[Chapter 3: Legacy Effects of Urban Form Decisions]
-
-**Approach**
-
-- 15 sites total, 3 classes of gentrification, continuous gradient of urban form
-
-```{r, echo = F, fig.align='center', out.width='75%'}
-knitr::include_graphics("ch3sampling.png")
-```
-
-
-???
-
-To try and tease out how all these factors are operating together, we will use a categorical approach to gentrification, developed by Statistics Canada and designate 5 neighbourhoods as either gentrified, not gentrified, or didn't qualify for gentrification. We will then spread those 5 sites across 
-
-
----
-class: chapterthree
-
-# .small[Chapter 3: Legacy Effects of Urban Form Decisions]
-
-**Proposed Analysis**
-
-```{r, echo = F, eval = T, warning = F, message = F, fig.align='center', fig.retina = 2}
-library(data.table)
-library(ggplot2)
-library(patchwork)
-
-set.seed(1)
-
-N   <- 15
-rho1 <- -0.3
-rho2 <- -0.73 
-rho3 <- -0.3 
-
-density  <- rlnorm(n = N, mean = 0, sd = 1)
-NAGen  <- (rho1 * density) + sqrt(1 - rho1*rho1) * rnorm(n = N, mean = 3, sd = 1)
-Gen <- (rho2 * density) + sqrt(1 - rho2*rho2) * rnorm(n = N, mean = 10, sd = 1)
-DNGen  <- (rho3 * density) + sqrt(1 - rho3*rho3) * rnorm(n = N, mean = 2, sd = 1)
-
-df3 <- as.data.table(cbind(density, NAGen, Gen, DNGen))
-
-df3l <- melt(df3, id.vars = "density", measure.vars = c("NAGen", "Gen", "DNGen"), value.name = "ForestSize", variable.name = "NeighbourhoodType")
-
-ggplot(df3l, aes(x = density, y = ForestSize, colour = NeighbourhoodType)) + 
-  geom_point() + 
-  scale_colour_manual(values = c("#FEEFD8", "#FDCFA8", "#EB806F"), labels = c("Non Gentrifiable", "Gentrified", "Did Not Gentrify")) + 
-  geom_smooth(method = "lm", se = F) + 
-  theme_classic() + 
-  ylab("Canopy Cover (%)") + 
-  xlab("Urban Form (Density)") + 
-  labs(colour = "Gentrification") + 
-  theme(panel.background = element_rect(fill='#e7e5cc'),
-        plot.background = element_rect(fill='#e7e5cc', color=NA), 
-        legend.background = element_rect(fill = '#e7e5cc'))  
-
-```
-
-???
-
-
-
----
-class: chapterthree
-
-# .small[Chapter 3: Legacy Effects of Urban Form Decisions]
-
-**Proposed Analysis**
-```{r, eval = T, echo = F, warning = F, message = F, fig.align = 'center', fig.retina = 2}
-rho4 <- -0.4
-
-NAGenD  <- (rho4 * density) + sqrt(1 - rho4*rho4) * rnorm(n = N, mean = 6, sd = 1)
-GenD <- (rho4 * density) + sqrt(1 - rho4*rho4) * rnorm(n = N, mean = 10, sd = 1)
-DNGenD  <- (rho4 * density) + sqrt(1 - rho4*rho4) * rnorm(n = N, mean = 3, sd = 1)
-
-df3.2 <- as.data.table(cbind(density, NAGenD, GenD, DNGenD))
-
-df3.2l <- melt(df3.2, id.vars = "density", measure.vars = c("NAGenD", "GenD", "DNGenD"), value.name = "ForestDiversity", variable.name = "NeighbourhoodType")
-ggplot(df3.2l, aes(x = density, y = ForestDiversity, colour = NeighbourhoodType)) + 
-  geom_point() + 
-  scale_colour_manual(values = c("#FEEFD8", "#FDCFA8", "#EB806F"), labels = c("Non Gentrifiable", "Gentrified", "Did Not Gentrify")) + 
-  geom_smooth(method = "lm", se = F) + 
-  theme_classic() + 
-  ylab("Forest Diversity") + 
-  xlab("Urban Form (Density)") + 
-  labs(colour = "Gentrification") + 
-  theme(panel.background = element_rect(fill='#e7e5cc'),
-        plot.background = element_rect(fill='#e7e5cc', color=NA), 
-        legend.background = element_rect(fill = '#e7e5cc'))  
-
-```
-
-
-???
-
-Finally, I expect to model these results using a continuous gradient of density based on a variety of urban form factors. I will use dependent variables of urban forest size, density, and diversity for street trees, as well as overall canopy cover to try and capture the contribution of privately owned trees in my analysis.
-
----
-class: chapterthree 
-
-# .small[Contributions] 
-
-
-1. Broad, landscape scale study on urban ecosystem services + generalizable knowledge on drivers 
-
---
-
-2. Addition of temporal heterogeneity to the field + impacts of park development choices   
-
---
-
-3. Process of gentrification in Montreal
-
---
-
-4. Integration of natural and social sciences 
-
----
-class: chapterthree
+class: results
 background-image: url("urbantree.jpg")
 
 # Questions
@@ -775,9 +362,40 @@ background-image: url("urbantree.jpg")
 .footnotefinal["Le Plateau Montreal - Tree" by ra1000 is licensed under CC BY-NC-ND 2.0]
 
 
+
 ---
 
-class: mainconcepts 
+class: introduction
+
+# .small[Research Gaps]
+
+- "Despite the importance of historical and future urban growth as a driver of global change, the global impact on biodiversity remains unclear" - McDonald et al. 2020
+
+--
+
+- "Some of the most compelling, and as yet unanswered, questions that take a systems approach to understanding and quantifying ES:" - Bennett 2017
+  - "How do multiple ES interact, and what do those interactions mean for ecosystem management?" 
+  - "What is the role of historical legacies in the provision of ES today?"
+  
+--
+  
+- "central features of future urban ecological research should be synthesis, a complex-systems view, cross-city comparison at multiple scales, and inclusion of more disciplines that take advantage of emerging data sources, methods, and tools." - McPhearson et al. 2016
+
+--
+
+- "...the analysis of the distribution of ecosystem services needs to be developed further to fully address justice" - Ernstson 2013 
+
+--
+
+- "A more rigorous engagement between urban political ecology and the biophysical sciences, ..., would mark the outline of a very different kind of research agenda" - Gandy 2022
+
+???
+
+Here I have included some quotes from some of the foundational papers driving my research that kind of outline the gaps that I am trying to fill... We start with this McDonald paper that highlights the need for an improved understanding of urbanization and biodiversity. Followed by Elena Bennett's 2017 paper saying that some of the most compelling questions about ecosystem services are investigating how multiple ES interact and what do those interactions mean, as well as looking into the effect of historical legacies on ES. McPhearson et al outline the future of urban ecology should do cross-city comparisons at multiple scales, with multiple disciplines, using cutting edge tools. We have Ernstson saying that we need to further develop our understanding of the distribution of ecosystem services if we want to use this framework to address justice and injustice. And finally, we have Gandy outlining the gap that exists between urban political ecology and urban ecology, where if integrated, we could see really new and exciting research taking place.
+
+---
+
+class: introduction 
 
 # Foundational Papers
 
@@ -801,7 +419,7 @@ class: mainconcepts
 
 ---
 
-class: chapterone 
+class: mainconcepts 
 
 # .small[Chapter 1: Cross-City Drivers of Ecosystem Services]
 
@@ -834,7 +452,7 @@ ggdag(dag) +
 
 
 ---
-class: chapterone 
+class: mainconcepts 
 
 # .small[Chapter 1: Cross-City Drivers of Ecosystem Services]
 **Functional Groups**
@@ -849,7 +467,7 @@ Paquette et al. 2021, [Urban Forestry & Urban Greening](https://doi.org/10.1016/
 
 
 ---
-class: chapterone 
+class: mainconcepts 
 # .small[Chapter 1: Cross-City Drivers of Ecosystem Services]
 
 **Scale vs City** 
@@ -862,124 +480,3 @@ class: chapterone
 
 - Drivers that vary across cities but consistently across scales 
   - e.g., sociodemographic variables - effect often scales up but is dependent on local context 
-
----
-class: chaptertwo 
-
-# .small[Chapter 2: Legacy Effects of Past Land-Use Type]
-**1874**
-
-```{r, echo = F, fig.align='center', out.width='35%', out.height='35%'}
-knitr::include_graphics("JD_1874.JPG")
-```
-
-
----
-class: chaptertwo 
-
-# .small[Chapter 2: Legacy Effects of Past Land-Use Type]
-**1930**
-
-```{r, echo = F, fig.align='center', out.width='85%'}
-knitr::include_graphics("JD_1930.JPG")
-```
-
-
----
-class: chaptertwo 
-
-# .small[Chapter 2: Legacy Effects of Past Land-Use Type]
-**1954**
-
-```{r, echo = F, fig.align='center', out.width = '75%'}
-knitr::include_graphics("JD_1954.JPG")
-```
-
-
----
-class: chaptertwo 
-
-# .small[Chapter 2: Legacy Effects of Past Land-Use Type]
-
-```{r, echo = F}
-library(data.table)
-library(kableExtra)
-p <- fread("studyparks.csv", encoding = "UTF-8") 
-i <- subset(p, `Past Land-Use` == "Industrial")
-a  <- subset(p, `Past Land-Use` == "Agricultural")
-n <- subset(p, `Past Land-Use` == "Natural")
-knitr::kable(i) %>%
-  kable_styling(font_size = 15)
-```
-
----
-class: chaptertwo 
-
-# .small[Chapter 2: Legacy Effects of Past Land-Use Type]
-
-```{r, echo = F}
-knitr::kable(a) %>%
-  kable_styling(font_size = 15)
-```
-
----
-class: chaptertwo 
-
-# .small[Chapter 2: Legacy Effects of Past Land-Use Type]
-
-```{r, echo = F}
-knitr::kable(n) %>%
-  kable_styling(font_size = 15)
-```
-
-
----
-class: chaptertwo 
-
-# .small[Chapter 2: Legacy Effects of Past Land-Use Type]
-
-```{r, echo = F, message = F,warning = F}
-library(mapview)
-library(sf)
-parks <- read_sf("studyparks.gpkg")
-mapview(parks)
-```
-
-
----
-class: chapterthree 
-
-# .small[Chapter 3: Legacy Effects of Urban Form]
-
-**Gentrification**
-
-"Gentrification is an area-level process in which formerly declining, under-resourced neighbourhoods experience reinvestment and in-migration of increasingly affluent new residents"  
-
-|                   | Grube-Cavers                                                 |
-| -------------     | ------------------------------------------------------------ | 
-| **Gentrifiable**  |                                                              | 
-|                   | Avg. family income < CMA avg.                                |
-|                   | Number of college degree holders per capita < CMA avg.       |
-| **Gentrified**    |                                                              |
-|                   | Increase in family income > CMA avg                          | 
-|                   | Increase in prop. degrees per capita > CMA avg.              |
-|                   | Increase in avg. monthly rent > CMA avg.                     | 
-|                   | Increase in prop. owner occupied dwellings > CMA avg.        | 
-|                   | Increase in prop. people professional occupations > CMA avg. | 
-
-
-
-.footnote[ [Grube-Cavers & Patterson, 2014](https://journals.sagepub.com/doi/full/10.1177/0042098014524287) ]]
----
-class: chapterthree
-
-# .small[Chapter 3: Legacy Effects of Urban Form]
-
-**Gentrification Measures**
-
-```{r, echo = F, fig.align='center', out.width='75%'}
-knitr::include_graphics("montrealgent.png")
-```
-
-[GENUINE](https://teaminteract.ca/develop/gentrification/gentrif_test_allCMA.html)
-
