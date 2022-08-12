@@ -213,8 +213,6 @@ class: hypotheses
 
 # Cross-City vs City-Specific
 
-**Hypotheses** 
-
 --
 
 *Cross-City Drivers*: We hypothesize that there will be some drivers that influence ecosystem service capacity in the same direction across scales/cities. For example:  
@@ -295,9 +293,7 @@ The drivers I am testing can be separated into three categories - ecological: tr
 ---
 class:results
 
-# .small[Chapter 1: Cross-City Drivers of Ecosystem Services]
-
-**Proposed Analysis** 
+# Proposed Analysis 
 
 
 ```{r,echo = F, eval = T, fig.align='center', out.width='85%'}
@@ -313,9 +309,7 @@ The conceptualization of the analysis for this chapter gets a little bit complic
 ---
 class:results
 
-# .small[Chapter 1: Cross-City Drivers of Ecosystem Services]
-
-**Proposed Analysis** 
+# Proposed Analysis
 
 
 ```{r,echo = F, eval = T, fig.align='center', out.width='40%', out.height='40%'}
@@ -335,6 +329,10 @@ class:results
 
 # Why Does it Matter? + Stay Tuned!
 
+
+```{r,echo = F, eval = T, fig.align='center'}
+knitr::include_graphics("mtl.jpg")
+```
 
 
 ???
@@ -356,7 +354,7 @@ background-image: url("urbantree.jpg")
 
 class: introduction
 
-# .small[Research Gaps]
+# Research Gaps
 
 - "Despite the importance of historical and future urban growth as a driver of global change, the global impact on biodiversity remains unclear" - McDonald et al. 2020
 
@@ -410,9 +408,7 @@ class: introduction
 
 class: mainconcepts 
 
-# .small[Chapter 1: Cross-City Drivers of Ecosystem Services]
-
-**Causal Model - All Variables**
+# Causal Model - All Variables
 
 ```{r, eval = T, message = F, echo = F, fig.align='center', fig.retina=2}
 library(ggdag)
@@ -443,8 +439,7 @@ ggdag(dag) +
 ---
 class: mainconcepts 
 
-# .small[Chapter 1: Cross-City Drivers of Ecosystem Services]
-**Functional Groups**
+# Functional Groups
 
 ```{r, echo = F, fig.align='center'}
 knitr::include_graphics("paquette.jpg")
@@ -457,9 +452,7 @@ Paquette et al. 2021, [Urban Forestry & Urban Greening](https://doi.org/10.1016/
 
 ---
 class: mainconcepts 
-# .small[Chapter 1: Cross-City Drivers of Ecosystem Services]
-
-**Scale vs City** 
+# Scale vs City
 
 - Landscape vs local level effects 
 
