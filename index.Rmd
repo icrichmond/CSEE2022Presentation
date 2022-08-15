@@ -312,24 +312,48 @@ Alternatively, I think using a hot-spot/cold-spot approach to the ecosystem serv
 ---
 class:results
 
-# Why Does it Matter? + Stay Tuned!
-
+# Why Does it Matter?
 
 ```{r,echo = F, eval = T, fig.align='center'}
-knitr::include_graphics("mtl.jpg")
+knitr::include_graphics("urbantreesbenefits")
 ```
+
+.footnote[ [8]: [The Nature Conservancy](https://www.washingtonnature.org/fieldnotes/advocacy-urban-trees-puget-sound)]  
 
 
 ???
 Cities across Canada are dynamic systems - evolving and changing all the time. In understanding the commonalities (and differences) of the factors that determine the ecosystem service capacity in our cities, we can more effectively plan and manage on large, landscape scales. We have a better baseline understanding when starting a project, which hopefully will allow us to design and live in cities that distribute ecosystem services effectively and equitably. 
 
+- most people live in cities
+
+- trees are critical infrastructure
+
+---
+class:results
+
+# Potential Outcomes
+
+- Knowledge on landscape scale processes in our cities 
+
+--
+
+- Multi-city dataset
+
+--
+
+- 
+
+???
+
 
 ---
 class: results
-background-image: url("urbantree.jpg")
 
-# Questions
+# Questions?
 
+```{r,echo = F, eval = T, fig.align='center'}
+knitr::include_graphics("mtl.jpg")
+```
 
 .footnotefinal["Le Plateau Montreal - Tree" by ra1000 is licensed under CC BY-NC-ND 2.0]
 
