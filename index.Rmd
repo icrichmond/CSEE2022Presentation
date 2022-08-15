@@ -328,23 +328,6 @@ Cities across Canada are dynamic systems - evolving and changing all the time. I
 
 - trees are critical infrastructure
 
----
-class:results
-
-# Potential Outcomes
-
-- Knowledge on landscape scale processes in our cities 
-
---
-
-- Multi-city dataset
-
---
-
-- 
-
-???
-
 
 ---
 class: results
