@@ -291,22 +291,7 @@ So with all that in mind, my first chapter will take a multi-scale, multi-servic
 The drivers I am testing can be separated into three categories - ecological: tree diversity, tree size, and tree density, built infrastructure/urban form: road size, impervious surface, green area, building density, building height, building function, and sociodemographic; population density, income, educatioon level, visible minorities, immigration, and dwelling type
 
 ---
-class:results
 
-# Proposed Analysis 
-
-
-```{r,echo = F, eval = T, fig.align='center', out.width='85%'}
-
-knitr::include_graphics("ch1analysis.png")
-
-```
-
-???
-
-The conceptualization of the analysis for this chapter gets a little bit complicated when you try to hold it all in your brain at once. And I am super open to a discussion regarding this, I would love to get everyone's opinions and insights. On this slide, I am presenting one possible approach that I have started to think about. Basically here, I am depicting some hypothetical cross-city drivers (x axis), at the neighbourhood scale, for all three ecosystem service capacities (y axis), for three hypothetical cities. Here, I have the response variables separated obviously, but I would also be looking at the interaction between these three ecosystem service capacities through a kind of spatial hotspot analysis. I have also considered using a multiple linear regression with all three response variables included in the same model so that we can see the interactions between them, since they are of course related and causally tied to one another. We could also imagine this graph with only one driver and each column being a different scale, street vs neighbourhood vs city. Basically, modelling the variables and trying to tease out these common relationships is the goal. But I haven't nailed down exactly the approach I will be taking.
-
----
 class:results
 
 # Proposed Analysis
